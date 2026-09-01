@@ -1,0 +1,53 @@
+# Build and IDE outputs
+.vs/
+**/.vs/
+artifacts/
+**/artifacts/
+**/bin/
+**/obj/
+**/build/
+**/out/
+
+# Native and managed generated files
+*.pdb
+*.ilk
+*.idb
+*.ipch
+*.pch
+*.tlog
+*.lastbuildstate
+*.user
+*.suo
+
+# Recording and diagnostic outputs
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.jsonl
+*.dmp
+*.etl
+*.trace
+diagnostic-logs/
+**/diagnostic-logs/
+p2.4-longrun/
+p2.4-quality-ab/
+
+# Local caches, downloads, and temporary files
+*.cache
+*.tmp
+*.temp
+*.bak
+*.orig
+*.part
+*.crdownload
+
+# External reference repositories and historical snapshots
+_external-references/
+**/_external-references/
+Cap-main/
+**/Cap-main/
+OpenScreen*/
+**/OpenScreen*/
+upstream-*/
+**/upstream-*/

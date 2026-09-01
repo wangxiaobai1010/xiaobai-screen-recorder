@@ -1,0 +1,723 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!--
+    Mechanical conversions from exact donor object
+    034e886:src/App.css. This spike intentionally uses the installed Windows
+    Segoe UI family and contains no donor font or brand asset.
+  -->
+  <Styles.Resources>
+    <ResourceDictionary>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.Deck">#FAF8F5</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.ControlArea">#F7F4EF</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.PanelSurface">#FFFDFC</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.ControlSurface">#F2EFEA</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.Surface">#FFFFFF</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.SurfaceSecondary">#F3F1ED</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.TextPrimary">#242220</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.TextSecondary">#77726C</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.TextFaint">#77726C</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.Line">#DDD8D1</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.LineStrong">#BDBDBD</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.Brand">#E0351F</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.BrandHover">#C12E1A</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.BrandInk">#B62D1B</SolidColorBrush>
+      <!-- donor brand-rgb variable is 224,52,30; not HSL-brand-derived -->
+      <SolidColorBrush x:Key="SkillRecorder.Brush.SignalDim">#21E0341E</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.FocusRing">#38E0341E</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.Record">#E82C17</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.Success">#008554</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.Warning">#CE7C09</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.AudioSourceUnavailable">#F3F1ED</SolidColorBrush>
+      <SolidColorBrush x:Key="SkillRecorder.Brush.AudioSourceAvailable">#8D857C</SolidColorBrush>
+
+      <x:String x:Key="SkillRecorder.FontFamilyName">Segoe UI</x:String>
+      <CornerRadius x:Key="SkillRecorder.Radius.Primary">10</CornerRadius>
+      <CornerRadius x:Key="SkillRecorder.Radius.Select">8</CornerRadius>
+      <CornerRadius x:Key="SkillRecorder.Radius.CardAction">12</CornerRadius>
+      <CornerRadius x:Key="SkillRecorder.Radius.Selectable">10</CornerRadius>
+      <CornerRadius x:Key="SkillRecorder.Radius.ToggleTrack">11</CornerRadius>
+      <x:Double x:Key="SkillRecorder.Toggle.Width">36</x:Double>
+      <x:Double x:Key="SkillRecorder.Toggle.Height">22</x:Double>
+      <Thickness x:Key="SkillRecorder.Toggle.Padding">3</Thickness>
+      <x:Double x:Key="SkillRecorder.Toggle.Knob">16</x:Double>
+      <x:Double x:Key="SkillRecorder.Toggle.Travel">14</x:Double>
+      <x:Double x:Key="SkillRecorder.Duration.VisualMs">150</x:Double>
+      <x:Double x:Key="SkillRecorder.Duration.TransformMs">120</x:Double>
+      <x:Double x:Key="SkillRecorder.Duration.ToggleMs">150</x:Double>
+      <x:Double x:Key="SkillRecorder.Duration.CardPressedMs">60</x:Double>
+      <x:Double x:Key="SkillRecorder.Duration.RecordGlyphMs">180</x:Double>
+      <SplineEasing x:Key="SkillRecorder.Ease"
+                    X1="0.25" Y1="0.1" X2="0.25" Y2="1" />
+    </ResourceDictionary>
+  </Styles.Resources>
+
+  <Style Selector="UserControl.skill-recorder-shell">
+    <Setter Property="FontFamily" Value="Segoe UI" />
+    <Setter Property="FontSize" Value="13" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextPrimary}" />
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.Deck}" />
+  </Style>
+
+  <Style Selector="TextBlock.skill-title">
+    <Setter Property="FontSize" Value="20" />
+    <Setter Property="FontWeight" Value="SemiBold" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextPrimary}" />
+  </Style>
+  <Style Selector="TextBlock.skill-section-title">
+    <Setter Property="FontSize" Value="14" />
+    <Setter Property="FontWeight" Value="SemiBold" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextPrimary}" />
+  </Style>
+  <Style Selector="TextBlock.skill-label">
+    <Setter Property="FontSize" Value="12" />
+    <Setter Property="FontWeight" Value="SemiBold" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextPrimary}" />
+  </Style>
+  <Style Selector="TextBlock.skill-muted">
+    <Setter Property="FontSize" Value="12" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextSecondary}" />
+  </Style>
+  <Style Selector="TextBlock.skill-faint">
+    <Setter Property="FontSize" Value="11" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextFaint}" />
+  </Style>
+
+  <Style Selector="Border.skill-deck-region">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.PanelSurface}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Line}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius"
+            Value="{StaticResource SkillRecorder.Radius.Selectable}" />
+    <Setter Property="Padding" Value="12,10" />
+  </Style>
+  <Style Selector="Border.skill-layout-slot">
+    <Setter Property="MinHeight" Value="26" />
+    <Setter Property="Padding" Value="7,3" />
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.ControlSurface}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Line}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="6" />
+    <Setter Property="IsHitTestVisible" Value="False" />
+  </Style>
+  <Style Selector="Border.skill-layout-toggle-slot">
+    <Setter Property="Width" Value="32" />
+    <Setter Property="Height" Value="18" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.ControlSurface}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Line}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="9" />
+    <Setter Property="IsHitTestVisible" Value="False" />
+  </Style>
+  <Style Selector="Border.skill-sample-region">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.Surface}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Line}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius"
+            Value="{StaticResource SkillRecorder.Radius.Selectable}" />
+    <Setter Property="Padding" Value="16" />
+  </Style>
+
+  <Style Selector="Button.skill-primary">
+    <Setter Property="MinHeight" Value="38" />
+    <Setter Property="Padding" Value="16,8" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.Brand}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.Surface}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Brand}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius"
+            Value="{StaticResource SkillRecorder.Radius.Primary}" />
+    <Setter Property="Cursor" Value="Hand" />
+    <Setter Property="Transitions">
+      <Transitions>
+        <BrushTransition Property="Background" Duration="0:0:0.150"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+        <BrushTransition Property="BorderBrush" Duration="0:0:0.150"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+        <DoubleTransition Property="Opacity" Duration="0:0:0.150"
+                          Easing="{StaticResource SkillRecorder.Ease}" />
+        <TransformOperationsTransition Property="RenderTransform"
+                                       Duration="0:0:0.120"
+                                       Easing="{StaticResource SkillRecorder.Ease}" />
+      </Transitions>
+    </Setter>
+    <Setter Property="RenderTransform" Value="scale(1)" />
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Border Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                CornerRadius="{TemplateBinding CornerRadius}"
+                Padding="{TemplateBinding Padding}">
+          <ContentPresenter Content="{TemplateBinding Content}"
+                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                            HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" />
+        </Border>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+  <Style Selector="Button.skill-primary:pointerover">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.BrandHover}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.BrandHover}" />
+  </Style>
+  <!-- donor defines no distinct primary pressed color -->
+  <Style Selector="Button.skill-primary:pressed">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.BrandHover}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.BrandHover}" />
+  </Style>
+  <Style Selector="Button.skill-primary:focus-visible">
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.FocusRing}" />
+    <Setter Property="BorderThickness" Value="3" />
+  </Style>
+  <Style Selector="Button.skill-primary:disabled">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.SurfaceSecondary}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextFaint}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Line}" />
+  </Style>
+
+  <Style Selector="Button.skill-secondary">
+    <Setter Property="MinHeight" Value="34" />
+    <Setter Property="Padding" Value="13,6" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.ControlSurface}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextPrimary}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Line}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius"
+            Value="{StaticResource SkillRecorder.Radius.Select}" />
+    <Setter Property="Cursor" Value="Hand" />
+    <Setter Property="Transitions">
+      <Transitions>
+        <BrushTransition Property="Background" Duration="0:0:0.150"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+        <BrushTransition Property="BorderBrush" Duration="0:0:0.150"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+      </Transitions>
+    </Setter>
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Border Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                CornerRadius="{TemplateBinding CornerRadius}"
+                Padding="{TemplateBinding Padding}">
+          <ContentPresenter Content="{TemplateBinding Content}"
+                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                            HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" />
+        </Border>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+  <Style Selector="Button.skill-secondary:pointerover">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.PanelSurface}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.LineStrong}" />
+  </Style>
+  <Style Selector="Button.skill-secondary:focus-visible">
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.FocusRing}" />
+    <Setter Property="BorderThickness" Value="3" />
+  </Style>
+
+  <!-- Canonical quiet small-button language. This slice applies the class
+       only to Director zoom and ReturnHome actions. -->
+  <Style Selector="Button.director-small">
+    <Setter Property="MinHeight" Value="30" />
+    <Setter Property="Padding" Value="10,5" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.ControlSurface}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextPrimary}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Line}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="7" />
+    <Setter Property="Cursor" Value="Hand" />
+    <Setter Property="Opacity" Value="1" />
+    <Setter Property="RenderTransform" Value="translateY(0px)" />
+    <Setter Property="Transitions">
+      <Transitions>
+        <BrushTransition Property="Background" Duration="0:0:0.120"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+        <BrushTransition Property="BorderBrush" Duration="0:0:0.120"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+        <BrushTransition Property="Foreground" Duration="0:0:0.120"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+        <DoubleTransition Property="Opacity" Duration="0:0:0.120"
+                          Easing="{StaticResource SkillRecorder.Ease}" />
+        <TransformOperationsTransition Property="RenderTransform"
+                                       Duration="0:0:0.060"
+                                       Easing="{StaticResource SkillRecorder.Ease}" />
+      </Transitions>
+    </Setter>
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Border Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                CornerRadius="{TemplateBinding CornerRadius}"
+                Padding="{TemplateBinding Padding}">
+          <ContentPresenter Content="{TemplateBinding Content}"
+                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                            HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" />
+        </Border>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+  <Style Selector="Button.director-small:pointerover">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.PanelSurface}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.LineStrong}" />
+  </Style>
+  <Style Selector="Button.director-small.selected">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.SignalDim}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+  </Style>
+  <Style Selector="Button.director-small:pressed">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.SignalDim}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+    <Setter Property="RenderTransform" Value="translateY(1px)" />
+  </Style>
+  <Style Selector="Button.director-small:focus-visible">
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+    <Setter Property="BorderThickness" Value="2" />
+  </Style>
+  <Style Selector="Button.director-small:disabled">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.ControlSurface}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextFaint}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Line}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="Cursor" Value="Arrow" />
+    <Setter Property="Opacity" Value="1" />
+    <Setter Property="RenderTransform" Value="translateY(0px)" />
+  </Style>
+  <Style Selector="Button.skill-capture-trigger">
+    <Setter Property="Height" Value="30" />
+  </Style>
+  <Style Selector="Button.audio-refresh">
+    <Setter Property="Width" Value="22" />
+    <Setter Property="Height" Value="22" />
+    <Setter Property="MinHeight" Value="22" />
+    <Setter Property="Padding" Value="0" />
+    <Setter Property="CornerRadius" Value="6" />
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Border Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                CornerRadius="{TemplateBinding CornerRadius}">
+          <Viewbox Width="12"
+                   Height="12"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   IsHitTestVisible="False">
+            <Canvas Width="12" Height="12">
+              <Path Data="M 10.2,5 A 4.4,4.4 0 1 0 9.4,9.3 M 10.2,5 L 10.2,1.9 M 10.2,5 L 7.2,5"
+                    Fill="Transparent"
+                    Stroke="{TemplateBinding Foreground}"
+                    StrokeThickness="1.45"
+                    StrokeLineCap="Round" />
+            </Canvas>
+          </Viewbox>
+        </Border>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+
+  <Style Selector="Ellipse.audio-source-glow">
+    <Setter Property="Width" Value="12" />
+    <Setter Property="Height" Value="12" />
+    <Setter Property="Fill" Value="Transparent" />
+    <Setter Property="HorizontalAlignment" Value="Center" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+    <Setter Property="IsHitTestVisible" Value="False" />
+  </Style>
+  <Style Selector="Ellipse.audio-source-glow.ready">
+    <Setter Property="Fill"
+            Value="{StaticResource SkillRecorder.Brush.SignalDim}" />
+  </Style>
+  <Style Selector="Ellipse.audio-source-lamp">
+    <Setter Property="Width" Value="8" />
+    <Setter Property="Height" Value="8" />
+    <Setter Property="HorizontalAlignment" Value="Center" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+    <Setter Property="StrokeThickness" Value="1" />
+    <Setter Property="IsHitTestVisible" Value="False" />
+  </Style>
+  <Style Selector="Ellipse.audio-source-lamp.unavailable">
+    <Setter Property="Fill"
+            Value="{StaticResource SkillRecorder.Brush.AudioSourceUnavailable}" />
+    <Setter Property="Stroke"
+            Value="{StaticResource SkillRecorder.Brush.LineStrong}" />
+  </Style>
+  <Style Selector="Ellipse.audio-source-lamp.available">
+    <Setter Property="Fill"
+            Value="{StaticResource SkillRecorder.Brush.AudioSourceAvailable}" />
+    <Setter Property="Stroke"
+            Value="{StaticResource SkillRecorder.Brush.AudioSourceAvailable}" />
+  </Style>
+  <Style Selector="Ellipse.audio-source-lamp.ready">
+    <Setter Property="Fill"
+            Value="{StaticResource SkillRecorder.Brush.Brand}" />
+    <Setter Property="Stroke"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+  </Style>
+
+  <Style Selector="ToggleButton.skill-toggle">
+    <Setter Property="Width"
+            Value="{StaticResource SkillRecorder.Toggle.Width}" />
+    <Setter Property="Height"
+            Value="{StaticResource SkillRecorder.Toggle.Height}" />
+    <Setter Property="Padding"
+            Value="{StaticResource SkillRecorder.Toggle.Padding}" />
+    <Setter Property="Cursor" Value="Hand" />
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Grid Width="{TemplateBinding Width}"
+              Height="{TemplateBinding Height}">
+          <Border x:Name="PART_ToggleTrack"
+                  Background="{StaticResource SkillRecorder.Brush.SurfaceSecondary}"
+                  CornerRadius="{StaticResource SkillRecorder.Radius.ToggleTrack}"
+                  Padding="{TemplateBinding Padding}">
+            <Border.Transitions>
+              <Transitions>
+                <BrushTransition Property="Background" Duration="0:0:0.150"
+                                 Easing="{StaticResource SkillRecorder.Ease}" />
+              </Transitions>
+            </Border.Transitions>
+            <Border x:Name="PART_ToggleKnob"
+                    Width="{StaticResource SkillRecorder.Toggle.Knob}"
+                    Height="{StaticResource SkillRecorder.Toggle.Knob}"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Background="{StaticResource SkillRecorder.Brush.Surface}"
+                    CornerRadius="8"
+                    RenderTransform="translateX(0px)">
+              <Border.Transitions>
+                <Transitions>
+                  <BrushTransition Property="Background" Duration="0:0:0.150"
+                                   Easing="{StaticResource SkillRecorder.Ease}" />
+                  <TransformOperationsTransition Property="RenderTransform"
+                                                 Duration="0:0:0.150"
+                                                 Easing="{StaticResource SkillRecorder.Ease}" />
+                </Transitions>
+              </Border.Transitions>
+            </Border>
+          </Border>
+          <Border x:Name="PART_ToggleFocus"
+                  BorderBrush="{StaticResource SkillRecorder.Brush.FocusRing}"
+                  BorderThickness="0"
+                  CornerRadius="{StaticResource SkillRecorder.Radius.ToggleTrack}"
+                  IsHitTestVisible="False" />
+        </Grid>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle:checked /template/ Border#PART_ToggleTrack">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.Brand}" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle:checked /template/ Border#PART_ToggleKnob">
+    <Setter Property="RenderTransform" Value="translateX(14px)" />
+  </Style>
+  <!-- donor has no track-hover color; no :pointerover track rule is invented -->
+  <Style Selector="ToggleButton.skill-toggle:focus-visible /template/ Border#PART_ToggleFocus">
+    <Setter Property="BorderThickness" Value="2" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle:disabled /template/ Border#PART_ToggleTrack">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.SurfaceSecondary}" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle:disabled /template/ Border#PART_ToggleKnob">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.LineStrong}" />
+  </Style>
+
+  <Style Selector="ToggleButton.skill-card">
+    <Setter Property="MinHeight" Value="74" />
+    <Setter Property="Padding" Value="14" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.Surface}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextPrimary}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Line}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius"
+            Value="{StaticResource SkillRecorder.Radius.CardAction}" />
+    <Setter Property="Cursor" Value="Hand" />
+    <Setter Property="RenderTransform" Value="translateY(0px)" />
+    <Setter Property="Transitions">
+      <Transitions>
+        <BrushTransition Property="Background" Duration="0:0:0.150"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+        <BrushTransition Property="BorderBrush" Duration="0:0:0.150"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+        <TransformOperationsTransition Property="RenderTransform"
+                                       Duration="0:0:0.060"
+                                       Easing="{StaticResource SkillRecorder.Ease}" />
+      </Transitions>
+    </Setter>
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Border Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                CornerRadius="{TemplateBinding CornerRadius}"
+                Padding="{TemplateBinding Padding}">
+          <ContentPresenter Content="{TemplateBinding Content}"
+                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                            HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" />
+        </Border>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+  <Style Selector="ToggleButton.skill-card:pointerover">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.SurfaceSecondary}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.LineStrong}" />
+  </Style>
+  <Style Selector="ToggleButton.skill-card:pressed">
+    <Setter Property="RenderTransform" Value="translateY(1px)" />
+  </Style>
+  <Style Selector="ToggleButton.skill-card:checked">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.SignalDim}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+  </Style>
+  <Style Selector="ToggleButton.skill-card:focus-visible">
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.FocusRing}" />
+    <Setter Property="BorderThickness" Value="3" />
+  </Style>
+
+  <Style Selector="ComboBox.skill-select">
+    <Setter Property="MinHeight" Value="38" />
+    <Setter Property="Padding" Value="12,7" />
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.ControlSurface}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextPrimary}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Line}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius"
+            Value="{StaticResource SkillRecorder.Radius.Select}" />
+    <Setter Property="Transitions">
+      <Transitions>
+        <BrushTransition Property="Background" Duration="0:0:0.150"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+        <BrushTransition Property="BorderBrush" Duration="0:0:0.150"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+      </Transitions>
+    </Setter>
+  </Style>
+  <Style Selector="ComboBox.skill-select:pointerover">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.PanelSurface}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.LineStrong}" />
+  </Style>
+  <Style Selector="ComboBox.skill-select:focus-visible">
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.FocusRing}" />
+    <Setter Property="BorderThickness" Value="3" />
+  </Style>
+  <Style Selector="ComboBox.skill-window-select">
+    <Setter Property="MinHeight" Value="30" />
+    <Setter Property="Height" Value="30" />
+    <Setter Property="Padding" Value="8,3" />
+    <Setter Property="CornerRadius"
+            Value="{StaticResource SkillRecorder.Radius.Select}" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle.director-toggle /template/ Border#PART_ToggleTrack">
+    <Setter Property="Background" Value="#D1D1D1" />
+    <Setter Property="BorderBrush" Value="#C5C5C5" />
+    <Setter Property="BorderThickness" Value="1" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle.director-toggle /template/ Border#PART_ToggleKnob">
+    <Setter Property="Background"
+            Value="{DynamicResource SkillRecorder.Brush.Surface}" />
+    <Setter Property="BorderBrush" Value="#AAAAAA" />
+    <Setter Property="BorderThickness" Value="1.25" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle.director-toggle:pointerover /template/ Border#PART_ToggleTrack">
+    <Setter Property="Background" Value="#C7C7C7" />
+    <Setter Property="BorderBrush" Value="#B8B8B8" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle.director-toggle:pressed /template/ Border#PART_ToggleTrack">
+    <Setter Property="Background" Value="#BCBCBC" />
+    <Setter Property="BorderBrush" Value="#A9A9A9" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle.director-toggle:checked /template/ Border#PART_ToggleTrack">
+    <Setter Property="Background"
+            Value="{DynamicResource SkillRecorder.Brush.Brand}" />
+    <Setter Property="BorderBrush"
+            Value="{DynamicResource SkillRecorder.Brush.BrandInk}" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle.director-toggle:checked:pointerover /template/ Border#PART_ToggleTrack">
+    <Setter Property="Background"
+            Value="{DynamicResource SkillRecorder.Brush.BrandHover}" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle.director-toggle:checked:pressed /template/ Border#PART_ToggleTrack">
+    <Setter Property="Background"
+            Value="{DynamicResource SkillRecorder.Brush.BrandInk}" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle.director-toggle:disabled">
+    <Setter Property="Cursor" Value="Arrow" />
+    <Setter Property="Opacity" Value="0.55" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle.director-toggle:disabled /template/ Border#PART_ToggleTrack">
+    <Setter Property="Background"
+            Value="{DynamicResource SkillRecorder.Brush.SurfaceSecondary}" />
+    <Setter Property="BorderBrush"
+            Value="{DynamicResource SkillRecorder.Brush.Line}" />
+  </Style>
+  <Style Selector="ToggleButton.skill-toggle.director-toggle:disabled /template/ Border#PART_ToggleKnob">
+    <Setter Property="Background" Value="#F7F7F7" />
+    <Setter Property="BorderBrush" Value="#D6D6D6" />
+  </Style>
+  <Style Selector="ComboBox.capture-target-choice">
+    <Setter Property="Padding" Value="10,5" />
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.ControlSurface}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextPrimary}" />
+    <Setter Property="PlaceholderForeground"
+            Value="{StaticResource SkillRecorder.Brush.TextPrimary}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Line}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="7" />
+    <Setter Property="Cursor" Value="Hand" />
+    <Setter Property="Opacity" Value="1" />
+    <Setter Property="RenderTransform" Value="translateY(0px)" />
+    <Setter Property="Transitions">
+      <Transitions>
+        <BrushTransition Property="Background" Duration="0:0:0.120"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+        <BrushTransition Property="BorderBrush" Duration="0:0:0.120"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+        <BrushTransition Property="Foreground" Duration="0:0:0.120"
+                         Easing="{StaticResource SkillRecorder.Ease}" />
+        <DoubleTransition Property="Opacity" Duration="0:0:0.120"
+                          Easing="{StaticResource SkillRecorder.Ease}" />
+        <TransformOperationsTransition Property="RenderTransform"
+                                       Duration="0:0:0.060"
+                                       Easing="{StaticResource SkillRecorder.Ease}" />
+      </Transitions>
+    </Setter>
+  </Style>
+  <Style Selector="ComboBox.capture-target-choice:pointerover">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.PanelSurface}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.LineStrong}" />
+  </Style>
+  <Style Selector="ComboBox.capture-target-choice.selected">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.SignalDim}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+    <Setter Property="PlaceholderForeground"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+  </Style>
+  <Style Selector="ComboBox.capture-target-choice:dropdownopen">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.SignalDim}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+    <Setter Property="PlaceholderForeground"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+    <Setter Property="RenderTransform" Value="translateY(1px)" />
+  </Style>
+  <Style Selector="ComboBox.capture-target-choice:focus-visible">
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.BrandInk}" />
+    <Setter Property="BorderThickness" Value="2" />
+  </Style>
+  <Style Selector="ComboBox.capture-target-choice:disabled">
+    <Setter Property="Background"
+            Value="{StaticResource SkillRecorder.Brush.ControlSurface}" />
+    <Setter Property="Foreground"
+            Value="{StaticResource SkillRecorder.Brush.TextFaint}" />
+    <Setter Property="PlaceholderForeground"
+            Value="{StaticResource SkillRecorder.Brush.TextFaint}" />
+    <Setter Property="BorderBrush"
+            Value="{StaticResource SkillRecorder.Brush.Line}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="Cursor" Value="Arrow" />
+    <Setter Property="Opacity" Value="1" />
+    <Setter Property="RenderTransform" Value="translateY(0px)" />
+  </Style>
+  <Style Selector="ComboBox.skill-window-select /template/ Popup#PART_Popup">
+    <Setter Property="MaxWidth" Value="180" />
+  </Style>
+  <Style Selector="ComboBox.skill-window-select /template/ Border#PopupBorder">
+    <Setter Property="Width" Value="180" />
+    <Setter Property="MaxWidth" Value="180" />
+    <Setter Property="CornerRadius"
+            Value="{StaticResource SkillRecorder.Radius.Select}" />
+    <Setter Property="ClipToBounds" Value="True" />
+  </Style>
+</Styles>

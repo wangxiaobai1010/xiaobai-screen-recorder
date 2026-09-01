@@ -1,0 +1,953 @@
+{
+  "schemaVersion": 1,
+  "product": "Xiaobai Recorder 1.0.0",
+  "rid": "win-x64",
+  "evidenceFoundationCommit": "fe1299b109fd9e5ff99bb89f7a2c3eb5c94f44a1",
+  "frozenAppManifest": {
+    "path": "artifacts/packaging/xiaobai-recorder-1.0.0/app-manifest.json",
+    "sha256": "171067C3302DAFB59553F8AB70F8BF266F0F002E4636C2BE10D880E7C6E1BA78",
+    "fileCount": 579,
+    "sha256Coverage": "100%",
+    "pdbCount": 0
+  },
+  "overallClosure": "PARTIAL-BLOCKED",
+  "thirdPartyNoticesReady": false,
+  "componentCount": 26,
+  "components": [
+    {
+      "name": ".NET runtime",
+      "version": "Microsoft.NETCore.App 8.0.29; Microsoft.WindowsDesktop.App 8.0.29",
+      "runtimeFilesOrGroups": [
+        "RUNTIME-INVENTORY.json: Microsoft.NETCore.App.Runtime.win-x64 runtime group (179 files)",
+        "RUNTIME-INVENTORY.json: Microsoft.WindowsDesktop.App.Runtime.win-x64 runtime group (280 files)"
+      ],
+      "copyrightHolders": [
+        "Microsoft Corporation",
+        "Third-party holders listed in the exact notice"
+      ],
+      "license": "MIT for Microsoft runtime code; exact bundled third-party terms in THIRD-PARTY-NOTICES.TXT",
+      "upstream": [
+        "https://github.com/dotnet/runtime",
+        "https://github.com/dotnet/wpf"
+      ],
+      "sourceIdentity": [
+        "Microsoft.NETCore.App.Runtime.win-x64 8.0.29; repository commit 18fd75c847399745c43b5970fec840ba71064e80",
+        "Microsoft.WindowsDesktop.App.Runtime.win-x64 8.0.29; repository commit 580168d2b82abec4ec1460077b8e62c016c031c4"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "microsoft.netcore.app.runtime.win-x64.8.0.29.nupkg",
+          "sha256": "6B7C7751AE5DFCBC110A8DDF659559038542DADCEBA67C48F95F6CB20407198C"
+        },
+        {
+          "identity": "microsoft.windowsdesktop.app.runtime.win-x64.8.0.29.nupkg",
+          "sha256": "71A06ACC00B76FF0872535F83AC8860DE8F08C6733E3BC01348B757CE271F0C5"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/dotnet/Microsoft.NETCore.App.Runtime.win-x64/LICENSE.TXT",
+        "licenses/dotnet/Microsoft.NETCore.App.Runtime.win-x64/THIRD-PARTY-NOTICES.TXT",
+        "licenses/dotnet/Microsoft.WindowsDesktop.App.Runtime.win-x64/LICENSE"
+      ],
+      "sourceCompanion": {
+        "required": false,
+        "identity": null,
+        "sha256": null,
+        "status": "NOT-REQUIRED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "All 459 runtime files hash-reverse-map to the exact 8.0.29 packages; the WindowsDesktop package contains no separate third-party-notice file."
+    },
+    {
+      "name": "Abseil",
+      "version": "20240722.0 plus WrapDB build files 20240722.0-3",
+      "runtimeFilesOrGroups": [
+        "statically incorporated into gstreamer/plugins/gstwebrtcdsp.dll"
+      ],
+      "copyrightHolders": [
+        "The Abseil Authors",
+        "Meson WrapDB build-file contributors"
+      ],
+      "license": "Apache-2.0; WrapDB build files MIT",
+      "upstream": [
+        "https://github.com/abseil/abseil-cpp",
+        "https://github.com/mesonbuild/wrapdb"
+      ],
+      "sourceIdentity": [
+        "Abseil release 20240722.0",
+        "Meson WrapDB patch 20240722.0-3"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "abseil-cpp-20240722.0.tar.gz",
+          "sha256": "F50E5AC311A81382DA7FA75B97310E4B9006474F9560AC46F54A9967F07D4AE3"
+        },
+        {
+          "identity": "abseil-cpp_20240722.0-3_patch.zip",
+          "sha256": "12DD8DF1488A314C53E3751ABD2750CF233B830651D168B6A9F15E7D0CF71F7B"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/abseil/LICENSE",
+        "licenses/abseil/LICENSE.build"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Exact license/source evidence is complete; its containing GStreamer source companion remains separately blocked."
+    },
+    {
+      "name": "ANGLE",
+      "version": "2.1.27548.20260419",
+      "runtimeFilesOrGroups": [
+        "av_libglesv2.dll"
+      ],
+      "copyrightHolders": [
+        "The ANGLE Project Authors"
+      ],
+      "license": "BSD-3-Clause",
+      "upstream": [
+        "https://github.com/AvaloniaUI/angle"
+      ],
+      "sourceIdentity": [
+        "commit 1c89805903c1482166356d3b950d474973180e61",
+        "NuGet Avalonia.Angle.Windows.Natives 2.1.27548.20260419"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "avalonia.angle.windows.natives.2.1.27548.20260419.nupkg",
+          "sha256": "76D67901097E9173D155EFC4C2B7D2C8E3122F2C2E0415028EB0C88478A386F9"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/angle/LICENSE"
+      ],
+      "sourceCompanion": {
+        "required": false,
+        "identity": null,
+        "sha256": null,
+        "status": "NOT-REQUIRED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Frozen binary hash matches the exact package; package metadata and official commit API tie the source revision."
+    },
+    {
+      "name": "Avalonia",
+      "version": "12.2.999-cibuild0067907-alpha",
+      "runtimeFilesOrGroups": [
+        "RUNTIME-INVENTORY.json: Avalonia runtime groups (23 DLLs)"
+      ],
+      "copyrightHolders": [
+        "The AvaloniaUI Project (2013-2026)"
+      ],
+      "license": "MIT",
+      "upstream": [
+        "https://github.com/AvaloniaUI/Avalonia",
+        "https://nuget-feed-all.avaloniaui.net/v3/index.json"
+      ],
+      "sourceIdentity": [
+        "package repository commit 18254778a6fb767971bafbffbbc14869facc050b",
+        "exact package family recorded in NUGET-PACKAGES.json"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "avalonia.12.2.999-cibuild0067907-alpha.nupkg",
+          "sha256": "25D921ECCE2D5D8B51FF46431E5C5C5367FE88ECB3664E897EF4EA1AFC2127D4"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/avalonia/MIT.html"
+      ],
+      "sourceCompanion": {
+        "required": false,
+        "identity": null,
+        "sha256": null,
+        "status": "NOT-REQUIRED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "All 23 runtime DLLs hash-match the exact official CI packages. The historical commit object is no longer served, but the signed package metadata fixes its identity and no source-disclosure obligation applies."
+    },
+    {
+      "name": "FFmpeg",
+      "version": "n8.1.2-34-g9b6c8969e0-20260809",
+      "runtimeFilesOrGroups": [
+        "ffmpeg/ffmpeg.exe",
+        "ffmpeg/avcodec-62.dll",
+        "ffmpeg/avdevice-62.dll",
+        "ffmpeg/avfilter-11.dll",
+        "ffmpeg/avformat-62.dll",
+        "ffmpeg/avutil-60.dll",
+        "ffmpeg/swresample-6.dll",
+        "ffmpeg/swscale-9.dll"
+      ],
+      "copyrightHolders": [
+        "FFmpeg developers",
+        "External dependency holders in FFMPEG-DEPENDENCIES.json"
+      ],
+      "license": "Archive claims LGPL-3.0-or-later, but static FFTW GPL-2.0-or-later through Chromaprint creates a likely GPL-3.0-or-later combined-work condition; legal disposition unresolved",
+      "upstream": [
+        "https://github.com/FFmpeg/FFmpeg",
+        "https://github.com/BtbN/FFmpeg-Builds"
+      ],
+      "sourceIdentity": [
+        "FFmpeg release/8.1 commit 9b6c8969e05b4f0b29f0f85cd501be6b3e582e6b",
+        "BtbN builder commit 2437e7b868da3c11872367b15f3c613b87c24819; release autobuild-2026-08-09-13-03"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "frozen latest alias archive",
+          "sha256": "6D4AFE797A68AF283ED42254827027F7D56940BA6C9E37EBED9C0E87A9E0C54C"
+        },
+        {
+          "identity": "BtbN-FFmpeg-Builds-2437e7b868da3c11872367b15f3c613b87c24819.zip",
+          "sha256": "1055D03392E823E2D62C08F2924EC0489B6C82EC2DEBB7191309C5AE7A5070F4"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/ffmpeg/LICENSE.txt",
+        "licenses/ffmpeg-builds/LICENSE"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-ffmpeg-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "BLOCKED-BY-FFTW-GPL-DISTRIBUTION-BASIS-AND-INCOMPLETE-HISTORICAL-INPUTS"
+      },
+      "closureStatus": "BLOCKED",
+      "closureReason": "FOUNDATION-CONTRADICTION: exact builder scripts and frozen strings establish static FFTW 3.3.11 while --enable-gpl is absent and only LGPLv3 is shipped; no commercial FFTW rights or reviewed GPL distribution basis exists."
+    },
+    {
+      "name": "FFmpeg enabled external dependency closure",
+      "version": "Exact revisions in FFMPEG-DEPENDENCIES.json",
+      "runtimeFilesOrGroups": [
+        "statically incorporated, header-only, dispatcher, compiler-runtime, and system relationships for the eight FFmpeg binaries"
+      ],
+      "copyrightHolders": [
+        "Per-project holders in FFMPEG-DEPENDENCIES.json"
+      ],
+      "license": "Mixed; includes LGPL, permissive, MPL, GPL-with-runtime-exception, and the release-blocking GPL-2.0-or-later FFTW",
+      "upstream": [
+        "BtbN builder scripts at 2437e7b868da3c11872367b15f3c613b87c24819"
+      ],
+      "sourceIdentity": [
+        "FFMPEG-DEPENDENCIES.json",
+        "FFMPEG-BUILD.md"
+      ],
+      "sourceArtifact": [],
+      "licenseEvidencePaths": [],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-ffmpeg-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "BLOCKED-BY-FFTW-GPL-DISTRIBUTION-BASIS-AND-INCOMPLETE-HISTORICAL-INPUTS"
+      },
+      "closureStatus": "BLOCKED",
+      "closureReason": "Exact dependency license files/source checkouts, mutable/recursive inputs, immutable build environment, link maps, and a defensible FFTW license basis are not closed."
+    },
+    {
+      "name": "FLAC",
+      "version": "1.4.3",
+      "runtimeFilesOrGroups": [
+        "FLAC-8.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "Xiph BSD-3-Clause",
+      "upstream": [
+        "https://github.com/xiph/flac"
+      ],
+      "sourceIdentity": [
+        "flac-1.4.3.tar.xz"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "flac-1.4.3.tar.xz",
+          "sha256": "6C58E69CD22348F441B861092B825E591D0B822E106DE6EB0EE4D05D27205B70"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/flac/COPYING.Xiph"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Exact binary/source/license identity is closed; inclusion in the unpublished aggregate GStreamer source asset is tracked separately."
+    },
+    {
+      "name": "GLib",
+      "version": "2.82.4",
+      "runtimeFilesOrGroups": [
+        "glib-2.0-0.dll",
+        "gmodule-2.0-0.dll",
+        "gobject-2.0-0.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "LGPL-2.1-or-later",
+      "upstream": [
+        "https://gitlab.gnome.org/GNOME/glib"
+      ],
+      "sourceIdentity": [
+        "glib-2.82.4.tar.xz"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "glib-2.82.4.tar.xz",
+          "sha256": "37DD0877FE964CD15E9A2710B044A1830FB1BD93652A6D0CB6B8B2DFF187C709"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/glib/LGPL-2.1-or-later.txt"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "BLOCKED",
+      "closureReason": "Exact identity and license text are closed, but the required durable GStreamer corresponding-source asset/relink instructions are not assembled or published."
+    },
+    {
+      "name": "gst-plugins-bad",
+      "version": "1.28.6",
+      "runtimeFilesOrGroups": [
+        "gstbadaudio-1.0-0.dll",
+        "gstreamer/plugins/gstwasapi2.dll",
+        "gstreamer/plugins/gstwebrtcdsp.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "LGPL-2.0-or-later; gstwebrtcdsp LGPL-2.1-or-later",
+      "upstream": [
+        "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad"
+      ],
+      "sourceIdentity": [
+        "gst-plugins-bad-1.28.6.tar.xz"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "gst-plugins-bad-1.28.6.tar.xz",
+          "sha256": "6636F2C2289CEDA52C4ABA971338C81E2B5780D3381BD3673C1C116EC87587C3"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/gstreamer/COPYING.gst-plugins-bad"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "BLOCKED",
+      "closureReason": "Exact identity and license text are closed, but the required durable GStreamer corresponding-source asset/relink instructions are not assembled or published."
+    },
+    {
+      "name": "gst-plugins-base",
+      "version": "1.28.6",
+      "runtimeFilesOrGroups": [
+        "gstaudio-1.0-0.dll",
+        "gsttag-1.0-0.dll",
+        "gstreamer/plugins/gstaudioconvert.dll",
+        "gstreamer/plugins/gstaudioresample.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "LGPL-2.0-or-later; release COPYING LGPL-2.1",
+      "upstream": [
+        "https://gitlab.freedesktop.org/gstreamer/gst-plugins-base"
+      ],
+      "sourceIdentity": [
+        "gst-plugins-base-1.28.6.tar.xz"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "gst-plugins-base-1.28.6.tar.xz",
+          "sha256": "0BA699C7C6C66F4BA640BE78CB38A24715ADD9683F3E3A199F5369DC5A4F04AC"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/gstreamer/COPYING"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "BLOCKED",
+      "closureReason": "Exact identity and license text are closed, but the required durable GStreamer corresponding-source asset/relink instructions are not assembled or published."
+    },
+    {
+      "name": "gst-plugins-good",
+      "version": "1.28.6",
+      "runtimeFilesOrGroups": [
+        "gstreamer/plugins/gstflac.dll",
+        "gstreamer/plugins/gstlevel.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "LGPL-2.0-or-later",
+      "upstream": [
+        "https://gitlab.freedesktop.org/gstreamer/gst-plugins-good"
+      ],
+      "sourceIdentity": [
+        "gst-plugins-good-1.28.6.tar.xz"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "gst-plugins-good-1.28.6.tar.xz",
+          "sha256": "B0C620A4B18B6EE931B4C43BBF1760D308666DC37F730A7E7F1AD327E59CE2DF"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/gstreamer/COPYING.gst-plugins-good"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "BLOCKED",
+      "closureReason": "Exact identity and license text are closed, but the required durable GStreamer corresponding-source asset/relink instructions are not assembled or published."
+    },
+    {
+      "name": "GStreamer core",
+      "version": "1.28.6",
+      "runtimeFilesOrGroups": [
+        "gstreamer-1.0-0.dll",
+        "gstbase-1.0-0.dll",
+        "gstreamer/plugins/gstcoreelements.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "LGPL-2.0-or-later; release COPYING LGPL-2.1",
+      "upstream": [
+        "https://gitlab.freedesktop.org/gstreamer/gstreamer"
+      ],
+      "sourceIdentity": [
+        "gstreamer-1.28.6.tar.xz"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "gstreamer-1.28.6.tar.xz",
+          "sha256": "62B6B9F0AD3147A6DD6420AC64A91180B14E990695BDDD353B96041611D052CA"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/gstreamer/COPYING"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "BLOCKED",
+      "closureReason": "Exact identity and license text are closed, but the required durable GStreamer corresponding-source asset/relink instructions are not assembled or published."
+    },
+    {
+      "name": "HarfBuzzSharp",
+      "version": "8.3.1.3",
+      "runtimeFilesOrGroups": [
+        "HarfBuzzSharp.dll",
+        "libHarfBuzzSharp.dll"
+      ],
+      "copyrightHolders": [
+        "Microsoft Corporation and upstream third parties listed in the exact notices"
+      ],
+      "license": "MIT plus exact native third-party notices",
+      "upstream": [
+        "https://github.com/mono/SkiaSharp"
+      ],
+      "sourceIdentity": [
+        "commit 2888c737ad016d584c74525e2d35db5097ea8576",
+        "exact NuGet packages in NUGET-PACKAGES.json"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "HarfBuzzSharp.NativeAssets.Win32 8.3.1.3 package notice corpus",
+          "sha256": "21504C46C4C58AA64C1055BD2DCBC5F9A136B4B8C412ED3CC6740E22C5B127F5"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/skiasharp-harfbuzzsharp/LICENSE.txt",
+        "licenses/skiasharp-harfbuzzsharp/THIRD-PARTY-NOTICES.txt"
+      ],
+      "sourceCompanion": {
+        "required": false,
+        "identity": null,
+        "sha256": null,
+        "status": "NOT-REQUIRED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Exact managed/native package hashes, source commit, license, and notices were already gate-closed and reconfirmed."
+    },
+    {
+      "name": "libffi",
+      "version": "meson-3.2.9999.5",
+      "runtimeFilesOrGroups": [
+        "ffi-7.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "MIT",
+      "upstream": [
+        "https://github.com/gstreamer/meson-ports"
+      ],
+      "sourceIdentity": [
+        "libffi-meson-3.2.9999.5.tar.bz2"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "libffi-meson-3.2.9999.5.tar.bz2",
+          "sha256": "B4D403932A8860589E571300E807E40BB4F7D9D2630C8EC19C29FB9E7B0FD227"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/libffi/LICENSE"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Exact binary/source/license identity is closed; inclusion in the unpublished aggregate GStreamer source asset is tracked separately."
+    },
+    {
+      "name": "libogg",
+      "version": "1.3.5",
+      "runtimeFilesOrGroups": [
+        "ogg-0.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "Xiph BSD-3-Clause",
+      "upstream": [
+        "https://github.com/xiph/ogg"
+      ],
+      "sourceIdentity": [
+        "libogg-1.3.5.tar.xz"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "libogg-1.3.5.tar.xz",
+          "sha256": "C4D91BE36FC8E54DEAE7575241E03F4211EB102AFB3FC0775FBBC1B740016705"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/libogg/COPYING"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Exact binary/source/license identity is closed; inclusion in the unpublished aggregate GStreamer source asset is tracked separately."
+    },
+    {
+      "name": "MicroCom.Runtime",
+      "version": "0.11.6",
+      "runtimeFilesOrGroups": [
+        "MicroCom.Runtime.dll"
+      ],
+      "copyrightHolders": [
+        "Nikita Tsukanov (2021)"
+      ],
+      "license": "MIT",
+      "upstream": [
+        "https://github.com/kekekeks/MicroCom"
+      ],
+      "sourceIdentity": [
+        "commit 76785efcafd91b5902fd19dd11145f6dd655b7b4"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "microcom.runtime.0.11.6.nupkg",
+          "sha256": "453AF6D34477B19BB2C62D17436E68C76A75915B7947509B1FF601B36D7E78D8"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/microcom.runtime/LICENSE"
+      ],
+      "sourceCompanion": {
+        "required": false,
+        "identity": null,
+        "sha256": null,
+        "status": "NOT-REQUIRED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Frozen DLL hash matches the exact package; package metadata and exact upstream MIT text agree."
+    },
+    {
+      "name": "Microsoft Visual C++ Runtime",
+      "version": "14.44.35211.0",
+      "runtimeFilesOrGroups": [
+        "msvcp140.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ],
+      "copyrightHolders": [
+        "Microsoft Corporation"
+      ],
+      "license": "Microsoft Visual Studio redistribution terms (not copied into the application)",
+      "upstream": [
+        "https://learn.microsoft.com/en-us/cpp/windows/redistributing-visual-cpp-files?view=msvc-170",
+        "https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution"
+      ],
+      "sourceIdentity": [
+        "Exact file version 14.44.35211.0; byte-matched to installed Microsoft.VC143.CRT redist directory 14.44.35112"
+      ],
+      "sourceArtifact": [],
+      "licenseEvidencePaths": [],
+      "sourceCompanion": {
+        "required": false,
+        "identity": null,
+        "sha256": null,
+        "status": "NOT-REQUIRED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "FILES AUTHORIZED AS REDISTRIBUTABLE = YES, conditional on a valid Visual Studio license and distribution of the unmodified ordinary VC143 CRT redist files; they are not debug/non-redist files."
+    },
+    {
+      "name": "ORC",
+      "version": "0.4.42",
+      "runtimeFilesOrGroups": [
+        "orc-0.4-0.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "BSD-2-Clause plus BSD-3-Clause example terms",
+      "upstream": [
+        "https://gitlab.freedesktop.org/gstreamer/orc"
+      ],
+      "sourceIdentity": [
+        "orc-0.4.42.tar.xz"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "orc-0.4.42.tar.xz",
+          "sha256": "7EC912AB59AF3CC97874C456A56A8AE1EEC520C385EC447E8A102B2BD122C90C"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/orc/COPYING"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Exact binary/source/license identity is closed; inclusion in the unpublished aggregate GStreamer source asset is tracked separately."
+    },
+    {
+      "name": "PCRE2",
+      "version": "10.42",
+      "runtimeFilesOrGroups": [
+        "pcre2-8-0.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "BSD-3-Clause-style PCRE2 licence/exemption",
+      "upstream": [
+        "https://github.com/PCRE2Project/pcre2"
+      ],
+      "sourceIdentity": [
+        "pcre2-10.42.tar.bz2"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "pcre2-10.42.tar.bz2",
+          "sha256": "8D36CD8CB6EA2A4C2BB358FF6411B0C788633A2A45DABBF1AEB4B701D1B5E840"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/pcre2/LICENCE"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Exact binary/source/license identity is closed; inclusion in the unpublished aggregate GStreamer source asset is tracked separately."
+    },
+    {
+      "name": "proxy-libintl",
+      "version": "0.5",
+      "runtimeFilesOrGroups": [
+        "intl-8.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "LGPL-2.0-or-later",
+      "upstream": [
+        "https://github.com/frida/proxy-libintl"
+      ],
+      "sourceIdentity": [
+        "tag 0.5; commit 33934de09af6a6627eb44e310a8079df009abdbb; proxy-libintl-0.5.tar.gz"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "tag 0.5; commit 33934de09af6a6627eb44e310a8079df009abdbb; proxy-libintl-0.5.tar.gz",
+          "sha256": "F7A1CBD7579BAAF575C66F9D99FB6295E9B0684A28B095967CFDA17857595303"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/proxy-libintl/COPYING"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "BLOCKED",
+      "closureReason": "Exact identity and license text are closed, but the required durable GStreamer corresponding-source asset/relink instructions are not assembled or published."
+    },
+    {
+      "name": "ScreenRecorderLib derivative attribution",
+      "version": "ScreenRecorderLib v6.6.0 derivative; Microsoft Windows classic samples source commit 77f217b3f89d4dac7864a62cc91ff7b569f26a50",
+      "runtimeFilesOrGroups": [
+        "XbPreview.Native.dll"
+      ],
+      "copyrightHolders": [
+        "ScreenRecorderLib contributors",
+        "Microsoft Corporation"
+      ],
+      "license": "MIT",
+      "upstream": [
+        "https://github.com/sskodje/ScreenRecorderLib",
+        "https://github.com/microsoft/Windows-classic-samples"
+      ],
+      "sourceIdentity": [
+        "ScreenRecorderLib commit 39ad1e2f1750fa06669b73743dbbaa25371dec21",
+        "Windows classic samples commit 77f217b3f89d4dac7864a62cc91ff7b569f26a50"
+      ],
+      "sourceArtifact": [],
+      "licenseEvidencePaths": [
+        "licenses/screenrecorderlib/LICENSE-SCREENRECORDERLIB.txt",
+        "licenses/screenrecorderlib/LICENSE-MICROSOFT-WINDOWS-CLASSIC-SAMPLES.txt"
+      ],
+      "sourceCompanion": {
+        "required": false,
+        "identity": null,
+        "sha256": null,
+        "status": "NOT-REQUIRED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Vendored provenance and both MIT attribution models were already gate-closed and are consolidated here."
+    },
+    {
+      "name": "SkiaSharp",
+      "version": "3.119.4",
+      "runtimeFilesOrGroups": [
+        "SkiaSharp.dll",
+        "libSkiaSharp.dll"
+      ],
+      "copyrightHolders": [
+        "Microsoft Corporation and upstream third parties listed in the exact notices"
+      ],
+      "license": "MIT plus exact native third-party notices",
+      "upstream": [
+        "https://github.com/mono/SkiaSharp"
+      ],
+      "sourceIdentity": [
+        "commit f568ac94dd768ef9a2f593537cfde2dd0d348ef5",
+        "exact NuGet packages in NUGET-PACKAGES.json"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "SkiaSharp.NativeAssets.Win32 3.119.4 package notice corpus",
+          "sha256": "21504C46C4C58AA64C1055BD2DCBC5F9A136B4B8C412ED3CC6740E22C5B127F5"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/skiasharp-harfbuzzsharp/LICENSE.txt",
+        "licenses/skiasharp-harfbuzzsharp/THIRD-PARTY-NOTICES.txt"
+      ],
+      "sourceCompanion": {
+        "required": false,
+        "identity": null,
+        "sha256": null,
+        "status": "NOT-REQUIRED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Exact managed/native package hashes, source commit, license, and notices were already gate-closed and reconfirmed."
+    },
+    {
+      "name": "System.IO.Pipelines",
+      "version": "8.0.0",
+      "runtimeFilesOrGroups": [
+        "System.IO.Pipelines.dll"
+      ],
+      "copyrightHolders": [
+        ".NET Foundation and Contributors"
+      ],
+      "license": "MIT plus exact third-party notices",
+      "upstream": [
+        "https://github.com/dotnet/runtime"
+      ],
+      "sourceIdentity": [
+        "commit 5535e31a712343a63f5d7d796cd874e563e5ac14"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "system.io.pipelines.8.0.0.nupkg",
+          "sha256": "2DDA41D6CE2F433B0E3836B188AB2D2E4B39ED7F434C3E43E9C3F1F03135C301"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/system.io.pipelines/LICENSE.TXT",
+        "licenses/system.io.pipelines/THIRD-PARTY-NOTICES.TXT"
+      ],
+      "sourceCompanion": {
+        "required": false,
+        "identity": null,
+        "sha256": null,
+        "status": "NOT-REQUIRED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Exact package, source commit, license, and notice were already gate-closed and reconfirmed."
+    },
+    {
+      "name": "Tmds.DBus.Protocol",
+      "version": "0.94.1",
+      "runtimeFilesOrGroups": [
+        "Tmds.DBus.Protocol.dll"
+      ],
+      "copyrightHolders": [
+        "Alp Toker",
+        "Other Contributors",
+        "Tom Deseyn"
+      ],
+      "license": "MIT",
+      "upstream": [
+        "https://github.com/tmds/Tmds.DBus"
+      ],
+      "sourceIdentity": [
+        "commit b4a7fed0b878f74cb54f7cca84d2889af4e596ba"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "tmds.dbus.protocol.0.94.1.nupkg",
+          "sha256": "4F71D06AC40E725FFBCF1B79853DD93218695A84F23D36FAFC85F477A4C9580F"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/tmds.dbus.protocol/COPYING"
+      ],
+      "sourceCompanion": {
+        "required": false,
+        "identity": null,
+        "sha256": null,
+        "status": "NOT-REQUIRED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "The frozen manifest confirms redistribution; exact package/source/license identities agree."
+    },
+    {
+      "name": "WebRTC Audio Processing",
+      "version": "2.1",
+      "runtimeFilesOrGroups": [
+        "statically incorporated into gstreamer/plugins/gstwebrtcdsp.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "BSD-3-Clause and exact bundled-code notices",
+      "upstream": [
+        "https://gitlab.freedesktop.org/pulseaudio/webrtc-audio-processing"
+      ],
+      "sourceIdentity": [
+        "tag v2.1; commit 846fe90a289f58b7c9303a635142aa2c7caa93e5; official GStreamer mirror archive"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "tag v2.1; commit 846fe90a289f58b7c9303a635142aa2c7caa93e5; official GStreamer mirror archive",
+          "sha256": "AE9302824B2038D394F10213CAB05312C564A038434269F11DBF68F511F9F9FE"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/webrtc-audio-processing/COPYING",
+        "licenses/webrtc-audio-processing/webrtc/LICENSE",
+        "licenses/webrtc-audio-processing/webrtc/common_audio/third_party/ooura/LICENSE",
+        "licenses/webrtc-audio-processing/webrtc/common_audio/third_party/spl_sqrt_floor/LICENSE",
+        "licenses/webrtc-audio-processing/webrtc/modules/third_party/fft/LICENSE",
+        "licenses/webrtc-audio-processing/webrtc/third_party/pffft/LICENSE",
+        "licenses/webrtc-audio-processing/webrtc/third_party/rnnoise/COPYING"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Exact binary/source/license identity is closed; inclusion in the unpublished aggregate GStreamer source asset is tracked separately."
+    },
+    {
+      "name": "zlib",
+      "version": "1.3.1",
+      "runtimeFilesOrGroups": [
+        "z-1.dll"
+      ],
+      "copyrightHolders": [
+        "Exact holders preserved in the tracked license evidence"
+      ],
+      "license": "Zlib",
+      "upstream": [
+        "https://github.com/madler/zlib"
+      ],
+      "sourceIdentity": [
+        "zlib-1.3.1.tar.gz"
+      ],
+      "sourceArtifact": [
+        {
+          "identity": "zlib-1.3.1.tar.gz",
+          "sha256": "9A93B2B7DFDAC77CEBA5A558A580E74667DD6FEDE4585B91EEFB60F03B72DF23"
+        }
+      ],
+      "licenseEvidencePaths": [
+        "licenses/zlib/LICENSE",
+        "licenses/zlib/README"
+      ],
+      "sourceCompanion": {
+        "required": true,
+        "identity": "xiaobai-recorder-1.0.0-gstreamer-corresponding-source.tar.xz",
+        "sha256": null,
+        "status": "PLANNED-NOT-ASSEMBLED-OR-PUBLISHED"
+      },
+      "closureStatus": "PASS",
+      "closureReason": "Exact binary/source/license identity is closed; inclusion in the unpublished aggregate GStreamer source asset is tracked separately."
+    }
+  ]
+}

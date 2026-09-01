@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "integrityAlgorithm": "Decode as text; normalize CRLF and CR to LF; ignore terminal LF count only; compare ordinally. Raw source and tracked SHA-256 values are recorded separately.",
+  "recordCount": 36,
+  "allNormalizedTextEqual": true,
+  "records": [
+    {
+      "component": "Abseil",
+      "version": "20240722.0",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/abseil/LICENSE",
+      "sourceUrlOrPackage": "https://github.com/abseil/abseil-cpp/releases/tag/20240722.0",
+      "originalFileName": "LICENSE",
+      "sourceSha256": "C79A7FEA0E3CAC04CD43F20E7B648E5A0FF8FA5344E644B0EE09CA1162B62747",
+      "trackedSha256": "7B99254D0929E0F483B14FCBD7368430722A2E137CA53B4EEFBE1FCF37171248",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "Abseil WrapDB build files",
+      "version": "20240722.0-3",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/abseil/LICENSE.build",
+      "sourceUrlOrPackage": "https://wrapdb.mesonbuild.com/v2/abseil-cpp_20240722.0-3/get_patch",
+      "originalFileName": "LICENSE.build",
+      "sourceSha256": "7939F4C45423CEC4A18236AD0A88570E33508DD7462E07B1038001F90ECE65FB",
+      "trackedSha256": "5FEC2ADCEE413FB525B8461C8F140B36BAEC4BB41F51CC8CC221A1EC5827FEF1",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "ANGLE",
+      "version": "2.1.27548.20260419",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/angle/LICENSE",
+      "sourceUrlOrPackage": "https://raw.githubusercontent.com/AvaloniaUI/angle/1c89805903c1482166356d3b950d474973180e61/LICENSE",
+      "originalFileName": "LICENSE",
+      "sourceSha256": "BF4DA21BD20BCFB5B60B7ECC67FA864A79BE049E21D6178076887F178DD6C71A",
+      "trackedSha256": "AC81D9C16D063C7A6B61E475F184BD83B5F26D80F751653BF7844A70614A22B2",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "Avalonia",
+      "version": "12.2.999-cibuild0067907-alpha",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/avalonia/MIT.html",
+      "sourceUrlOrPackage": "https://licenses.nuget.org/MIT",
+      "originalFileName": "MIT",
+      "sourceSha256": "0FF20DDAC3D7EE3C94CD6B60BEF6537B4C4F6815063AB28228AB8CA563B1FE8E",
+      "trackedSha256": "2BDA97ABED99BEB7733CD5C379B237A80A93F03379AEA4BA8A8E716E21B78605",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "Microsoft.NETCore.App.Runtime.win-x64",
+      "version": "8.0.29",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/dotnet/Microsoft.NETCore.App.Runtime.win-x64/LICENSE.TXT",
+      "sourceUrlOrPackage": "nuget:Microsoft.NETCore.App.Runtime.win-x64/8.0.29",
+      "originalFileName": "LICENSE.TXT",
+      "sourceSha256": "D7A68596AB69B06F51CA278A6545148E4269A9381C26D597C13DF5D88E08CF5B",
+      "trackedSha256": "CBFF440B0D8166DE75B5DAE0E18498C869B3521974B37DF7C7093A349E560B3A",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "Microsoft.NETCore.App.Runtime.win-x64",
+      "version": "8.0.29",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/dotnet/Microsoft.NETCore.App.Runtime.win-x64/THIRD-PARTY-NOTICES.TXT",
+      "sourceUrlOrPackage": "nuget:Microsoft.NETCore.App.Runtime.win-x64/8.0.29",
+      "originalFileName": "THIRD-PARTY-NOTICES.TXT",
+      "sourceSha256": "B60B2912DA28EAA6518593C9E2EFB5334EE062D3C42E80D8FDFA806B3DC52977",
+      "trackedSha256": "3775B566178A545B0EB7F3BEFE4CE47142F61397336EA38F3F8AD3FB001CD6A6",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+      "version": "8.0.29",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/dotnet/Microsoft.WindowsDesktop.App.Runtime.win-x64/LICENSE",
+      "sourceUrlOrPackage": "nuget:Microsoft.WindowsDesktop.App.Runtime.win-x64/8.0.29",
+      "originalFileName": "LICENSE",
+      "sourceSha256": "A89886665765362EB77E0F8E26602C924520041D1711B2EEDC136434FE4D01AB",
+      "trackedSha256": "CFC21F5E8BD655AE997EEC916138B707B1D290B83272C02A95C9F821B8C87310",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "BtbN FFmpeg-Builds",
+      "version": "2437e7b868da3c11872367b15f3c613b87c24819",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/ffmpeg-builds/LICENSE",
+      "sourceUrlOrPackage": "https://github.com/BtbN/FFmpeg-Builds/tree/2437e7b868da3c11872367b15f3c613b87c24819",
+      "originalFileName": "LICENSE",
+      "sourceSha256": "C1B3CC7EEC42BD9C4F6247169BB887B4A9BC904ABFD2A7F7F9231ED357844993",
+      "trackedSha256": "D987AAA6712E331E0645770B73398F656D5B0EE07F8C507399B08EE6D1C824C3",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "FFmpeg",
+      "version": "n8.1.2-34-g9b6c8969e0-20260809",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/ffmpeg/LICENSE.txt",
+      "sourceUrlOrPackage": "https://github.com/BtbN/FFmpeg-Builds/releases/tag/autobuild-2026-08-09-13-03",
+      "originalFileName": "LICENSE.txt",
+      "sourceSha256": "DA7EABB7BAFDF7D3AE5E9F223AA5BDC1EECE45AC569DC21B3B037520B4464768",
+      "trackedSha256": "97628AFEBC60F026F5C2B25D7491C46A5C4EE61F693E7CFA07FBD2C03605979B",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "FLAC",
+      "version": "1.4.3",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/flac/COPYING.Xiph",
+      "sourceUrlOrPackage": "https://downloads.xiph.org/releases/flac/flac-1.4.3.tar.xz",
+      "originalFileName": "COPYING.Xiph",
+      "sourceSha256": "12600EA1A7AFFCBF469BD0D8B2CD725E4167114A2EE834B88F5D2857BFD7DDBF",
+      "trackedSha256": "9983BEFF4F208A83941B55EA9DF47F6C0D16C5BFC53C06D0A0E8E447919EF50F",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "GLib",
+      "version": "2.82.4",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/glib/LGPL-2.1-or-later.txt",
+      "sourceUrlOrPackage": "https://download.gnome.org/sources/glib/2.82/glib-2.82.4.tar.xz",
+      "originalFileName": "LICENSES/LGPL-2.1-or-later.txt",
+      "sourceSha256": "FA6F36630BB1E0C571D34B2BBDF188D08495C9DBF58F28CAC112F303FC1F58FB",
+      "trackedSha256": "B5175666E4922D08572752D05B0203EDD440DBA74F8FD4920DFE11ED8D928296",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "GStreamer core/base",
+      "version": "1.28.6",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/gstreamer/COPYING",
+      "sourceUrlOrPackage": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.6.tar.xz",
+      "originalFileName": "COPYING",
+      "sourceSha256": "AD2EEC519EBD4B5DF86EA84DFF24AE3BFA2EDEA846A703B58902DD221AE375DB",
+      "trackedSha256": "6095E9FFA777DD22839F7801AA845B31C9ED07F3D6BF8A26DC5D2DEC8CCC0EF3",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "gst-plugins-bad",
+      "version": "1.28.6",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/gstreamer/COPYING.gst-plugins-bad",
+      "sourceUrlOrPackage": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.28.6.tar.xz",
+      "originalFileName": "COPYING",
+      "sourceSha256": "DC626520DCD53A22F727AF3EE42C770E56C97A64FE3ADB063799D8AB032FE551",
+      "trackedSha256": "7C6699C75F87B52BDC542DB26D6B1B92892577CDA46E20ECEB79E2790A1C291B",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "gst-plugins-good",
+      "version": "1.28.6",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/gstreamer/COPYING.gst-plugins-good",
+      "sourceUrlOrPackage": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.28.6.tar.xz",
+      "originalFileName": "COPYING",
+      "sourceSha256": "6095E9FFA777DD22839F7801AA845B31C9ED07F3D6BF8A26DC5D2DEC8CCC0EF3",
+      "trackedSha256": "49CD12E78E7C2D73E8B2E7C8EA4EDA2FFE9BE43F13A986836D2554C3CF8B9E7F",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "libffi",
+      "version": "meson-3.2.9999.5",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/libffi/LICENSE",
+      "sourceUrlOrPackage": "https://gstreamer.freedesktop.org/src/mirror/libffi/libffi-meson-3.2.9999.5.tar.bz2",
+      "originalFileName": "LICENSE",
+      "sourceSha256": "0F4D7A0BFB83C37465D42DC305F124189196CC0CC2CC8D6F8461103682AEBBC5",
+      "trackedSha256": "7E711AFAB35EC04E7FBC32359217F173284EB6548768C765CEE06D7DAE000D0C",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "libogg",
+      "version": "1.3.5",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/libogg/COPYING",
+      "sourceUrlOrPackage": "https://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.xz",
+      "originalFileName": "COPYING",
+      "sourceSha256": "D2AB5758336489DA61C12CC5BB757DA5339C4AE9001F9BB0562B4370249AF814",
+      "trackedSha256": "40B96EF8F651DDB335766F7321EEA7A0EA93CC4BCDAB312A699D55EFAB576E52",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "MicroCom.Runtime",
+      "version": "0.11.6",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/microcom.runtime/LICENSE",
+      "sourceUrlOrPackage": "https://raw.githubusercontent.com/kekekeks/MicroCom/76785efcafd91b5902fd19dd11145f6dd655b7b4/LICENSE",
+      "originalFileName": "LICENSE",
+      "sourceSha256": "6EE769C9AC4DAC9ABB16B98B1341E9528FF9F4AB685481410D3376D14148F3A9",
+      "trackedSha256": "5B75D17D23E6EBC51A12EB9004995408230A6B0B8350B087F77ABE006524515E",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "ORC",
+      "version": "0.4.42",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/orc/COPYING",
+      "sourceUrlOrPackage": "https://gstreamer.freedesktop.org/src/orc/orc-0.4.42.tar.xz",
+      "originalFileName": "COPYING",
+      "sourceSha256": "4F5DABB1B44BB6FC5CD53820B1F103147AD61B395A57903991325BD1B85D97BF",
+      "trackedSha256": "356B85B1AFA51A471C7FA69B0297F3B29AB0A5A43B530F4C15F241AAAB2F9C4D",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "PCRE2",
+      "version": "10.42",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/pcre2/LICENCE",
+      "sourceUrlOrPackage": "https://github.com/PhilipHazel/pcre2/releases/tag/pcre2-10.42",
+      "originalFileName": "LICENCE",
+      "sourceSha256": "87D884ECEB7FC54611470CE9F74280D28612B0C877ADFC767E9676892A638987",
+      "trackedSha256": "AC9460C1D690C2C30C734999141FB955E1FCBC96DB7E9B9EA6B149D2F78BB4BE",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "proxy-libintl",
+      "version": "0.5",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/proxy-libintl/COPYING",
+      "sourceUrlOrPackage": "https://github.com/frida/proxy-libintl/tree/0.5",
+      "originalFileName": "COPYING",
+      "sourceSha256": "D245807F90032872D1438D741ED21E2490E1175DC8AA3AFA5DDB6C8E529B58E5",
+      "trackedSha256": "45FCD6CEBD93E46065E2EA38A05EC3862B588FE4AD35CDCB52B2447FCDC59361",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "Microsoft Windows classic samples derivative",
+      "version": "77f217b3f89d4dac7864a62cc91ff7b569f26a50",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/screenrecorderlib/LICENSE-MICROSOFT-WINDOWS-CLASSIC-SAMPLES.txt",
+      "sourceUrlOrPackage": "https://github.com/microsoft/Windows-classic-samples/commit/77f217b3f89d4dac7864a62cc91ff7b569f26a50",
+      "originalFileName": "LICENSE",
+      "sourceSha256": "C250D6278F0B47A6439FB7592B08B58A55EB9F535AA49A1DB63211C3F982B674",
+      "trackedSha256": "7A69EC43A422A470AB5505C2AD13E0574B19F0A85A5A67A3048C60B4BC2938E7",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "ScreenRecorderLib",
+      "version": "v6.6.0 / 39ad1e2f1750fa06669b73743dbbaa25371dec21",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/screenrecorderlib/LICENSE-SCREENRECORDERLIB.txt",
+      "sourceUrlOrPackage": "https://github.com/sskodje/ScreenRecorderLib/tree/39ad1e2f1750fa06669b73743dbbaa25371dec21",
+      "originalFileName": "LICENSE",
+      "sourceSha256": "53050706F559F3D9526036DE5E795C514A8175A8C773FCA47881AA5E4410BD83",
+      "trackedSha256": "BF5DB6A424E0BE33771B5466932932379D57810763FB586AEA12DD7CEAF72DFC",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "SkiaSharp and HarfBuzzSharp",
+      "version": "SkiaSharp 3.119.4 / HarfBuzzSharp 8.3.1.3",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/skiasharp-harfbuzzsharp/LICENSE.txt",
+      "sourceUrlOrPackage": "nuget:SkiaSharp/3.119.4 and HarfBuzzSharp/8.3.1.3",
+      "originalFileName": "LICENSE.txt",
+      "sourceSha256": "89101E35A8C66FD4D6DFFC1763259161D35CB564C169714EC227A768C89F2938",
+      "trackedSha256": "8180D9E2D039A65D9A74030D67E094DC14476D35C0BEE87ACA8B72CC23737CF9",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "SkiaSharp native assets",
+      "version": "3.119.4",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/skiasharp-harfbuzzsharp/THIRD-PARTY-NOTICES.txt",
+      "sourceUrlOrPackage": "nuget:SkiaSharp.NativeAssets.Win32/3.119.4",
+      "originalFileName": "THIRD-PARTY-NOTICES.txt",
+      "sourceSha256": "21504C46C4C58AA64C1055BD2DCBC5F9A136B4B8C412ED3CC6740E22C5B127F5",
+      "trackedSha256": "E45CFFD74493CD220D3ACB232766E10399E0028DD522ED32C05349DCFAF41150",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "System.IO.Pipelines",
+      "version": "8.0.0",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/system.io.pipelines/LICENSE.TXT",
+      "sourceUrlOrPackage": "nuget:System.IO.Pipelines/8.0.0",
+      "originalFileName": "LICENSE.TXT",
+      "sourceSha256": "D7A68596AB69B06F51CA278A6545148E4269A9381C26D597C13DF5D88E08CF5B",
+      "trackedSha256": "CBFF440B0D8166DE75B5DAE0E18498C869B3521974B37DF7C7093A349E560B3A",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "System.IO.Pipelines",
+      "version": "8.0.0",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/system.io.pipelines/THIRD-PARTY-NOTICES.TXT",
+      "sourceUrlOrPackage": "nuget:System.IO.Pipelines/8.0.0",
+      "originalFileName": "THIRD-PARTY-NOTICES.TXT",
+      "sourceSha256": "19C19DCAC9F3EE6302CFBC6745BB8E79F08EFC4C933EB8DC5509BF14B88347EC",
+      "trackedSha256": "26C0FE2F012426F2F2D25C7C5742A0F12906F94D2E0991A7415710284E0C948B",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "Tmds.DBus.Protocol",
+      "version": "0.94.1",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/tmds.dbus.protocol/COPYING",
+      "sourceUrlOrPackage": "https://raw.githubusercontent.com/tmds/Tmds.DBus/b4a7fed0b878f74cb54f7cca84d2889af4e596ba/COPYING",
+      "originalFileName": "COPYING",
+      "sourceSha256": "ACA3B49277ABCC7886CCB2F115603A9F5B15FC3F96019A10C00F2974098B210C",
+      "trackedSha256": "2A86AFD8F0173998B01C9AF8BDFD7C703CAE1DB6CC5E57E7043A2B67FA0B2116",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "WebRTC Audio Processing",
+      "version": "2.1 bundled",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/webrtc-audio-processing/COPYING",
+      "sourceUrlOrPackage": "https://gstreamer.freedesktop.org/data/src/mirror/webrtc-audio-processing/webrtc-audio-processing-2.1.tar.xz",
+      "originalFileName": "COPYING",
+      "sourceSha256": "9B79539028E216E813E152D45F5C1ED5FDD0554426AD50270FB03134E7082DAC",
+      "trackedSha256": "649679AA4A37AE18CFDFC264FB4740F03E1285CC037A75B57E473B14ACFFCB67",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "WebRTC Ooura FFT",
+      "version": "2.1 bundled",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/webrtc-audio-processing/webrtc/common_audio/third_party/ooura/LICENSE",
+      "sourceUrlOrPackage": "https://gstreamer.freedesktop.org/data/src/mirror/webrtc-audio-processing/webrtc-audio-processing-2.1.tar.xz",
+      "originalFileName": "webrtc/common_audio/third_party/ooura/LICENSE",
+      "sourceSha256": "25B7731B70C77ECD5F3BB19303FBAA99BE18860F81D44F71DA670FDCD04829DB",
+      "trackedSha256": "1B64272C7A00E09B925728F05AB026D303E9D48CDCE1FC6CB52C389AF7A1A8BF",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "WebRTC spl_sqrt_floor",
+      "version": "2.1 bundled",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/webrtc-audio-processing/webrtc/common_audio/third_party/spl_sqrt_floor/LICENSE",
+      "sourceUrlOrPackage": "https://gstreamer.freedesktop.org/data/src/mirror/webrtc-audio-processing/webrtc-audio-processing-2.1.tar.xz",
+      "originalFileName": "webrtc/common_audio/third_party/spl_sqrt_floor/LICENSE",
+      "sourceSha256": "41D791701E3E1C1073470403DE7E342442D1E6A2AF72681023B13A2F45F2125C",
+      "trackedSha256": "8B63E93824E85DE04636507983A6E45AEE77884600D54D73F2492701C4949D65",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "WebRTC bundled code",
+      "version": "2.1 bundled",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/webrtc-audio-processing/webrtc/LICENSE",
+      "sourceUrlOrPackage": "https://gstreamer.freedesktop.org/data/src/mirror/webrtc-audio-processing/webrtc-audio-processing-2.1.tar.xz",
+      "originalFileName": "webrtc/LICENSE",
+      "sourceSha256": "AB00A482B6A3902E40211B43C5D0441962EA99B6CC7C25C0F243FA270B78D482",
+      "trackedSha256": "824C9F36F49E7E84BBC2A0B87B02FBD86EF6E91E275C7D2D9A2BA2029C9E2462",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "WebRTC FFT target",
+      "version": "2.1 bundled",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/webrtc-audio-processing/webrtc/modules/third_party/fft/LICENSE",
+      "sourceUrlOrPackage": "https://gstreamer.freedesktop.org/data/src/mirror/webrtc-audio-processing/webrtc-audio-processing-2.1.tar.xz",
+      "originalFileName": "webrtc/modules/third_party/fft/LICENSE",
+      "sourceSha256": "6FDBABD2C95C5EFC6F1E46175278239AFB9343120A3022ED0E0CB04267A6AEB3",
+      "trackedSha256": "73E567FE1EDB4E14955CC7665CCEE4354C017270D2200E2DD9FE20A27025529F",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "WebRTC PFFFT",
+      "version": "2.1 bundled",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/webrtc-audio-processing/webrtc/third_party/pffft/LICENSE",
+      "sourceUrlOrPackage": "https://gstreamer.freedesktop.org/data/src/mirror/webrtc-audio-processing/webrtc-audio-processing-2.1.tar.xz",
+      "originalFileName": "webrtc/third_party/pffft/LICENSE",
+      "sourceSha256": "A46200592EB193853527250DA098E6BB0C75424E7A2C7DB8DA526C4F301C3D88",
+      "trackedSha256": "048D649AAE3C88A096327C53A781E4B18B6049B005D6D13008FE9EA06A31EAE5",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "WebRTC RNNoise",
+      "version": "2.1 bundled",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/webrtc-audio-processing/webrtc/third_party/rnnoise/COPYING",
+      "sourceUrlOrPackage": "https://gstreamer.freedesktop.org/data/src/mirror/webrtc-audio-processing/webrtc-audio-processing-2.1.tar.xz",
+      "originalFileName": "webrtc/third_party/rnnoise/COPYING",
+      "sourceSha256": "E2F59FF41D9D03ADC3DCF3DEFF170F8C8CF4A6EB4A9B174762A7656D23200FFA",
+      "trackedSha256": "D1F022CCC621C4E64FACE68F73DE736A6F01CA6BB4BC6FF500DEAAA51464DB55",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "zlib",
+      "version": "1.3.1",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/zlib/LICENSE",
+      "sourceUrlOrPackage": "https://zlib.net/fossils/zlib-1.3.1.tar.gz",
+      "originalFileName": "LICENSE",
+      "sourceSha256": "845EFC77857D485D91FB3E0B884AAA929368C717AE8186B66FE1ED2495753243",
+      "trackedSha256": "ACE889521A004A91D771C7C2407E3FA89CFEC39FFACC96E13CB42FDA7669F58E",
+      "normalizedTextEqual": true
+    },
+    {
+      "component": "zlib",
+      "version": "1.3.1",
+      "trackedPath": "docs/release/compliance/v1.0.0/licenses/zlib/README",
+      "sourceUrlOrPackage": "https://zlib.net/fossils/zlib-1.3.1.tar.gz",
+      "originalFileName": "README",
+      "sourceSha256": "D106DCDB2A0B3087CB3A2380B9F00A0BBADC7EB835CD80408F94A2D78D69727D",
+      "trackedSha256": "C6A8D462A742F2705567A71207B99D12683796B201D9A179B9F963D6F64C4A26",
+      "normalizedTextEqual": true
+    }
+  ]
+}

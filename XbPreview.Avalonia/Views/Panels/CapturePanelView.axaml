@@ -1,0 +1,223 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:l10n="using:XbPreview.Avalonia.Localization"
+             x:Class="XbPreview.Avalonia.Views.Panels.CapturePanelView">
+  <Border Classes="skill-deck-region"
+          ClipToBounds="True">
+    <Grid>
+      <Grid RowDefinitions="Auto,Auto,Auto,Auto,*,*,*"
+            RowSpacing="2">
+        <TextBlock Grid.Row="0"
+                   Classes="skill-section-title"
+                   Text="{x:Static l10n:Strings.CaptureTitle}" />
+        <TextBlock Grid.Row="1"
+                   Classes="skill-muted"
+                   Text="{x:Static l10n:Strings.CaptureTarget}" />
+        <Grid Grid.Row="2"
+              ColumnDefinitions="78,82"
+              ColumnSpacing="8"
+              HorizontalAlignment="Left">
+          <Button x:Name="FullScreenCaptureButton"
+                  Classes="director-small skill-capture-trigger"
+                  HorizontalAlignment="Stretch"
+                  IsEnabled="False"
+                  Content="{x:Static l10n:Strings.FullScreen}" />
+          <ComboBox x:Name="WindowCaptureSelector"
+                    Grid.Column="1"
+                    Classes="skill-select skill-window-select capture-target-choice"
+                    MinWidth="0"
+                    HorizontalAlignment="Stretch"
+                    IsEnabled="False"
+                    PlaceholderForeground="{DynamicResource SkillRecorder.Brush.TextPrimary}"
+                    PlaceholderText="{x:Static l10n:Strings.Window}">
+            <ComboBox.ItemTemplate>
+              <DataTemplate x:CompileBindings="False">
+                <TextBlock MaxWidth="144"
+                           Text="{Binding Title}"
+                           TextWrapping="NoWrap"
+                           TextTrimming="CharacterEllipsis" />
+              </DataTemplate>
+            </ComboBox.ItemTemplate>
+          </ComboBox>
+        </Grid>
+        <TextBlock x:Name="CaptureStatusText"
+                   Grid.Row="3"
+                   Classes="skill-faint"
+                   Text="{x:Static l10n:Strings.CaptureConnecting}"
+                   TextTrimming="CharacterEllipsis" />
+        <Grid Grid.Row="4"
+              Grid.RowSpan="3"
+              RowDefinitions="*,*,*"
+              ColumnDefinitions="Auto,*,22,36"
+              ColumnSpacing="4">
+          <TextBlock Grid.Row="0"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="4"
+                     Classes="skill-muted"
+                     VerticalAlignment="Center"
+                     Text="{x:Static l10n:Strings.HideCursor}" />
+          <ToggleButton x:Name="MouseHiddenToggle"
+                        Grid.Row="0"
+                        Grid.Column="4"
+                        Classes="skill-toggle director-toggle"
+                        AutomationProperties.Name="{x:Static l10n:Strings.HideCursor}"
+                        VerticalAlignment="Center"
+                        IsChecked="False"
+                        IsEnabled="False" />
+
+          <TextBlock x:Name="SystemAudioLabel"
+                     Grid.Row="1"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                     Classes="skill-muted"
+                     VerticalAlignment="Center"
+                     Text="{x:Static l10n:Strings.SystemAudio}" />
+          <Grid x:Name="SystemAudioMeter"
+                Grid.Row="1"
+                Grid.Column="1"
+                Height="4"
+                Margin="12,0,6,0"
+                ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*"
+                ColumnSpacing="2"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Center"
+                IsHitTestVisible="False"
+                Opacity="0.28">
+            <Border x:Name="SystemMeterSegment01" Grid.Column="0" CornerRadius="1" Background="#202124" />
+            <Border x:Name="SystemMeterSegment02" Grid.Column="1" CornerRadius="1" Background="#202124" />
+            <Border x:Name="SystemMeterSegment03" Grid.Column="2" CornerRadius="1" Background="#202124" />
+            <Border x:Name="SystemMeterSegment04" Grid.Column="3" CornerRadius="1" Background="#202124" />
+            <Border x:Name="SystemMeterSegment05" Grid.Column="4" CornerRadius="1" Background="#202124" />
+            <Border x:Name="SystemMeterSegment06" Grid.Column="5" CornerRadius="1" Background="#202124" />
+            <Border x:Name="SystemMeterSegment07" Grid.Column="6" CornerRadius="1" Background="#202124" />
+            <Border x:Name="SystemMeterSegment08" Grid.Column="7" CornerRadius="1" Background="#202124" />
+            <Border x:Name="SystemMeterSegment09" Grid.Column="8" CornerRadius="1" Background="#202124" />
+            <Border x:Name="SystemMeterSegment10" Grid.Column="9" CornerRadius="1" Background="#202124" />
+            <Border x:Name="SystemMeterSegment11" Grid.Column="10" CornerRadius="1" Background="#202124" />
+            <Border x:Name="SystemMeterSegment12" Grid.Column="11" CornerRadius="1" Background="#202124" />
+          </Grid>
+          <Grid x:Name="EnglishSystemAudioLayout"
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                ColumnDefinitions="Auto,8,*"
+                IsVisible="False" />
+          <Button x:Name="SystemAudioRefreshButton"
+                  Grid.Row="1"
+                  Grid.Column="2"
+                  Classes="director-small audio-refresh"
+                  AutomationProperties.Name="{x:Static l10n:Strings.RefreshSystemAudio}"
+                  AutomationProperties.HelpText="{x:Static l10n:Strings.RefreshSystemAudioHelp}"
+                  VerticalAlignment="Center"
+                  IsEnabled="False"
+                  ToolTip.Tip="{x:Static l10n:Strings.RefreshSystemAudio}" />
+          <ToggleButton x:Name="SystemAudioToggle"
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        Classes="skill-toggle director-toggle"
+                        AutomationProperties.Name="{x:Static l10n:Strings.SystemAudio}"
+                        VerticalAlignment="Center"
+                        IsChecked="False"
+                        IsEnabled="False" />
+
+          <TextBlock Grid.Row="2"
+                     Grid.Column="0"
+                     Classes="skill-muted"
+                     VerticalAlignment="Center"
+                     Text="{x:Static l10n:Strings.Microphone}" />
+          <ComboBox x:Name="MicrophoneSelector"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Classes="skill-select skill-window-select capture-target-choice"
+                    MinWidth="0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    IsEnabled="False"
+                    PlaceholderText="{x:Static l10n:Strings.Microphone}">
+            <ComboBox.ItemTemplate>
+              <DataTemplate x:CompileBindings="False">
+                <TextBlock Text="{Binding DisplayName}"
+                           TextWrapping="NoWrap"
+                           TextTrimming="CharacterEllipsis" />
+              </DataTemplate>
+            </ComboBox.ItemTemplate>
+          </ComboBox>
+          <Grid x:Name="MicrophoneMeter"
+                Grid.Row="2"
+                Grid.Column="1"
+                Height="4"
+                Margin="10,0,24,4"
+                ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*"
+                ColumnSpacing="2"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Bottom"
+                IsHitTestVisible="False"
+                Opacity="0.28">
+            <Border x:Name="MicrophoneMeterSegment01" Grid.Column="0" CornerRadius="1" Background="#202124" />
+            <Border x:Name="MicrophoneMeterSegment02" Grid.Column="1" CornerRadius="1" Background="#202124" />
+            <Border x:Name="MicrophoneMeterSegment03" Grid.Column="2" CornerRadius="1" Background="#202124" />
+            <Border x:Name="MicrophoneMeterSegment04" Grid.Column="3" CornerRadius="1" Background="#202124" />
+            <Border x:Name="MicrophoneMeterSegment05" Grid.Column="4" CornerRadius="1" Background="#202124" />
+            <Border x:Name="MicrophoneMeterSegment06" Grid.Column="5" CornerRadius="1" Background="#202124" />
+            <Border x:Name="MicrophoneMeterSegment07" Grid.Column="6" CornerRadius="1" Background="#202124" />
+            <Border x:Name="MicrophoneMeterSegment08" Grid.Column="7" CornerRadius="1" Background="#202124" />
+            <Border x:Name="MicrophoneMeterSegment09" Grid.Column="8" CornerRadius="1" Background="#202124" />
+            <Border x:Name="MicrophoneMeterSegment10" Grid.Column="9" CornerRadius="1" Background="#202124" />
+            <Border x:Name="MicrophoneMeterSegment11" Grid.Column="10" CornerRadius="1" Background="#202124" />
+            <Border x:Name="MicrophoneMeterSegment12" Grid.Column="11" CornerRadius="1" Background="#202124" />
+          </Grid>
+          <Button x:Name="MicrophoneRefreshButton"
+                  Grid.Row="2"
+                  Grid.Column="2"
+                  Classes="director-small audio-refresh"
+                  AutomationProperties.Name="{x:Static l10n:Strings.RefreshMicrophone}"
+                  AutomationProperties.HelpText="{x:Static l10n:Strings.RefreshMicrophoneHelp}"
+                  VerticalAlignment="Center"
+                  IsEnabled="False"
+                  ToolTip.Tip="{x:Static l10n:Strings.RefreshMicrophone}" />
+          <ToggleButton x:Name="MicrophoneEnabledToggle"
+                        Grid.Row="2"
+                        Grid.Column="3"
+                        Classes="skill-toggle director-toggle"
+                        AutomationProperties.Name="{x:Static l10n:Strings.Microphone}"
+                        VerticalAlignment="Center"
+                        IsChecked="False"
+                        IsEnabled="False" />
+        </Grid>
+      </Grid>
+      <Viewbox x:Name="CaptureTitleIcon"
+               Width="24"
+               Height="22"
+               Margin="60,-2,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               IsHitTestVisible="False">
+        <Canvas Width="22" Height="20">
+          <Path Data="M 2,2 H 20 V 15 H 2 Z"
+                Fill="#202124" />
+          <Path Data="M 4,4 H 18 V 13 H 4 Z"
+                Fill="{DynamicResource SkillRecorder.Brush.PanelSurface}" />
+          <Path Data="M 9,15 H 13 V 17 H 16 V 19 H 6 V 17 H 9 Z"
+                Fill="#202124" />
+        </Canvas>
+      </Viewbox>
+      <Border x:Name="TitleDragHandle"
+              Height="20"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Top"
+              Background="Transparent"
+              Cursor="SizeAll" />
+      <Button x:Name="FloatingCloseButton"
+              Width="28"
+              Height="28"
+              MinHeight="28"
+              Padding="0"
+              HorizontalAlignment="Right"
+              VerticalAlignment="Top"
+              Classes="director-small director-return"
+              Content="&#x21A9;"
+              IsVisible="False"
+              ToolTip.Tip="{x:Static l10n:Strings.ReturnHome}" />
+    </Grid>
+  </Border>
+</UserControl>

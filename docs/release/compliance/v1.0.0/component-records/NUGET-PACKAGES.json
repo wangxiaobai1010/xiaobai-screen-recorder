@@ -1,0 +1,630 @@
+{
+    "schemaVersion":  1,
+    "source":  "exact locally locked official NuGet package artifacts",
+    "packages":  [
+                     {
+                         "packageId":  "Avalonia",
+                         "version":  "12.2.999-cibuild0067907-alpha",
+                         "officialNuGetUrl":  "https://nuget-feed-all.avaloniaui.net/v3/package/avalonia/12.2.999-cibuild0067907-alpha/avalonia.12.2.999-cibuild0067907-alpha.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.12.2.999-cibuild0067907-alpha.nupkg",
+                                                 "size":  10154702,
+                                                 "sha256":  "25D921ECCE2D5D8B51FF46431E5C5C5367FE88ECB3664E897EF4EA1AFC2127D4"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/?utm_source=nuget\u0026utm_medium=referral\u0026utm_content=project_homepage_link",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/Avalonia/",
+                                            "commit":  "18254778a6fb767971bafbffbbc14869facc050b"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Avalonia.Angle.Windows.Natives",
+                         "version":  "2.1.27548.20260419",
+                         "officialNuGetUrl":  "https://api.nuget.org/v3-flatcontainer/avalonia.angle.windows.natives/2.1.27548.20260419/avalonia.angle.windows.natives.2.1.27548.20260419.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.angle.windows.natives.2.1.27548.20260419.nupkg",
+                                                 "size":  6123766,
+                                                 "sha256":  "76D67901097E9173D155EFC4C2B7D2C8E3122F2C2E0415028EB0C88478A386F9"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "file",
+                                         "value":  "LICENSE",
+                                         "legacyUrl":  "https://aka.ms/deprecateLicenseUrl"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/angle/",
+                                            "commit":  "1c89805903c1482166356d3b950d474973180e61"
+                                        },
+                         "includedLicenseEvidence":  [
+                                                         {
+                                                             "originalFileName":  "LICENSE",
+                                                             "size":  1675,
+                                                             "sha256":  "54AFF7276217DF9F6B5181613999D208C9E40D2B1D51BF55217837E6871A4A63"
+                                                         }
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Avalonia.Desktop",
+                         "version":  "12.2.999-cibuild0067907-alpha",
+                         "officialNuGetUrl":  "https://nuget-feed-all.avaloniaui.net/v3/package/avalonia.desktop/12.2.999-cibuild0067907-alpha/avalonia.desktop.12.2.999-cibuild0067907-alpha.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.desktop.12.2.999-cibuild0067907-alpha.nupkg",
+                                                 "size":  28810,
+                                                 "sha256":  "A3C6647DF42CC99B0DA77D5A4298C5CBBD249F00B2F260AFCFB6EAF835E8A535"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/?utm_source=nuget\u0026utm_medium=referral\u0026utm_content=project_homepage_link",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/Avalonia/",
+                                            "commit":  "18254778a6fb767971bafbffbbc14869facc050b"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Avalonia.FreeDesktop",
+                         "version":  "12.2.999-cibuild0067907-alpha",
+                         "officialNuGetUrl":  "https://nuget-feed-all.avaloniaui.net/v3/package/avalonia.freedesktop/12.2.999-cibuild0067907-alpha/avalonia.freedesktop.12.2.999-cibuild0067907-alpha.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.freedesktop.12.2.999-cibuild0067907-alpha.nupkg",
+                                                 "size":  203841,
+                                                 "sha256":  "0A50400693CCB55780521816D76D9FF4D139A537D8D5AB692E65F6CEB85634B4"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/?utm_source=nuget\u0026utm_medium=referral\u0026utm_content=project_homepage_link",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/Avalonia/",
+                                            "commit":  "18254778a6fb767971bafbffbbc14869facc050b"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Avalonia.FreeDesktop.AtSpi",
+                         "version":  "12.2.999-cibuild0067907-alpha",
+                         "officialNuGetUrl":  "https://nuget-feed-all.avaloniaui.net/v3/package/avalonia.freedesktop.atspi/12.2.999-cibuild0067907-alpha/avalonia.freedesktop.atspi.12.2.999-cibuild0067907-alpha.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.freedesktop.atspi.12.2.999-cibuild0067907-alpha.nupkg",
+                                                 "size":  409084,
+                                                 "sha256":  "6D51D2D1F2B8AB10AED5CCE95E31761E86F86FD5922498ECBCDF55C9EED694B4"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/?utm_source=nuget\u0026utm_medium=referral\u0026utm_content=project_homepage_link",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/Avalonia/",
+                                            "commit":  "18254778a6fb767971bafbffbbc14869facc050b"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Avalonia.HarfBuzz",
+                         "version":  "12.2.999-cibuild0067907-alpha",
+                         "officialNuGetUrl":  "https://nuget-feed-all.avaloniaui.net/v3/package/avalonia.harfbuzz/12.2.999-cibuild0067907-alpha/avalonia.harfbuzz.12.2.999-cibuild0067907-alpha.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.harfbuzz.12.2.999-cibuild0067907-alpha.nupkg",
+                                                 "size":  35937,
+                                                 "sha256":  "EC40868CA024DC7E441B67BB5BF861FB313D3EB005D24CD3CBAFCC2AE6EBFFD4"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/?utm_source=nuget\u0026utm_medium=referral\u0026utm_content=project_homepage_link",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/Avalonia/",
+                                            "commit":  "18254778a6fb767971bafbffbbc14869facc050b"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Avalonia.Native",
+                         "version":  "12.2.999-cibuild0067907-alpha",
+                         "officialNuGetUrl":  "https://nuget-feed-all.avaloniaui.net/v3/package/avalonia.native/12.2.999-cibuild0067907-alpha/avalonia.native.12.2.999-cibuild0067907-alpha.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.native.12.2.999-cibuild0067907-alpha.nupkg",
+                                                 "size":  677488,
+                                                 "sha256":  "98354E3D0F428B86F9AE950654B760D6BA445114CFED069AC89C461A92888142"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/?utm_source=nuget\u0026utm_medium=referral\u0026utm_content=project_homepage_link",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/Avalonia/",
+                                            "commit":  "18254778a6fb767971bafbffbbc14869facc050b"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Avalonia.Remote.Protocol",
+                         "version":  "12.2.999-cibuild0067907-alpha",
+                         "officialNuGetUrl":  "https://nuget-feed-all.avaloniaui.net/v3/package/avalonia.remote.protocol/12.2.999-cibuild0067907-alpha/avalonia.remote.protocol.12.2.999-cibuild0067907-alpha.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.remote.protocol.12.2.999-cibuild0067907-alpha.nupkg",
+                                                 "size":  136427,
+                                                 "sha256":  "2F40723E4F5B6B389CC61EA1379F4379B64AF322293F0B6FFBB121C45ACE1B70"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/?utm_source=nuget\u0026utm_medium=referral\u0026utm_content=project_homepage_link",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/Avalonia/",
+                                            "commit":  "18254778a6fb767971bafbffbbc14869facc050b"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Avalonia.Skia",
+                         "version":  "12.2.999-cibuild0067907-alpha",
+                         "officialNuGetUrl":  "https://nuget-feed-all.avaloniaui.net/v3/package/avalonia.skia/12.2.999-cibuild0067907-alpha/avalonia.skia.12.2.999-cibuild0067907-alpha.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.skia.12.2.999-cibuild0067907-alpha.nupkg",
+                                                 "size":  150451,
+                                                 "sha256":  "841BBBD260131E38428EA3490071FD1E618A703D5215B9EDDA23CB040F8BE4F7"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/?utm_source=nuget\u0026utm_medium=referral\u0026utm_content=project_homepage_link",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/Avalonia/",
+                                            "commit":  "18254778a6fb767971bafbffbbc14869facc050b"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Avalonia.Themes.Fluent",
+                         "version":  "12.2.999-cibuild0067907-alpha",
+                         "officialNuGetUrl":  "https://nuget-feed-all.avaloniaui.net/v3/package/avalonia.themes.fluent/12.2.999-cibuild0067907-alpha/avalonia.themes.fluent.12.2.999-cibuild0067907-alpha.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.themes.fluent.12.2.999-cibuild0067907-alpha.nupkg",
+                                                 "size":  260284,
+                                                 "sha256":  "4747D53DE7AC4E0573D9D1096046674504153A0D7F7887B8EC194489D74A6D6D"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/?utm_source=nuget\u0026utm_medium=referral\u0026utm_content=project_homepage_link",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/Avalonia/",
+                                            "commit":  "18254778a6fb767971bafbffbbc14869facc050b"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Avalonia.Win32",
+                         "version":  "12.2.999-cibuild0067907-alpha",
+                         "officialNuGetUrl":  "https://nuget-feed-all.avaloniaui.net/v3/package/avalonia.win32/12.2.999-cibuild0067907-alpha/avalonia.win32.12.2.999-cibuild0067907-alpha.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.win32.12.2.999-cibuild0067907-alpha.nupkg",
+                                                 "size":  756170,
+                                                 "sha256":  "C51B978969C4ACD14C1C763B0D2916412BA7126705C5E85EFBF438BB038E2995"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/?utm_source=nuget\u0026utm_medium=referral\u0026utm_content=project_homepage_link",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/Avalonia/",
+                                            "commit":  "18254778a6fb767971bafbffbbc14869facc050b"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Avalonia.Win32.Interoperability",
+                         "version":  "12.2.999-cibuild0067907-alpha",
+                         "officialNuGetUrl":  "https://nuget-feed-all.avaloniaui.net/v3/package/avalonia.win32.interoperability/12.2.999-cibuild0067907-alpha/avalonia.win32.interoperability.12.2.999-cibuild0067907-alpha.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.win32.interoperability.12.2.999-cibuild0067907-alpha.nupkg",
+                                                 "size":  33602,
+                                                 "sha256":  "91113285AEE274FC96F0F3E94279FFA911F4130C7954D2842DE112B6D595FDEA"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/?utm_source=nuget\u0026utm_medium=referral\u0026utm_content=project_homepage_link",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/Avalonia/",
+                                            "commit":  "18254778a6fb767971bafbffbbc14869facc050b"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Avalonia.X11",
+                         "version":  "12.2.999-cibuild0067907-alpha",
+                         "officialNuGetUrl":  "https://nuget-feed-all.avaloniaui.net/v3/package/avalonia.x11/12.2.999-cibuild0067907-alpha/avalonia.x11.12.2.999-cibuild0067907-alpha.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "avalonia.x11.12.2.999-cibuild0067907-alpha.nupkg",
+                                                 "size":  375542,
+                                                 "sha256":  "776A4D06A76746BEA43B66AA1136EA80F63EB8AA25B82EFA6C288672DE57865C"
+                                             },
+                         "authors":  "Avalonia Team",
+                         "copyright":  "Copyright 2013-2026 © The AvaloniaUI Project",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://avaloniaui.net/?utm_source=nuget\u0026utm_medium=referral\u0026utm_content=project_homepage_link",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/AvaloniaUI/Avalonia/",
+                                            "commit":  "18254778a6fb767971bafbffbbc14869facc050b"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "HarfBuzzSharp",
+                         "version":  "8.3.1.3",
+                         "officialNuGetUrl":  "https://api.nuget.org/v3-flatcontainer/harfbuzzsharp/8.3.1.3/harfbuzzsharp.8.3.1.3.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "harfbuzzsharp.8.3.1.3.nupkg",
+                                                 "size":  1038451,
+                                                 "sha256":  "FFE644863A4EB3C078B4C3F0DEF0F2B90A861991C9116BF2DD668A31A0F09AB5"
+                                             },
+                         "authors":  "Microsoft",
+                         "copyright":  "© Microsoft Corporation. All rights reserved.",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://go.microsoft.com/fwlink/?linkid=868515",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://go.microsoft.com/fwlink/?linkid=868515",
+                                            "commit":  "2888c737ad016d584c74525e2d35db5097ea8576"
+                                        },
+                         "includedLicenseEvidence":  [
+                                                         {
+                                                             "originalFileName":  "LICENSE.txt",
+                                                             "size":  1129,
+                                                             "sha256":  "89101E35A8C66FD4D6DFFC1763259161D35CB564C169714EC227A768C89F2938"
+                                                         }
+                                                     ]
+                     },
+                     {
+                         "packageId":  "HarfBuzzSharp.NativeAssets.Win32",
+                         "version":  "8.3.1.3",
+                         "officialNuGetUrl":  "https://api.nuget.org/v3-flatcontainer/harfbuzzsharp.nativeassets.win32/8.3.1.3/harfbuzzsharp.nativeassets.win32.8.3.1.3.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "harfbuzzsharp.nativeassets.win32.8.3.1.3.nupkg",
+                                                 "size":  18498061,
+                                                 "sha256":  "58D51098B595152C01293F71ED47614B3F53D8503BC226EFC23B8F7B0FF7C943"
+                                             },
+                         "authors":  "Microsoft",
+                         "copyright":  "© Microsoft Corporation. All rights reserved.",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://go.microsoft.com/fwlink/?linkid=868515",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://go.microsoft.com/fwlink/?linkid=868515",
+                                            "commit":  "2888c737ad016d584c74525e2d35db5097ea8576"
+                                        },
+                         "includedLicenseEvidence":  [
+                                                         {
+                                                             "originalFileName":  "LICENSE.txt",
+                                                             "size":  1129,
+                                                             "sha256":  "89101E35A8C66FD4D6DFFC1763259161D35CB564C169714EC227A768C89F2938"
+                                                         },
+                                                         {
+                                                             "originalFileName":  "THIRD-PARTY-NOTICES.txt",
+                                                             "size":  139775,
+                                                             "sha256":  "21504C46C4C58AA64C1055BD2DCBC5F9A136B4B8C412ED3CC6740E22C5B127F5"
+                                                         }
+                                                     ]
+                     },
+                     {
+                         "packageId":  "MicroCom.Runtime",
+                         "version":  "0.11.6",
+                         "officialNuGetUrl":  "https://api.nuget.org/v3-flatcontainer/microcom.runtime/0.11.6/microcom.runtime.0.11.6.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "microcom.runtime.0.11.6.nupkg",
+                                                 "size":  39680,
+                                                 "sha256":  "453AF6D34477B19BB2C62D17436E68C76A75915B7947509B1FF601B36D7E78D8"
+                                             },
+                         "authors":  "MicroCom.Runtime",
+                         "copyright":  "Copyright 2021 © Nikita Tsukanov",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/kekekeks/MicroCom",
+                                            "commit":  "76785efcafd91b5902fd19dd11145f6dd655b7b4"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Microsoft.NETCore.App.Runtime.win-x64",
+                         "version":  "8.0.29",
+                         "officialNuGetUrl":  "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.runtime.win-x64/8.0.29/microsoft.netcore.app.runtime.win-x64.8.0.29.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "microsoft.netcore.app.runtime.win-x64.8.0.29.nupkg",
+                                                 "size":  36124805,
+                                                 "sha256":  "6B7C7751AE5DFCBC110A8DDF659559038542DADCEBA67C48F95F6CB20407198C"
+                                             },
+                         "authors":  "Microsoft",
+                         "copyright":  "© Microsoft Corporation. All rights reserved.",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://dot.net/",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/dotnet/runtime",
+                                            "commit":  "18fd75c847399745c43b5970fec840ba71064e80"
+                                        },
+                         "includedLicenseEvidence":  [
+                                                         {
+                                                             "originalFileName":  "LICENSE.TXT",
+                                                             "size":  1139,
+                                                             "sha256":  "D7A68596AB69B06F51CA278A6545148E4269A9381C26D597C13DF5D88E08CF5B"
+                                                         },
+                                                         {
+                                                             "originalFileName":  "THIRD-PARTY-NOTICES.TXT",
+                                                             "size":  68910,
+                                                             "sha256":  "B60B2912DA28EAA6518593C9E2EFB5334EE062D3C42E80D8FDFA806B3DC52977"
+                                                         }
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+                         "version":  "8.0.29",
+                         "officialNuGetUrl":  "https://api.nuget.org/v3-flatcontainer/microsoft.windowsdesktop.app.runtime.win-x64/8.0.29/microsoft.windowsdesktop.app.runtime.win-x64.8.0.29.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "microsoft.windowsdesktop.app.runtime.win-x64.8.0.29.nupkg",
+                                                 "size":  36803733,
+                                                 "sha256":  "71A06ACC00B76FF0872535F83AC8860DE8F08C6733E3BC01348B757CE271F0C5"
+                                             },
+                         "authors":  "Microsoft",
+                         "copyright":  "© Microsoft Corporation. All rights reserved.",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://dot.net/",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/dotnet/windowsdesktop",
+                                            "commit":  "580168d2b82abec4ec1460077b8e62c016c031c4"
+                                        },
+                         "includedLicenseEvidence":  [
+                                                         {
+                                                             "originalFileName":  "LICENSE",
+                                                             "size":  1137,
+                                                             "sha256":  "A89886665765362EB77E0F8E26602C924520041D1711B2EEDC136434FE4D01AB"
+                                                         }
+                                                     ]
+                     },
+                     {
+                         "packageId":  "SkiaSharp",
+                         "version":  "3.119.4",
+                         "officialNuGetUrl":  "https://api.nuget.org/v3-flatcontainer/skiasharp/3.119.4/skiasharp.3.119.4.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "skiasharp.3.119.4.nupkg",
+                                                 "size":  8743679,
+                                                 "sha256":  "E32A449D31945C0B9D169EB5BC676E1E3F589AAB69888E49D703FDC1C384C176"
+                                             },
+                         "authors":  "Microsoft",
+                         "copyright":  "© Microsoft Corporation. All rights reserved.",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://go.microsoft.com/fwlink/?linkid=868515",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://go.microsoft.com/fwlink/?linkid=868515",
+                                            "commit":  "f568ac94dd768ef9a2f593537cfde2dd0d348ef5"
+                                        },
+                         "includedLicenseEvidence":  [
+                                                         {
+                                                             "originalFileName":  "LICENSE.txt",
+                                                             "size":  1129,
+                                                             "sha256":  "89101E35A8C66FD4D6DFFC1763259161D35CB564C169714EC227A768C89F2938"
+                                                         }
+                                                     ]
+                     },
+                     {
+                         "packageId":  "SkiaSharp.NativeAssets.Win32",
+                         "version":  "3.119.4",
+                         "officialNuGetUrl":  "https://api.nuget.org/v3-flatcontainer/skiasharp.nativeassets.win32/3.119.4/skiasharp.nativeassets.win32.3.119.4.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "skiasharp.nativeassets.win32.3.119.4.nupkg",
+                                                 "size":  76963437,
+                                                 "sha256":  "5A5698B1B4E1FDC9FFE9868DF6874DB5FA69F21A4DE76BA71A01A542E9B43391"
+                                             },
+                         "authors":  "Microsoft",
+                         "copyright":  "© Microsoft Corporation. All rights reserved.",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://go.microsoft.com/fwlink/?linkid=868515",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://go.microsoft.com/fwlink/?linkid=868515",
+                                            "commit":  "f568ac94dd768ef9a2f593537cfde2dd0d348ef5"
+                                        },
+                         "includedLicenseEvidence":  [
+                                                         {
+                                                             "originalFileName":  "LICENSE.txt",
+                                                             "size":  1129,
+                                                             "sha256":  "89101E35A8C66FD4D6DFFC1763259161D35CB564C169714EC227A768C89F2938"
+                                                         },
+                                                         {
+                                                             "originalFileName":  "THIRD-PARTY-NOTICES.txt",
+                                                             "size":  139775,
+                                                             "sha256":  "21504C46C4C58AA64C1055BD2DCBC5F9A136B4B8C412ED3CC6740E22C5B127F5"
+                                                         }
+                                                     ]
+                     },
+                     {
+                         "packageId":  "System.IO.Pipelines",
+                         "version":  "8.0.0",
+                         "officialNuGetUrl":  "https://api.nuget.org/v3-flatcontainer/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "system.io.pipelines.8.0.0.nupkg",
+                                                 "size":  267394,
+                                                 "sha256":  "2DDA41D6CE2F433B0E3836B188AB2D2E4B39ED7F434C3E43E9C3F1F03135C301"
+                                             },
+                         "authors":  "Microsoft",
+                         "copyright":  "© Microsoft Corporation. All rights reserved.",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "https://dot.net/",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/dotnet/runtime",
+                                            "commit":  "5535e31a712343a63f5d7d796cd874e563e5ac14"
+                                        },
+                         "includedLicenseEvidence":  [
+                                                         {
+                                                             "originalFileName":  "LICENSE.TXT",
+                                                             "size":  1139,
+                                                             "sha256":  "D7A68596AB69B06F51CA278A6545148E4269A9381C26D597C13DF5D88E08CF5B"
+                                                         },
+                                                         {
+                                                             "originalFileName":  "THIRD-PARTY-NOTICES.TXT",
+                                                             "size":  68911,
+                                                             "sha256":  "19C19DCAC9F3EE6302CFBC6745BB8E79F08EFC4C933EB8DC5509BF14B88347EC"
+                                                         }
+                                                     ]
+                     },
+                     {
+                         "packageId":  "Tmds.DBus.Protocol",
+                         "version":  "0.94.1",
+                         "officialNuGetUrl":  "https://api.nuget.org/v3-flatcontainer/tmds.dbus.protocol/0.94.1/tmds.dbus.protocol.0.94.1.nupkg",
+                         "packageArtifact":  {
+                                                 "fileName":  "tmds.dbus.protocol.0.94.1.nupkg",
+                                                 "size":  656347,
+                                                 "sha256":  "4F71D06AC40E725FFBCF1B79853DD93218695A84F23D36FAFC85F477A4C9580F"
+                                             },
+                         "authors":  "Tom Deseyn",
+                         "copyright":  "Tom Deseyn",
+                         "license":  {
+                                         "type":  "expression",
+                                         "value":  "MIT",
+                                         "legacyUrl":  "https://licenses.nuget.org/MIT"
+                                     },
+                         "projectUrl":  "",
+                         "repository":  {
+                                            "type":  "git",
+                                            "url":  "https://github.com/tmds/Tmds.DBus.git",
+                                            "commit":  "b4a7fed0b878f74cb54f7cca84d2889af4e596ba"
+                                        },
+                         "includedLicenseEvidence":  [
+
+                                                     ]
+                     }
+                 ]
+}

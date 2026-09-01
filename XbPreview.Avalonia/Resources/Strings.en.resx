@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="CaptureTitle" xml:space="preserve">
+    <value>Recording</value>
+  </data>
+  <data name="CaptureTarget" xml:space="preserve">
+    <value>Capture</value>
+  </data>
+  <data name="FullScreen" xml:space="preserve">
+    <value>Screen</value>
+  </data>
+  <data name="Window" xml:space="preserve">
+    <value>Window</value>
+  </data>
+  <data name="CaptureConnecting" xml:space="preserve">
+    <value>Connecting capture…</value>
+  </data>
+  <data name="HideCursor" xml:space="preserve">
+    <value>Hide Cursor</value>
+  </data>
+  <data name="SystemAudio" xml:space="preserve">
+    <value>PC Audio</value>
+  </data>
+  <data name="Microphone" xml:space="preserve">
+    <value>Mic</value>
+  </data>
+  <data name="RefreshSystemAudio" xml:space="preserve">
+    <value>Refresh System Audio</value>
+  </data>
+  <data name="RefreshSystemAudioHelp" xml:space="preserve">
+    <value>Check the Windows default audio output again</value>
+  </data>
+  <data name="RefreshMicrophone" xml:space="preserve">
+    <value>Refresh Microphones</value>
+  </data>
+  <data name="RefreshMicrophoneHelp" xml:space="preserve">
+    <value>Check available microphones again</value>
+  </data>
+  <data name="DirectorTitle" xml:space="preserve">
+    <value>Director</value>
+  </data>
+  <data name="ManualZoom" xml:space="preserve">
+    <value>Manual Zoom</value>
+  </data>
+  <data name="ZoomShortcuts" xml:space="preserve">
+    <value>Zoom Shortcuts</value>
+  </data>
+  <data name="AutoZoom" xml:space="preserve">
+    <value>Auto Zoom</value>
+  </data>
+  <data name="StageTitle" xml:space="preserve">
+    <value>3D View</value>
+  </data>
+  <data name="ViewAngle" xml:space="preserve">
+    <value>View Angle</value>
+  </data>
+  <data name="Left" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="Front" xml:space="preserve">
+    <value>Front</value>
+  </data>
+  <data name="Right" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="Tilt" xml:space="preserve">
+    <value>Tilt</value>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Mid</value>
+  </data>
+  <data name="Strong" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>Background</value>
+  </data>
+  <data name="RecordingTitle" xml:space="preserve">
+    <value>Record</value>
+  </data>
+  <data name="IncludeFloatingPanels" xml:space="preserve">
+    <value>Include Panels</value>
+  </data>
+  <data name="SaveLocation" xml:space="preserve">
+    <value>Save Location</value>
+  </data>
+  <data name="Resolution" xml:space="preserve">
+    <value>Resolution</value>
+  </data>
+  <data name="ResolutionOriginal" xml:space="preserve">
+    <value>Original</value>
+  </data>
+  <data name="Resolution1080" xml:space="preserve">
+    <value>1080p</value>
+  </data>
+  <data name="Resolution1440" xml:space="preserve">
+    <value>2K</value>
+  </data>
+  <data name="Resolution4K" xml:space="preserve">
+    <value>4K</value>
+  </data>
+  <data name="FrameRate" xml:space="preserve">
+    <value>Frame Rate</value>
+  </data>
+  <data name="StartRecording" xml:space="preserve">
+    <value>Start Recording</value>
+  </data>
+  <data name="Recording" xml:space="preserve">
+    <value>Recording</value>
+  </data>
+  <data name="Starting" xml:space="preserve">
+    <value>Starting…</value>
+  </data>
+  <data name="ElapsedTime" xml:space="preserve">
+    <value>Elapsed</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="RestartRecording" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="BackToReady" xml:space="preserve">
+    <value>Back to Recording</value>
+  </data>
+  <data name="RecordingDuration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="OpenFolder" xml:space="preserve">
+    <value>Open Folder</value>
+  </data>
+  <data name="OpenVideo" xml:space="preserve">
+    <value>Open Video</value>
+  </data>
+  <data name="RestartConfirmTitle" xml:space="preserve">
+    <value>Restart recording?</value>
+  </data>
+  <data name="RestartConfirmBody" xml:space="preserve">
+    <value>This recording will be discarded.</value>
+  </data>
+  <data name="ContinueRecording" xml:space="preserve">
+    <value>Keep Recording</value>
+  </data>
+  <data name="DiscardRecording" xml:space="preserve">
+    <value>Discard Recording</value>
+  </data>
+  <data name="ReturnHome" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="Later" xml:space="preserve">
+    <value>Later</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SettingsSubtitle" xml:space="preserve">
+    <value>App preferences</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="SimplifiedChineseSelf" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="EnglishSelf" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="RestartToApply" xml:space="preserve">
+    <value>Language will apply after restart</value>
+  </data>
+  <data name="RestartNow" xml:space="preserve">
+    <value>Restart Now</value>
+  </data>
+  <data name="LanguageEntry" xml:space="preserve">
+    <value>中 / EN</value>
+  </data>
+  <data name="BrandName" xml:space="preserve">
+    <value>Xiaobai Recorder</value>
+  </data>
+  <data name="RestartLater" xml:space="preserve">
+    <value>Later</value>
+  </data>
+  <data name="RecoveryBodyPreserved" xml:space="preserve">
+    <value>Your original recording files are safe.</value>
+  </data>
+  <data name="RecoveryBodyCanTry" xml:space="preserve">
+    <value>Your original files are safe. You can try recovery.</value>
+  </data>
+  <data name="RecoveryChecking" xml:space="preserve">
+    <value>Checking…</value>
+  </data>
+  <data name="RecoveryTry" xml:space="preserve">
+    <value>Try Recovery</value>
+  </data>
+  <data name="OpenContainingFolder" xml:space="preserve">
+    <value>Open Folder</value>
+  </data>
+  <data name="DontRemindAgain" xml:space="preserve">
+    <value>Don’t Remind Again</value>
+  </data>
+  <data name="RecoveryFoundOne" xml:space="preserve">
+    <value>Found 1 interrupted recording</value>
+  </data>
+  <data name="RecoveryFoundMany" xml:space="preserve">
+    <value>Found {0} recordings that need attention</value>
+  </data>
+  <data name="RecoveryRecoveredNotice" xml:space="preserve">
+    <value>Recording recovered and saved.</value>
+  </data>
+  <data name="RecoveryRecoveredTitle" xml:space="preserve">
+    <value>Recording Recovered</value>
+  </data>
+  <data name="RecoveryInterruptedTitle" xml:space="preserve">
+    <value>Interrupted Recording</value>
+  </data>
+  <data name="RecoveryAttentionTitle" xml:space="preserve">
+    <value>Recording Needs Attention</value>
+  </data>
+  <data name="RecoveryCanTryStatus" xml:space="preserve">
+    <value>This recording did not finish. You can try recovery.</value>
+  </data>
+  <data name="RecoveryPreservedStatus" xml:space="preserve">
+    <value>This recording did not finish. Its original files are safe.</value>
+  </data>
+  <data name="RecoveryRetainedStatus" xml:space="preserve">
+    <value>This recording cannot be processed automatically, but its files will not be deleted.</value>
+  </data>
+  <data name="RecoveryCanceledStatus" xml:space="preserve">
+    <value>Stopped. Your recording files are safe.</value>
+  </data>
+  <data name="RecoveryReadFailureStatus" xml:space="preserve">
+    <value>This recording cannot be read right now. Try again later. Its files will not be deleted.</value>
+  </data>
+  <data name="RecoveryChangedStatus" xml:space="preserve">
+    <value>The recording changed and cannot be processed automatically. Its files are safe.</value>
+  </data>
+  <data name="RecoveryUnavailableStatus" xml:space="preserve">
+    <value>This recording cannot be recovered automatically right now. Its files are safe.</value>
+  </data>
+  <data name="DefaultSaveLocation" xml:space="preserve">
+    <value>Default save location</value>
+  </data>
+  <data name="NoFileYet" xml:space="preserve">
+    <value>No file yet</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Resume</value>
+  </data>
+  <data name="RecordingComplete" xml:space="preserve">
+    <value>Recording Complete</value>
+  </data>
+  <data name="RecordingFailed" xml:space="preserve">
+    <value>Recording Failed</value>
+  </data>
+  <data name="Canceling" xml:space="preserve">
+    <value>Canceling…</value>
+  </data>
+  <data name="RecordingNow" xml:space="preserve">
+    <value>Recording</value>
+  </data>
+  <data name="Paused" xml:space="preserve">
+    <value>Ⅱ Paused</value>
+  </data>
+  <data name="Saving" xml:space="preserve">
+    <value>Saving…</value>
+  </data>
+  <data name="RecordingFailureDetail" xml:space="preserve">
+    <value>Recording failed. Check the diagnostic log.</value>
+  </data>
+  <data name="MicrophoneUnavailableAtStart" xml:space="preserve">
+    <value>No microphone was detected. Connect one or turn off microphone recording.</value>
+  </data>
+  <data name="UpscaleWarning" xml:space="preserve">
+    <value>Upscaling does not add detail to the source image</value>
+  </data>
+  <data name="HighLoadWarning" xml:space="preserve">
+    <value>4K + 60 FPS requires a powerful computer</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="CustomEllipsis" xml:space="preserve">
+    <value>Custom…</value>
+  </data>
+  <data name="Fantasy01" xml:space="preserve">
+    <value>Fantasy 01</value>
+  </data>
+  <data name="Fantasy02" xml:space="preserve">
+    <value>Fantasy 02</value>
+  </data>
+  <data name="Frame60Help" xml:space="preserve">
+    <value>Smoother video; requires more processing power</value>
+  </data>
+  <data name="CursorPreviewHidden" xml:space="preserve">
+    <value>The preview hides the cursor and shows an orange guide. The recording excludes the cursor.</value>
+  </data>
+  <data name="CursorPreviewVisible" xml:space="preserve">
+    <value>The preview shows the cursor without a guide.</value>
+  </data>
+  <data name="TrayEnabled" xml:space="preserve">
+    <value>Floating panels will be included</value>
+  </data>
+  <data name="TrayDisabled" xml:space="preserve">
+    <value>Floating panels will not be included</value>
+  </data>
+  <data name="AudioInitFailed" xml:space="preserve">
+    <value>Audio setup failed: {0}</value>
+  </data>
+  <data name="AudioModeConfirmed" xml:space="preserve">
+    <value>Audio mode: {0}</value>
+  </data>
+  <data name="RestoreMicrophoneFailed" xml:space="preserve">
+    <value>Could not restore the microphone ({0}) or the default device ({1}).</value>
+  </data>
+  <data name="SavedMicrophoneFallback" xml:space="preserve">
+    <value>The saved microphone is unavailable ({0}). Using the Windows default.</value>
+  </data>
+  <data name="EnumeratingWindows" xml:space="preserve">
+    <value>Checking available windows…</value>
+  </data>
+  <data name="WindowCount" xml:space="preserve">
+    <value>{0} windows · {1}</value>
+  </data>
+  <data name="WindowEnumerationFailed" xml:space="preserve">
+    <value>Could not list windows: {0}</value>
+  </data>
+  <data name="RecordingActiveCannotRefreshMicrophones" xml:space="preserve">
+    <value>Microphones cannot be refreshed while recording.</value>
+  </data>
+  <data name="AnotherAudioCommand" xml:space="preserve">
+    <value>Another audio change is in progress.</value>
+  </data>
+  <data name="RefreshingMicrophones" xml:space="preserve">
+    <value>Refreshing microphones…</value>
+  </data>
+  <data name="MicrophoneRefreshFailed" xml:space="preserve">
+    <value>Could not refresh microphones: {0}</value>
+  </data>
+  <data name="RecordingActiveCannotRefreshSystemAudio" xml:space="preserve">
+    <value>System audio cannot be refreshed while recording.</value>
+  </data>
+  <data name="RefreshingSystemAudio" xml:space="preserve">
+    <value>Refreshing system audio…</value>
+  </data>
+  <data name="SystemAudioRefreshFailed" xml:space="preserve">
+    <value>Could not refresh system audio: {0}</value>
+  </data>
+  <data name="SelectedMicrophoneUnavailable" xml:space="preserve">
+    <value>The selected microphone is unavailable. Select an available device first.</value>
+  </data>
+  <data name="NoSystemAudio" xml:space="preserve">
+    <value>No Windows default system audio output is available.</value>
+  </data>
+  <data name="CursorCommandPending" xml:space="preserve">
+    <value>A cursor setting change is in progress.</value>
+  </data>
+  <data name="ApplyingCursor" xml:space="preserve">
+    <value>Applying cursor setting…</value>
+  </data>
+  <data name="CursorHiddenOn" xml:space="preserve">
+    <value>Hide Cursor: On</value>
+  </data>
+  <data name="CursorHiddenOff" xml:space="preserve">
+    <value>Hide Cursor: Off</value>
+  </data>
+  <data name="CursorCommandFailed" xml:space="preserve">
+    <value>Could not change the cursor setting: {0}</value>
+  </data>
+  <data name="ConfirmingAudioMode" xml:space="preserve">
+    <value>Confirming audio for this recording…</value>
+  </data>
+  <data name="AudioConfirmationFailed" xml:space="preserve">
+    <value>Could not confirm audio before recording: {0}</value>
+  </data>
+  <data name="AudioConfirmationSucceeded" xml:space="preserve">
+    <value>Audio confirmed: {0}</value>
+  </data>
+  <data name="RecordingOrCapturePending" xml:space="preserve">
+    <value>Recording or capture is busy.</value>
+  </data>
+  <data name="SwitchingCapture" xml:space="preserve">
+    <value>Switching capture target…</value>
+  </data>
+  <data name="CaptureSwitchFailed" xml:space="preserve">
+    <value>Could not switch the capture target: {0}</value>
+  </data>
+  <data name="AudioLockedDuringRecording" xml:space="preserve">
+    <value>Audio settings are locked while recording.</value>
+  </data>
+  <data name="SubmittingAudio" xml:space="preserve">
+    <value>Applying audio settings…</value>
+  </data>
+  <data name="AudioCommandFailed" xml:space="preserve">
+    <value>Could not apply audio settings: {0}</value>
+  </data>
+  <data name="AudioSourceRejected" xml:space="preserve">
+    <value>{0} was not accepted ({1}). The last confirmed setting is still shown.</value>
+  </data>
+  <data name="CannotSelectUnavailableMicrophone" xml:space="preserve">
+    <value>An unavailable microphone cannot be selected.</value>
+  </data>
+  <data name="MicrophoneSelectionRejected" xml:space="preserve">
+    <value>The microphone was not accepted: {0}</value>
+  </data>
+  <data name="MicrophoneReadbackMismatch" xml:space="preserve">
+    <value>The microphone changed. The current device is now shown.</value>
+  </data>
+  <data name="RuntimeSelectedSaveFailed" xml:space="preserve">
+    <value>; selected, but could not save: {0}</value>
+  </data>
+  <data name="MicrophoneSelected" xml:space="preserve">
+    <value>Microphone: {0}</value>
+  </data>
+  <data name="NoMicrophones" xml:space="preserve">
+    <value>No microphone was detected. Screen and system audio recording remain available.</value>
+  </data>
+  <data name="CurrentMicrophoneUnavailable" xml:space="preserve">
+    <value>The current microphone is unavailable. Select another device; microphone recording remains off.</value>
+  </data>
+  <data name="MicrophoneCount" xml:space="preserve">
+    <value>{0} microphones</value>
+  </data>
+  <data name="NoDefaultSystemAudio" xml:space="preserve">
+    <value>No Windows default audio output was detected.</value>
+  </data>
+  <data name="DefaultSystemAudioUnavailable" xml:space="preserve">
+    <value>The Windows default audio output is unavailable.</value>
+  </data>
+  <data name="DefaultSystemAudioAvailable" xml:space="preserve">
+    <value>The Windows default audio output is available.</value>
+  </data>
+  <data name="WindowsDefault" xml:space="preserve">
+    <value>Windows Default</value>
+  </data>
+  <data name="WindowsDefaultWithName" xml:space="preserve">
+    <value>Windows Default — {0}</value>
+  </data>
+  <data name="WindowsDefaultUnavailable" xml:space="preserve">
+    <value>Windows Default (Unavailable)</value>
+  </data>
+  <data name="DeviceUnavailable" xml:space="preserve">
+    <value>{0} (Unavailable)</value>
+  </data>
+  <data name="CurrentWindow" xml:space="preserve">
+    <value>Current: Window · {0}</value>
+  </data>
+  <data name="CurrentFullScreen" xml:space="preserve">
+    <value>Current: Full Screen</value>
+  </data>
+  <data name="CannotStartRecording" xml:space="preserve">
+    <value>Recording cannot start in the current state.</value>
+  </data>
+  <data name="CannotStopRecording" xml:space="preserve">
+    <value>Recording cannot stop in the current state.</value>
+  </data>
+  <data name="CannotDiscardRecording" xml:space="preserve">
+    <value>This recording cannot be discarded in the current state.</value>
+  </data>
+  <data name="CannotResumeRecording" xml:space="preserve">
+    <value>Recording cannot resume in the current state.</value>
+  </data>
+  <data name="CannotPauseRecording" xml:space="preserve">
+    <value>Recording cannot pause in the current state.</value>
+  </data>
+  <data name="CannotChangeTray" xml:space="preserve">
+    <value>Floating panel capture cannot change in the current state.</value>
+  </data>
+  <data name="TrayChangeFailed" xml:space="preserve">
+    <value>Could not change floating panel capture: {0}</value>
+  </data>
+  <data name="CannotChangeFrameRate" xml:space="preserve">
+    <value>Frame rate cannot change while recording.</value>
+  </data>
+  <data name="FrameRateChangeFailed" xml:space="preserve">
+    <value>Could not change frame rate: {0}</value>
+  </data>
+  <data name="FrameRateSaveFailed" xml:space="preserve">
+    <value>Could not save frame rate: {0}{1}</value>
+  </data>
+  <data name="CannotChangeResolution" xml:space="preserve">
+    <value>Resolution cannot change while recording.</value>
+  </data>
+  <data name="ResolutionChangeFailed" xml:space="preserve">
+    <value>Could not change resolution: {0}</value>
+  </data>
+  <data name="CannotChangeSaveLocation" xml:space="preserve">
+    <value>Save location cannot change while recording.</value>
+  </data>
+  <data name="ChooseRecordingFolder" xml:space="preserve">
+    <value>Choose a folder for this recording</value>
+  </data>
+  <data name="FinalVideoNotReady" xml:space="preserve">
+    <value>The final video is not ready to open.</value>
+  </data>
+  <data name="OpenVideoFailed" xml:space="preserve">
+    <value>Could not open the video: {0}</value>
+  </data>
+  <data name="FinalFolderNotReady" xml:space="preserve">
+    <value>The final video folder is not ready to open.</value>
+  </data>
+  <data name="OpenFolderFailed" xml:space="preserve">
+    <value>Could not open the recording folder: {0}</value>
+  </data>
+  <data name="SaveLocationUnavailable" xml:space="preserve">
+    <value>This save location is unavailable. Choose an existing local folder.</value>
+  </data>
+  <data name="SaveLocationRuntimeFailed" xml:space="preserve">
+    <value>Could not use the save location: {0}</value>
+  </data>
+  <data name="SaveLocationSaveFailed" xml:space="preserve">
+    <value>Could not save the save location: {0}{1}</value>
+  </data>
+  <data name="PickBackgroundTitle" xml:space="preserve">
+    <value>Choose a background image</value>
+  </data>
+  <data name="ImageFiles" xml:space="preserve">
+    <value>Image files (*.png;*.jpg;*.jpeg;*.bmp)</value>
+  </data>
+  <data name="CursorRuntimeUnavailable" xml:space="preserve">
+    <value>Cursor controls are not ready.</value>
+  </data>
+  <data name="CursorRuntimeFailed" xml:space="preserve">
+    <value>Could not change the cursor setting: {0}; {1}</value>
+  </data>
+  <data name="ShellRecordingStateFailed" xml:space="preserve">
+    <value>Could not read recording status: {0}</value>
+  </data>
+  <data name="ShellClosingCannotStart" xml:space="preserve">
+    <value>The app is closing and cannot start recording.</value>
+  </data>
+  <data name="FrameRateRollbackFailed" xml:space="preserve">
+    <value>; could not restore the previous frame rate: {0}</value>
+  </data>
+  <data name="SaveLocationRollbackFailed" xml:space="preserve">
+    <value>; could not restore the previous save location: {0}</value>
+  </data>
+  <data name="ApplySaveLocationFailed" xml:space="preserve">
+    <value>Could not apply the safe recording location: {0}</value>
+  </data>
+  <data name="ApplyFrameRateFailed" xml:space="preserve">
+    <value>Could not apply the recording frame rate: {0}</value>
+  </data>
+  <data name="TrayReadyAllIncluded" xml:space="preserve">
+    <value>Floating panels included; the recorder can be captured while ready</value>
+  </data>
+  <data name="TrayMainExcluded" xml:space="preserve">
+    <value>Floating panels included; the main window is excluded</value>
+  </data>
+  <data name="TrayAllExcluded" xml:space="preserve">
+    <value>Main window and floating panels are excluded</value>
+  </data>
+  <data name="TrayPolicyFailed" xml:space="preserve">
+    <value>Could not apply floating panel capture: {0}; {1}</value>
+  </data>
+  <data name="CursorInitializing" xml:space="preserve">
+    <value>Connecting cursor controls…</value>
+  </data>
+  <data name="RecorderExcludeFailed" xml:space="preserve">
+    <value>Could not exclude the recorder before recording: {0}; {1}</value>
+  </data>
+  <data name="TrayValidationFailed" xml:space="preserve">
+    <value>Could not verify floating panel capture: {0}; {1}</value>
+  </data>
+  <data name="CursorGuideExcludeFailed" xml:space="preserve">
+    <value>Could not exclude the cursor guide: {0}</value>
+  </data>
+  <data name="CaptureWindowClosing" xml:space="preserve">
+    <value>The app is closing and cannot switch capture targets.</value>
+  </data>
+  <data name="StopPreviewFailed" xml:space="preserve">
+    <value>Could not stop the preview before switching: {0}</value>
+  </data>
+  <data name="WindowTargetRejected" xml:space="preserve">
+    <value>The window capture target was not accepted: {0}</value>
+  </data>
+  <data name="CaptureCanvasRejected" xml:space="preserve">
+    <value>The capture canvas was not accepted: {0}</value>
+  </data>
+  <data name="StartPreviewFailed" xml:space="preserve">
+    <value>Could not restart the preview after switching: {0}</value>
+  </data>
+  <data name="CurrentCaptureWindow" xml:space="preserve">
+    <value>Capture: Window · {0}</value>
+  </data>
+  <data name="CurrentCaptureFullScreen" xml:space="preserve">
+    <value>Capture: Full Screen</value>
+  </data>
+  <data name="BackgroundRuntimeNotReady" xml:space="preserve">
+    <value>Background controls are not ready</value>
+  </data>
+  <data name="BackgroundFileFallback" xml:space="preserve">
+    <value>The background file is unavailable. Using Warm.</value>
+  </data>
+  <data name="BackgroundRuntimeUnavailable" xml:space="preserve">
+    <value>Background controls are unavailable. The current background is unchanged.</value>
+  </data>
+  <data name="BackgroundLoadFailed" xml:space="preserve">
+    <value>Could not load the background. The current background is unchanged.</value>
+  </data>
+  <data name="BackgroundReadFailed" xml:space="preserve">
+    <value>Could not read the selected image. The current background is unchanged.</value>
+  </data>
+  <data name="BackgroundDecodeFailed" xml:space="preserve">
+    <value>Could not decode the image. The current background is unchanged.</value>
+  </data>
+  <data name="BackgroundPickerFailed" xml:space="preserve">
+    <value>Could not open the image picker. The current background is unchanged.</value>
+  </data>
+  <data name="BackgroundWarmFailed" xml:space="preserve">
+    <value>Could not initialize the Warm background.</value>
+  </data>
+  <data name="BackgroundSaveFailed" xml:space="preserve">
+    <value>Background applied, but the setting could not be saved.</value>
+  </data>
+  <data name="RecordingMicDisconnected" xml:space="preserve">
+    <value>The selected microphone is unavailable. Reconnect it or choose another microphone.</value>
+  </data>
+  <data name="RecordingDiskFull" xml:space="preserve">
+    <value>Recording stopped safely because disk space is low. Existing footage is safe.</value>
+  </data>
+  <data name="RecordingFolderReadOnly" xml:space="preserve">
+    <value>The recording folder is not writable. Check its permissions or disk protection.</value>
+  </data>
+  <data name="RecordingDriveUnavailable" xml:space="preserve">
+    <value>The recording folder or drive is unavailable. Existing footage is safe.</value>
+  </data>
+  <data name="RecordingDiskWriteFailed" xml:space="preserve">
+    <value>A disk write failed. Existing footage is safe.</value>
+  </data>
+  <data name="RecordingStorageFailure" xml:space="preserve">
+    <value>Recording could not finish. Check the recording folder and available disk space.</value>
+  </data>
+</root>

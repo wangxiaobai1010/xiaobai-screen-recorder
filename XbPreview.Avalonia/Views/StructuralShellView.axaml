@@ -1,0 +1,290 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="using:XbPreview.Avalonia.Controls"
+             xmlns:l10n="using:XbPreview.Avalonia.Localization"
+             xmlns:panels="using:XbPreview.Avalonia.Views.Panels"
+             xmlns:shapes="using:Avalonia.Controls.Shapes"
+             x:Class="XbPreview.Avalonia.Views.StructuralShellView"
+             Classes="skill-recorder-shell"
+             MinWidth="720"
+             MinHeight="520">
+  <Grid x:Name="RootLayout">
+    <Grid x:Name="HomeSurface" RowDefinitions="*,225">
+      <Grid x:Name="HomePreviewRegion"
+            Grid.Row="0"
+            RowDefinitions="*,Auto">
+        <Border x:Name="PreviewFrame"
+                Grid.Row="0"
+                Margin="17,8,17,10"
+                Background="{DynamicResource SkillRecorder.Brush.TextPrimary}"
+                BorderBrush="{DynamicResource SkillRecorder.Brush.LineStrong}"
+                BorderThickness="1"
+                CornerRadius="12"
+                Padding="1"
+                ClipToBounds="True">
+          <Grid x:Name="PreviewPresentationLayer">
+            <controls:GpuPreviewControl x:Name="GpuPreview" />
+          </Grid>
+        </Border>
+
+        <StackPanel x:Name="LanguageOverlay"
+                    Grid.Row="0"
+                    Margin="0,14,25,0"
+                    Width="260"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Spacing="6"
+                    ZIndex="8">
+          <Button x:Name="LanguageEntryButton"
+                  Width="72"
+                  Height="28"
+                  MinHeight="28"
+                  Padding="8,3"
+                  HorizontalAlignment="Right"
+                  Classes="director-small"
+                  Content="{x:Static l10n:Strings.LanguageEntry}" />
+          <Border x:Name="LanguageMenu"
+                  Width="150"
+                  Padding="6"
+                  HorizontalAlignment="Right"
+                  IsVisible="False"
+                  Background="{DynamicResource SkillRecorder.Brush.PanelSurface}"
+                  BorderBrush="{DynamicResource SkillRecorder.Brush.Line}"
+                  BorderThickness="1"
+                  CornerRadius="8">
+            <StackPanel Spacing="4">
+              <Button x:Name="SimplifiedChineseLanguageButton"
+                      Classes="director-small"
+                      HorizontalAlignment="Stretch"
+                      Content="{x:Static l10n:Strings.SimplifiedChineseSelf}" />
+              <Button x:Name="EnglishLanguageButton"
+                      Classes="director-small"
+                      HorizontalAlignment="Stretch"
+                      Content="{x:Static l10n:Strings.EnglishSelf}" />
+            </StackPanel>
+          </Border>
+          <Border x:Name="LanguageRestartPrompt"
+                  Padding="10,9"
+                  IsVisible="False"
+                  Background="{DynamicResource SkillRecorder.Brush.PanelSurface}"
+                  BorderBrush="{DynamicResource SkillRecorder.Brush.Line}"
+                  BorderThickness="1"
+                  CornerRadius="8">
+            <StackPanel Spacing="8">
+              <TextBlock Classes="skill-muted"
+                         Text="{x:Static l10n:Strings.RestartToApply}"
+                         TextWrapping="Wrap" />
+              <StackPanel Orientation="Horizontal"
+                          HorizontalAlignment="Right"
+                          Spacing="6">
+                <Button x:Name="RestartLaterButton"
+                        Classes="director-small"
+                        Content="{x:Static l10n:Strings.RestartLater}" />
+                <Button x:Name="RestartNowButton"
+                        Classes="skill-primary"
+                        MinHeight="28"
+                        Padding="10,4"
+                        Content="{x:Static l10n:Strings.RestartNow}" />
+              </StackPanel>
+            </StackPanel>
+          </Border>
+        </StackPanel>
+
+        <Border x:Name="RecoveryBanner"
+                Grid.Row="1"
+                Margin="17,0,17,10"
+                Padding="12,9"
+                IsVisible="False"
+                Background="{DynamicResource SkillRecorder.Brush.PanelSurface}"
+                BorderBrush="{DynamicResource SkillRecorder.Brush.Line}"
+                BorderThickness="1"
+                CornerRadius="10">
+          <Grid>
+            <Grid x:Name="RecoverySingleLayout"
+                  IsVisible="False"
+                  ColumnDefinitions="*,Auto"
+                  ColumnSpacing="12">
+              <StackPanel Spacing="1" VerticalAlignment="Center">
+                <TextBlock x:Name="RecoverySingleNoticeText"
+                           Classes="skill-label" />
+                <TextBlock x:Name="RecoverySingleBodyText"
+                           Classes="skill-faint"
+                           TextTrimming="CharacterEllipsis"
+                           TextWrapping="NoWrap"
+                           Text="{x:Static l10n:Strings.RecoveryBodyPreserved}" />
+              </StackPanel>
+              <StackPanel Grid.Column="1"
+                          Orientation="Horizontal"
+                          Spacing="8"
+                          VerticalAlignment="Center">
+                <Grid x:Name="RecoverySingleCandidateActions" />
+                <Button x:Name="RecoverySingleDismissButton"
+                        Classes="director-small"
+                        Content="{x:Static l10n:Strings.Later}" />
+              </StackPanel>
+            </Grid>
+            <StackPanel x:Name="RecoveryMultipleLayout"
+                        IsVisible="False"
+                        Spacing="7">
+              <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+                <StackPanel Spacing="1" VerticalAlignment="Center">
+                  <TextBlock x:Name="RecoveryNoticeText"
+                             Classes="skill-label" />
+                  <TextBlock x:Name="RecoveryBodyText"
+                             Classes="skill-faint"
+                             Text="{x:Static l10n:Strings.RecoveryBodyPreserved}" />
+                </StackPanel>
+                <Button x:Name="RecoveryDismissButton"
+                        Grid.Column="1"
+                        Classes="director-small"
+                        Content="{x:Static l10n:Strings.Later}" />
+              </Grid>
+              <StackPanel x:Name="RecoveryCandidateRows" Spacing="6" />
+            </StackPanel>
+          </Grid>
+        </Border>
+      </Grid>
+
+      <Grid x:Name="DeckRegion"
+            Grid.Row="1"
+            Margin="17,0,17,12"
+            Background="{DynamicResource SkillRecorder.Brush.ControlArea}"
+            ColumnDefinitions="*,*,*,*"
+            ColumnSpacing="12">
+        <Grid x:Name="CaptureHomeSlot"
+              Grid.Column="0">
+          <panels:CapturePanelView x:Name="CapturePanel" />
+          <Border x:Name="CaptureHomePlaceholder"
+                  IsVisible="False"
+                  Background="{DynamicResource SkillRecorder.Brush.SurfaceSecondary}"
+                  CornerRadius="10"
+                  Opacity="0.72">
+            <Grid>
+              <shapes:Rectangle x:Name="CaptureHomeOutline"
+                                Margin="0.5"
+                                RadiusX="10"
+                                RadiusY="10"
+                                Stroke="{DynamicResource SkillRecorder.Brush.LineStrong}"
+                                StrokeThickness="1"
+                                StrokeDashArray="4,3"
+                                IsHitTestVisible="False"
+                                Opacity="0.76" />
+              <StackPanel HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          Spacing="8">
+                <TextBlock HorizontalAlignment="Center"
+                           Classes="skill-muted"
+                           Text="{x:Static l10n:Strings.CaptureTitle}" />
+                <Button x:Name="CaptureReturnHomeButton"
+                        HorizontalAlignment="Center"
+                        Classes="director-small director-return"
+                        Content="{x:Static l10n:Strings.ReturnHome}" />
+              </StackPanel>
+            </Grid>
+          </Border>
+        </Grid>
+        <Grid x:Name="DirectorHomeSlot"
+              Grid.Column="1">
+          <panels:DirectorPanelView x:Name="DirectorPanel" />
+          <Border x:Name="DirectorHomePlaceholder"
+                  IsVisible="False"
+                  Background="{DynamicResource SkillRecorder.Brush.SurfaceSecondary}"
+                  CornerRadius="10"
+                  Opacity="0.72">
+            <Grid>
+              <shapes:Rectangle x:Name="DirectorHomeOutline"
+                                Margin="0.5"
+                                RadiusX="10"
+                                RadiusY="10"
+                                Stroke="{DynamicResource SkillRecorder.Brush.LineStrong}"
+                                StrokeThickness="1"
+                                StrokeDashArray="4,3"
+                                IsHitTestVisible="False"
+                                Opacity="0.76" />
+              <StackPanel HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          Spacing="8">
+                <TextBlock HorizontalAlignment="Center"
+                           Classes="skill-muted"
+                           Text="{x:Static l10n:Strings.DirectorTitle}" />
+                <Button x:Name="DirectorReturnHomeButton"
+                        HorizontalAlignment="Center"
+                        Classes="director-small director-return"
+                        Content="{x:Static l10n:Strings.ReturnHome}" />
+              </StackPanel>
+            </Grid>
+          </Border>
+        </Grid>
+        <Grid x:Name="Stage3DHomeSlot"
+              Grid.Column="2">
+          <Border Classes="skill-deck-region">
+            <panels:Stage3DPanelView x:Name="Stage3DPanel" />
+          </Border>
+          <Border x:Name="Stage3DHomePlaceholder"
+                  IsVisible="False"
+                  Background="{DynamicResource SkillRecorder.Brush.SurfaceSecondary}"
+                  CornerRadius="10"
+                  Opacity="0.72">
+            <Grid>
+              <shapes:Rectangle x:Name="Stage3DHomeOutline"
+                                Margin="0.5"
+                                RadiusX="10"
+                                RadiusY="10"
+                                Stroke="{DynamicResource SkillRecorder.Brush.LineStrong}"
+                                StrokeThickness="1"
+                                StrokeDashArray="4,3"
+                                IsHitTestVisible="False"
+                                Opacity="0.76" />
+              <StackPanel HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          Spacing="8">
+                <TextBlock HorizontalAlignment="Center"
+                           Classes="skill-muted"
+                           Text="{x:Static l10n:Strings.StageTitle}" />
+                <Button x:Name="Stage3DReturnHomeButton"
+                        HorizontalAlignment="Center"
+                        Classes="director-small director-return"
+                        Content="{x:Static l10n:Strings.ReturnHome}" />
+              </StackPanel>
+            </Grid>
+          </Border>
+        </Grid>
+        <Grid x:Name="RecordingHomeSlot"
+              Grid.Column="3">
+          <Border Classes="skill-deck-region">
+            <panels:RecordingPanelView x:Name="RecordingPanel" />
+          </Border>
+          <Border x:Name="RecordingHomePlaceholder"
+                  IsVisible="False"
+                  Background="{DynamicResource SkillRecorder.Brush.SurfaceSecondary}"
+                  CornerRadius="10"
+                  Opacity="0.72">
+            <Grid>
+              <shapes:Rectangle x:Name="RecordingHomeOutline"
+                                Margin="0.5"
+                                RadiusX="10"
+                                RadiusY="10"
+                                Stroke="{DynamicResource SkillRecorder.Brush.LineStrong}"
+                                StrokeThickness="1"
+                                StrokeDashArray="4,3"
+                                IsHitTestVisible="False"
+                                Opacity="0.76" />
+              <StackPanel HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          Spacing="8">
+                <TextBlock HorizontalAlignment="Center"
+                           Classes="skill-muted"
+                           Text="{x:Static l10n:Strings.RecordingTitle}" />
+                <Button x:Name="RecordingReturnHomeButton"
+                        HorizontalAlignment="Center"
+                        Classes="director-small director-return"
+                        Content="{x:Static l10n:Strings.ReturnHome}" />
+              </StackPanel>
+            </Grid>
+          </Border>
+        </Grid>
+      </Grid>
+    </Grid>
+
+  </Grid>
+</UserControl>

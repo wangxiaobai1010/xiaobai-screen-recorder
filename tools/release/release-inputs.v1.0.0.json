@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "product": {
+    "name": "Xiaobai Recorder",
+    "version": "1.0.0",
+    "rid": "win-x64",
+    "targetFramework": "net8.0-windows",
+    "runtimeVersion": "8.0.29",
+    "configuration": "Release",
+    "platform": "x64"
+  },
+  "source": {
+    "branch": "release/public-release-prep-v1",
+    "productCommit": "97c8e8c5698d654668f3aa29e07fc7f4f45b19b9",
+    "frozenFoundationCommit": "fe1299b109fd9e5ff99bb89f7a2c3eb5c94f44a1",
+    "approvedPostFoundationMetadata": {
+      "directories": ["docs/release/compliance/v1.0.0/"],
+      "files": ["THIRD-PARTY-NOTICES.md"]
+    }
+  },
+  "dotnet": {
+    "sdkVersion": "9.0.316",
+    "appHostRelativePath": "packs/Microsoft.NETCore.App.Host.win-x64/8.0.29/runtimes/win-x64/native/apphost.exe",
+    "appHostSha256": "83C9135E8A2EE7F18EE1D0F6DE7A3AE012B4042B52EDECFF6E4A32E1F9DCFFAC",
+    "runtimePackages": [
+      {
+        "id": "Microsoft.AspNetCore.App.Runtime.win-x64",
+        "version": "8.0.29",
+        "sha256": "DE9A72789F0C9C224F36E2D42A3F13DB77C6EEF5DA173EEBC9FC53D6D10EB566"
+      },
+      {
+        "id": "Microsoft.NETCore.App.Runtime.win-x64",
+        "version": "8.0.29",
+        "sha256": "6B7C7751AE5DFCBC110A8DDF659559038542DADCEBA67C48F95F6CB20407198C"
+      },
+      {
+        "id": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+        "version": "8.0.29",
+        "sha256": "71A06ACC00B76FF0872535F83AC8860DE8F08C6733E3BC01348B757CE271F0C5"
+      }
+    ]
+  },
+  "nuget": {
+    "avalonia": "12.2.999-cibuild0067907-alpha",
+    "angleWindowsNatives": "2.1.27548.20260419",
+    "skiaSharp": "3.119.4",
+    "harfBuzzSharp": "8.3.1.3",
+    "microComRuntime": "0.11.6",
+    "systemIoPipelines": "8.0.0",
+    "tmdsDbusProtocol": "0.94.1"
+  },
+  "gstreamer": {
+    "version": "1.28.6",
+    "installerFileName": "gstreamer-1.0-msvc-x86_64-1.28.6.exe",
+    "installerSha256": "059251444D1267B486EBA390B18D25FED87E10315E72F757EC6C7E912FA746B5",
+    "supportDlls": [
+      { "name": "gstreamer-1.0-0.dll", "sha256": "39B872CFD8B56C91274371117F2015FD75FC888FA84E6492B76B81DF7BEE1851" },
+      { "name": "gstbase-1.0-0.dll", "sha256": "60C6CD23E68EDB4A0FC7E3E16D323A655F33A3768BF0DE6FEE6B30986A1E6B29" },
+      { "name": "gstaudio-1.0-0.dll", "sha256": "0C296D74C8C30A6F3505F6E603794240E469C45A14264D673782FD2FE7BFBA5E" },
+      { "name": "gsttag-1.0-0.dll", "sha256": "CF2AE72687971F4C6B05505949A657A256D51118F73CD984C9F3C14E3D32A828" },
+      { "name": "gstbadaudio-1.0-0.dll", "sha256": "46BECD7EBC92C63B734C146FB0BE80F01C23DDF2DA84C17B92BF42C683D67D54" },
+      { "name": "glib-2.0-0.dll", "sha256": "619CA0C9DAEB04A2FDEE24D59AD6054FFFE418AF4840D76DF051C2FA8828E93C" },
+      { "name": "gobject-2.0-0.dll", "sha256": "EAEF117A5D4E7A886F31F22B873F647AECC758EDDFC8738108C796992752D2DD" },
+      { "name": "gmodule-2.0-0.dll", "sha256": "CA2873934BF7963644E6AB5841BFFC55EE113DBB7579D15A3C3FE80899DAE91C" },
+      { "name": "intl-8.dll", "sha256": "A3D0B4ACB339F733E9E6B632237AE340385CCABCA4704C23BB0308207BDEC196" },
+      { "name": "orc-0.4-0.dll", "sha256": "FFB2EDBB794008D5A5264AC1DA33A81D9A526D1E806350B4BCAE2330B927A3A6" },
+      { "name": "z-1.dll", "sha256": "D9B2D176090BAFE2E0F9698624916D825F06273A994C2A9BB492B1D01BFE5C81" },
+      { "name": "ffi-7.dll", "sha256": "B86BDB26B2422AC84199D5602C5CA717BD9F7184DE84E987B1706BE2E1FE240E" },
+      { "name": "pcre2-8-0.dll", "sha256": "3AD537716233406D00A751B7595F7E7B1FE023D0FC4C54863046186D6961E9E3" },
+      { "name": "FLAC-8.dll", "sha256": "BA06AE1CEB7979C64BD6C5E6995E038C264BA214FA358842995F05A90E177181" },
+      { "name": "ogg-0.dll", "sha256": "A01DE0420CF5746F2418ECAB4A5DC34A65F070E50FD74F3E69108E2D904F5354" }
+    ],
+    "plugins": [
+      { "name": "gstcoreelements.dll", "sha256": "7107089BBD228FCB7AF9BD7B0F1A6551F80EBAD22F4DF7163F679956219037E8" },
+      { "name": "gstwasapi2.dll", "sha256": "333B737842662A2525E3B71730AC9490AB4BC36E261A7CB69FC35E733E592241" },
+      { "name": "gstaudioconvert.dll", "sha256": "6B181FC0118919117C3399E4393D7DF1630AADD5BB91A587D05589823806AFCF" },
+      { "name": "gstaudioresample.dll", "sha256": "7581B2B3A21B52DA3F1BDA0E0370D0E378952DF2FC40E744C0089A5982CAA231" },
+      { "name": "gstwebrtcdsp.dll", "sha256": "6C4EF85040286453D8AD91C4C1DC8A5AAD79D3364C573BA1A1F8E2D4E8F91737" },
+      { "name": "gstflac.dll", "sha256": "F73A689248CF0B474E510D281BA71C2EFE6E5095A241410CDFD3B80BE7982C36" },
+      { "name": "gstlevel.dll", "sha256": "BCBD3537E205A31DE9AFDFEC890BE3F8C2C25F3F7218A71C558A961893A56792" }
+    ]
+  },
+  "ffmpeg": {
+    "build": "n8.1.2-34-g9b6c8969e0-20260809",
+    "archiveFileName": "ffmpeg-n8.1-latest-win64-lgpl-shared-8.1.zip",
+    "archiveSha256": "6D4AFE797A68AF283ED42254827027F7D56940BA6C9E37EBED9C0E87A9E0C54C",
+    "files": [
+      { "name": "ffmpeg.exe", "sha256": "795BF2808EE15ACB16D900DCD6D2533091BC6135737667502A734CD7391ED625" },
+      { "name": "avcodec-62.dll", "sha256": "9875527C7917979261985C893E402011F46AAB692CCE7071CB00AC9332326975" },
+      { "name": "avdevice-62.dll", "sha256": "208CA6C8D17303AC0C90624583CDB8368ED1FA28F7876CD7D9D4074FDFB2544A" },
+      { "name": "avfilter-11.dll", "sha256": "1BA6CDC114FF7F8D47D86FB6C9C3A76B885E1A9E655EB7F753D3374EDEF02D10" },
+      { "name": "avformat-62.dll", "sha256": "E11791FDBA4FF6AD5F22538B233995EE258AA37DD29E4C48743F40B03D89FD60" },
+      { "name": "avutil-60.dll", "sha256": "59503FAD7E49016A2F0753B01558DCE1C3991BEDD5C1B8F33B51F4456225C417" },
+      { "name": "swresample-6.dll", "sha256": "03B8538A6834CD4442D799F7EFC727B63D446B1793B0BC2561829516DEDE9324" },
+      { "name": "swscale-9.dll", "sha256": "3A4B2D55520A9307EB1A5615EE994E65E04D6428CFF16AF349C40E8B9FD15667" },
+      { "name": "LICENSE.txt", "sha256": "DA7EABB7BAFDF7D3AE5E9F223AA5BDC1EECE45AC569DC21B3B037520B4464768" }
+    ]
+  },
+  "vcRuntime": {
+    "model": "app-local",
+    "redistDirectoryVersion": "14.44.35112",
+    "fileVersion": "14.44.35211.0",
+    "files": [
+      { "name": "msvcp140.dll", "sha256": "0F885B509A685D2BBFA652FED26B5FB31D88FBDAB0A978C641D1C7B8AA460AA9" },
+      { "name": "vcruntime140.dll", "sha256": "D5E4D9A3E835FA679450145D6A7D94E36573A509317111904D9B3712C30D9066" },
+      { "name": "vcruntime140_1.dll", "sha256": "1F2D41C4AA5DB0BC33EBF7B66D72943A817D7CE6CBE880502A9403823633093F" }
+    ]
+  },
+  "assets": [
+    { "path": "assets/幻彩01.png", "sha256": "DF5CD01B5A9B2CDA681877D594DE633E8D7439B5C42D4322D0845D7931988ECB" },
+    { "path": "assets/幻彩02.png", "sha256": "245B5395FB91C4D71258BD1FA8E10040A81758B3A93DF58310D5551B6A00AA67" }
+  ],
+  "innoSetup": {
+    "expectedVersion": "6.7.3"
+  }
+}

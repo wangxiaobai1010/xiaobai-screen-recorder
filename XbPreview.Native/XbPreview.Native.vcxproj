@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{864E5A90-06F2-4A7D-89A4-3A10F4F93C74}</ProjectGuid>
+    <RootNamespace>XbPreviewNative</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <ProjectName>XbPreview.Native</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <OutDir>$(ProjectDir)..\artifacts\bin\$(Configuration)\x64\</OutDir>
+    <IntDir>$(ProjectDir)..\artifacts\obj\$(ProjectName)\$(Configuration)\x64\</IntDir>
+    <TargetName>XbPreview.Native</TargetName>
+    <GStreamerRoot>$(ProjectDir)..\artifacts\sdk\gstreamer-1.28.6</GStreamerRoot>
+    <FfmpegMuxRuntimeRoot>$(ProjectDir)..\artifacts\audio-v2-toolchain\ffmpeg-8.1-lgpl-shared\ffmpeg-n8.1-latest-win64-lgpl-shared-8.1</FfmpegMuxRuntimeRoot>
+    <StageFfmpegMuxRuntime>true</StageFfmpegMuxRuntime>
+    <RepositoryRoot>$([System.IO.Path]::GetFullPath('$(ProjectDir)..\'))</RepositoryRoot>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;NOMINMAX;UNICODE;_UNICODE;XB_PREVIEW_NATIVE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/utf-8 /experimental:deterministic /pathmap:$(RepositoryRoot)=. %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\third_party;$(GStreamerRoot)\include\gstreamer-1.0;$(GStreamerRoot)\include\glib-2.0;$(GStreamerRoot)\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <LinkTimeCodeGeneration Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <LinkTimeCodeGenerationObjectFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+      <AdditionalOptions>/PDBALTPATH:%_PDB% %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(GStreamerRoot)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gstreamer-1.0.lib;gobject-2.0.lib;glib-2.0.lib;windowsapp.lib;windowscodecs.lib;d2d1.lib;d3d11.lib;dxgi.lib;dxguid.lib;d3dcompiler.lib;user32.lib;gdi32.lib;psapi.lib;ole32.lib;uuid.lib;mfplat.lib;mfreadwrite.lib;mfuuid.lib;propsys.lib;avrt.lib;mf.lib;wmcodecdspuuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioEndpointLevelMonitor.h" />
+    <ClInclude Include="CameraTransform.h" />
+    <ClInclude Include="CaptureTarget.h" />
+    <ClInclude Include="GStreamerAudioCore.h" />
+    <ClInclude Include="GStreamerAudioFinalizer.h" />
+    <ClInclude Include="GStreamerAudioMode.h" />
+    <ClInclude Include="GStreamerMicrophoneDeviceMonitor.h" />
+    <ClInclude Include="MicPreflightLevelMonitor.h" />
+    <ClInclude Include="MfAacAudioStream.h" />
+    <ClInclude Include="CropTransform.h" />
+    <ClInclude Include="CameraStateStore.h" />
+    <ClInclude Include="CursorCaptureState.h" />
+    <ClInclude Include="CursorCoordinateMapper.h" />
+    <ClInclude Include="CursorDiagnosticLogger.h" />
+    <ClInclude Include="CursorMode.h" />
+    <ClInclude Include="CursorShapeCache.h" />
+    <ClInclude Include="CursorStateProvider.h" />
+    <ClInclude Include="CustomCursorRenderer.h" />
+    <ClInclude Include="DiagnosticLogger.h" />
+    <ClInclude Include="Direct2DPreviewScaler.h" />
+    <ClInclude Include="LatencyStatistics.h" />
+    <ClInclude Include="Letterbox.h" />
+    <ClInclude Include="HistoricalSessionScanInterop.h" />
+    <ClInclude Include="NarrowReconciliationInterop.h" />
+    <ClInclude Include="OutputCanvasTarget.h" />
+    <ClInclude Include="PreviewFrameExport.h" />
+    <ClInclude Include="PersistentFileIdentity.h" />
+    <ClInclude Include="RenderFrameTap.h" />
+    <ClInclude Include="RecordingOutputRoot.h" />
+    <ClInclude Include="RecordingStorageSafety.h" />
+    <ClInclude Include="RecordingVideoBitratePolicy.h" />
+    <ClInclude Include="RecordingSessionIdentity.h" />
+    <ClInclude Include="ReconciliationEvidenceGuard.h" />
+    <ClInclude Include="NarrowReconciler.h" />
+    <ClInclude Include="SessionPathSafety.h" />
+    <ClInclude Include="SessionInspection.h" />
+    <ClInclude Include="SessionManifest.h" />
+    <ClInclude Include="SessionLifetimeOwner.h" />
+    <ClInclude Include="VideoEncoderConfig.h" />
+    <ClInclude Include="VideoEncoderConsumer.h" />
+    <ClInclude Include="VideoEncoderDiagnostics.h" />
+    <ClInclude Include="VideoEncoderTimestamp.h" />
+    <ClInclude Include="WindowShowcaseBackgroundPreset.h" />
+    <ClInclude Include="WindowShowcaseMotionController.h" />
+    <ClInclude Include="WindowStagePunchOverlay.h" />
+    <ClInclude Include="WindowStageComposer.h" />
+    <ClInclude Include="WindowStageTransform.h" />
+    <ClInclude Include="WindowCardShadowPass.h" />
+    <ClInclude Include="D3D11Nv12Converter.h" />
+    <ClInclude Include="Nv12TrackedTexturePool.h" />
+    <ClInclude Include="MfH264SinkWriterSession.h" />
+    <ClInclude Include="PreviewEngine.h" />
+    <ClInclude Include="PreviewRenderer.h" />
+    <ClInclude Include="SessionGeometryStore.h" />
+    <ClInclude Include="PreviewStateMachine.h" />
+    <ClInclude Include="XbPreviewApi.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioEndpointLevelMonitor.cpp" />
+    <ClCompile Include="GStreamerAudioCore.cpp" />
+    <ClCompile Include="GStreamerAudioFinalizer.cpp" />
+    <ClCompile Include="GStreamerMicrophoneDeviceMonitor.cpp" />
+    <ClCompile Include="MicPreflightLevelMonitor.cpp" />
+    <ClCompile Include="MfAacAudioStream.cpp" />
+    <ClCompile Include="CursorDiagnosticLogger.cpp" />
+    <ClCompile Include="CursorShapeCache.cpp" />
+    <ClCompile Include="CursorStateProvider.cpp" />
+    <ClCompile Include="CustomCursorRenderer.cpp" />
+    <ClCompile Include="DiagnosticLogger.cpp" />
+    <ClCompile Include="Direct2DPreviewScaler.cpp" />
+    <ClCompile Include="Exports.cpp" />
+    <ClCompile Include="HistoricalSessionScanInterop.cpp" />
+    <ClCompile Include="NarrowReconciliationInterop.cpp" />
+    <ClCompile Include="OutputCanvasTarget.cpp" />
+    <ClCompile Include="PreviewFrameExport.cpp" />
+    <ClCompile Include="PersistentFileIdentity.cpp" />
+    <ClCompile Include="RenderFrameTap.cpp" />
+    <ClCompile Include="RecordingOutputRoot.cpp" />
+    <ClCompile Include="RecordingStorageSafety.cpp" />
+    <ClCompile Include="RecordingSessionIdentity.cpp" />
+    <ClCompile Include="ReconciliationEvidenceGuard.cpp" />
+    <ClCompile Include="NarrowReconciler.cpp" />
+    <ClCompile Include="SessionPathSafety.cpp" />
+    <ClCompile Include="SessionInspection.cpp" />
+    <ClCompile Include="SessionManifest.cpp" />
+    <ClCompile Include="SessionLifetimeOwner.cpp" />
+    <ClCompile Include="VideoEncoderConfig.cpp" />
+    <ClCompile Include="VideoEncoderConsumer.cpp" />
+    <ClCompile Include="VideoEncoderDiagnostics.cpp" />
+    <ClCompile Include="VideoEncoderTimestamp.cpp" />
+    <ClCompile Include="D3D11Nv12Converter.cpp" />
+    <ClCompile Include="Nv12TrackedTexturePool.cpp" />
+    <ClCompile Include="MfH264SinkWriterSession.cpp" />
+    <ClCompile Include="PreviewEngine.cpp" />
+    <ClCompile Include="PreviewRenderer.cpp" />
+    <ClCompile Include="SessionGeometryStore.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <WindowShowcaseArtAsset Include="$(ProjectDir)..\assets\幻彩01.png" />
+    <WindowShowcaseArtAsset Include="$(ProjectDir)..\assets\幻彩02.png" />
+  </ItemGroup>
+  <Target Name="ValidateGStreamerSdk" BeforeTargets="ClCompile">
+    <Error Condition="!Exists('$(GStreamerRoot)\include\gstreamer-1.0\gst\gst.h')" Text="Pinned GStreamer 1.28.6 SDK missing. Run tools\gstreamer\Install-GStreamer-1.28.6.ps1." />
+    <Error Condition="!Exists('$(GStreamerRoot)\lib\gstreamer-1.0.lib')" Text="Pinned GStreamer 1.28.6 import library missing." />
+  </Target>
+  <Target Name="StageGStreamerAudioRuntime" AfterTargets="Build">
+    <ItemGroup>
+      <GStreamerAudioRuntimeDll Include="$(GStreamerRoot)\bin\gstreamer-1.0-0.dll;$(GStreamerRoot)\bin\gstbase-1.0-0.dll;$(GStreamerRoot)\bin\gstaudio-1.0-0.dll;$(GStreamerRoot)\bin\gsttag-1.0-0.dll;$(GStreamerRoot)\bin\gstbadaudio-1.0-0.dll;$(GStreamerRoot)\bin\glib-2.0-0.dll;$(GStreamerRoot)\bin\gobject-2.0-0.dll;$(GStreamerRoot)\bin\gmodule-2.0-0.dll;$(GStreamerRoot)\bin\intl-8.dll;$(GStreamerRoot)\bin\orc-0.4-0.dll;$(GStreamerRoot)\bin\z-1.dll;$(GStreamerRoot)\bin\ffi-7.dll;$(GStreamerRoot)\bin\pcre2-8-0.dll;$(GStreamerRoot)\bin\FLAC-8.dll;$(GStreamerRoot)\bin\ogg-0.dll" />
+      <GStreamerAudioPlugin Include="$(GStreamerRoot)\lib\gstreamer-1.0\gstcoreelements.dll;$(GStreamerRoot)\lib\gstreamer-1.0\gstwasapi2.dll;$(GStreamerRoot)\lib\gstreamer-1.0\gstaudioconvert.dll;$(GStreamerRoot)\lib\gstreamer-1.0\gstaudioresample.dll;$(GStreamerRoot)\lib\gstreamer-1.0\gstwebrtcdsp.dll;$(GStreamerRoot)\lib\gstreamer-1.0\gstflac.dll;$(GStreamerRoot)\lib\gstreamer-1.0\gstlevel.dll" />
+    </ItemGroup>
+    <Error Condition="'@(GStreamerAudioRuntimeDll)'==''" Text="Pinned GStreamer 1.28.6 runtime DLL set is missing." />
+    <Error Condition="'@(GStreamerAudioPlugin)'==''" Text="Pinned GStreamer 1.28.6 audio plugin set is missing." />
+    <MakeDir Directories="$(OutDir)gstreamer\plugins;$(OutDir)gstreamer\gio-modules;$(OutDir)licenses\gstreamer" />
+    <Copy SourceFiles="@(GStreamerAudioRuntimeDll)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(GStreamerAudioPlugin)" DestinationFolder="$(OutDir)gstreamer\plugins" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="StageFfmpegMuxRuntime" AfterTargets="Build" Condition="'$(Configuration)|$(Platform)'=='Release|x64' and '$(StageFfmpegMuxRuntime)'=='true'">
+    <ItemGroup>
+      <FfmpegMuxRuntimeDll Include="$(FfmpegMuxRuntimeRoot)\bin\avcodec-62.dll;$(FfmpegMuxRuntimeRoot)\bin\avdevice-62.dll;$(FfmpegMuxRuntimeRoot)\bin\avfilter-11.dll;$(FfmpegMuxRuntimeRoot)\bin\avformat-62.dll;$(FfmpegMuxRuntimeRoot)\bin\avutil-60.dll;$(FfmpegMuxRuntimeRoot)\bin\swresample-6.dll;$(FfmpegMuxRuntimeRoot)\bin\swscale-9.dll" />
+    </ItemGroup>
+    <Error Condition="!Exists('$(FfmpegMuxRuntimeRoot)\bin\ffmpeg.exe')" Text="Pinned LGPL FFmpeg mux runtime is missing: ffmpeg.exe." />
+    <Error Condition="'@(FfmpegMuxRuntimeDll)'==''" Text="Pinned LGPL FFmpeg mux runtime DLL set is missing." />
+    <Error Condition="!Exists('$(FfmpegMuxRuntimeRoot)\LICENSE.txt')" Text="Pinned LGPL FFmpeg mux runtime is missing LICENSE.txt." />
+    <MakeDir Directories="$(OutDir)ffmpeg;$(OutDir)licenses" />
+    <Copy SourceFiles="$(FfmpegMuxRuntimeRoot)\bin\ffmpeg.exe" DestinationFolder="$(OutDir)ffmpeg" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(FfmpegMuxRuntimeDll)" DestinationFolder="$(OutDir)ffmpeg" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(FfmpegMuxRuntimeRoot)\LICENSE.txt" DestinationFolder="$(OutDir)ffmpeg" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="StageWindowShowcaseArtAsset" AfterTargets="Build">
+    <Error Condition="!Exists('$(ProjectDir)..\assets\幻彩01.png')" Text="Window Showcase ART01 asset is missing: 幻彩01.png." />
+    <Error Condition="!Exists('$(ProjectDir)..\assets\幻彩02.png')" Text="Window Showcase ART001 asset is missing: 幻彩02.png." />
+    <MakeDir Directories="$(OutDir)assets" />
+    <Copy SourceFiles="@(WindowShowcaseArtAsset)" DestinationFolder="$(OutDir)assets" SkipUnchangedFiles="true" />
+  </Target>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>x64</Platforms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OutputPath>..\artifacts\bin\$(Configuration)\x64\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Desktop" Version="12.2.999-cibuild0067907-alpha" />
+    <PackageReference Include="Avalonia.Win32.Interoperability" Version="12.2.999-cibuild0067907-alpha" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XbPreview.Host\XbPreview.Host.csproj"
+                      ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\XbPreview.Avalonia\XbPreview.Avalonia.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\XbPreview.Host\NativeMethods.cs" Link="NativeMethods.cs" />
+    <Compile Include="..\XbPreview.Host\CameraSettings.cs" Link="CameraSettings.cs" />
+    <Compile Include="..\XbPreview.Host\CameraCommand.cs" Link="CameraCommand.cs" />
+    <Compile Include="..\XbPreview.Host\CameraOwnership.cs" Link="CameraOwnership.cs" />
+    <Compile Include="..\XbPreview.Host\HotkeyBindings.cs" Link="HotkeyBindings.cs" />
+    <Compile Include="..\XbPreview.Host\HotkeyActivationState.cs" Link="HotkeyActivationState.cs" />
+    <Compile Include="..\XbPreview.Host\HotkeyRegistrationResult.cs" Link="HotkeyRegistrationResult.cs" />
+    <Compile Include="..\XbPreview.Host\IHotkeyRegistrar.cs" Link="IHotkeyRegistrar.cs" />
+    <Compile Include="..\XbPreview.Host\HotkeyService.cs" Link="HotkeyService.cs" />
+    <Compile Include="..\XbPreview.Host\CameraState.cs" Link="CameraState.cs" />
+    <Compile Include="..\XbPreview.Host\CameraMath.cs" Link="CameraMath.cs" />
+    <Compile Include="..\XbPreview.Host\FixedTargetCameraController.cs" Link="FixedTargetCameraController.cs" />
+    <Compile Include="..\XbPreview.Host\CameraCursorTarget.cs" Link="CameraCursorTarget.cs" />
+    <Compile Include="..\XbPreview.Host\RawMouseInputObserver.cs" Link="RawMouseInputObserver.cs" />
+    <Compile Include="..\XbPreview.Host\ComfortZoneSettings.cs" Link="ComfortZoneSettings.cs" />
+    <Compile Include="..\XbPreview.Host\ComfortZoneMath.cs" Link="ComfortZoneMath.cs" />
+    <Compile Include="..\XbPreview.Host\CameraFollowSmoother.cs" Link="CameraFollowSmoother.cs" />
+    <Compile Include="..\XbPreview.Host\ComfortZoneTracker.cs" Link="ComfortZoneTracker.cs" />
+    <Compile Include="..\XbPreview.Host\CursorMode.cs" Link="CursorMode.cs" />
+    <Compile Include="..\XbPreview.Host\WindowDisplayAffinity.cs" Link="WindowDisplayAffinity.cs" />
+    <Compile Include="..\XbPreview.Host\RecorderCaptureVisibilityController.cs" Link="RecorderCaptureVisibilityController.cs" />
+    <Compile Include="..\XbPreview.Host\OperatorCursorRingForm.cs" Link="OperatorCursorRingForm.cs" />
+    <Compile Include="..\XbPreview.Host\CaptureDisplaySnapshot.cs" Link="CaptureDisplaySnapshot.cs" />
+    <Compile Include="..\XbPreview.Host\CaptureRegion.cs" Link="CaptureRegion.cs" />
+    <Compile Include="..\XbPreview.Host\CaptureTarget.cs" Link="CaptureTarget.cs" />
+    <Compile Include="..\XbPreview.Host\OutputCanvas.cs" Link="OutputCanvas.cs" />
+    <Compile Include="..\XbPreview.Host\SessionGeometry.cs" Link="SessionGeometry.cs" />
+    <Compile Include="..\XbPreview.Host\SessionGeometryNativeV1.cs" Link="SessionGeometryNativeV1.cs" />
+    <Compile Include="..\XbPreview.Host\RegionSelectionResult.cs" Link="RegionSelectionResult.cs" />
+    <Compile Include="..\XbPreview.Host\RegionSelectionState.cs" Link="RegionSelectionState.cs" />
+    <Compile Include="..\XbPreview.Host\RegionSelectionMath.cs" Link="RegionSelectionMath.cs" />
+    <Compile Include="..\XbPreview.Host\ProductFeatures.cs" Link="ProductFeatures.cs" />
+    <Compile Include="..\XbPreview.Host\ProductSettings.cs" Link="ProductSettings.cs" />
+    <Compile Include="..\XbPreview.Host\RecordingResolutionPolicy.cs" Link="RecordingResolutionPolicy.cs" />
+    <Compile Include="..\XbPreview.Host\PreviewLifecycleState.cs" Link="PreviewLifecycleState.cs" />
+    <Compile Include="..\XbPreview.Host\PreviewReconfiguration.cs" Link="PreviewReconfiguration.cs" />
+    <Compile Include="..\XbPreview.Host\IPreviewNativeSession.cs" Link="IPreviewNativeSession.cs" />
+    <Compile Include="..\XbPreview.Host\Stage3DPanelActionController.cs" Link="Stage3DPanelActionController.cs" />
+    <Compile Include="..\XbPreview.Host\Stage3DPanelBackgroundController.cs" Link="Stage3DPanelBackgroundController.cs" />
+    <Compile Include="..\XbPreview.Host\NativePreviewSession.cs" Link="NativePreviewSession.cs" />
+    <Compile Include="..\XbPreview.Host\MicrophoneDevices.cs" Link="MicrophoneDevices.cs" />
+    <Compile Include="..\XbPreview.Host\RecordingController.cs" Link="RecordingController.cs" />
+    <Compile Include="..\XbPreview.Host\ProductionRecordingAdapter.cs" Link="ProductionRecordingAdapter.cs" />
+    <Compile Include="..\XbPreview.Host\RecordingFixedHomeAdapter.cs" Link="RecordingFixedHomeAdapter.cs" />
+    <Compile Include="..\XbPreview.Host\WindowsCoreAudioDefaultRenderProbe.cs" Link="WindowsCoreAudioDefaultRenderProbe.cs" />
+    <Compile Include="..\XbPreview.Host\MicrophoneMeaningfulActivityPresentation.cs" Link="MicrophoneMeaningfulActivityPresentation.cs" />
+    <Compile Include="..\XbPreview.Host\MinimalRecordingShell.cs" Link="MinimalRecordingShell.cs" />
+    <Compile Include="..\XbPreview.Host\PreviewLifecycleController.cs" Link="PreviewLifecycleController.cs" />
+    <Compile Include="..\XbPreview.Host\ManagedStartupDiagnostics.cs" Link="ManagedStartupDiagnostics.cs" />
+    <Compile Include="..\XbPreview.Host\StartupInspection.cs" Link="StartupInspection.cs" />
+    <Compile Include="..\XbPreview.Host\StartupInspectionCoordinator.cs" Link="StartupInspectionCoordinator.cs" />
+    <Compile Include="..\XbPreview.Host\NativeHistoricalSessionInspector.cs" Link="NativeHistoricalSessionInspector.cs" />
+    <Compile Include="..\XbPreview.Host\RecoveryCandidates.cs" Link="RecoveryCandidates.cs" />
+    <Compile Include="..\XbPreview.Host\NarrowRecovery.cs" Link="NarrowRecovery.cs" />
+    <Compile Include="..\XbPreview.Host\NativeNarrowRecoveryService.cs" Link="NativeNarrowRecoveryService.cs" />
+    <Compile Include="..\XbPreview.Host\RecoveryActionCoordinator.cs" Link="RecoveryActionCoordinator.cs" />
+    <Compile Include="..\XbPreview.Host\FormalRecoveryBannerPresentation.cs" Link="FormalRecoveryBannerPresentation.cs" />
+    <Compile Include="..\XbPreview.Host\RecoveryFolderNavigator.cs" Link="RecoveryFolderNavigator.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1093 @@
+{
+    "schemaVersion":  1,
+    "product":  "Xiaobai Recorder 1.0.0",
+    "rid":  "win-x64",
+    "evidenceFoundationCommit":  "fe1299b109fd9e5ff99bb89f7a2c3eb5c94f44a1",
+    "frozenAppStageManifest":  {
+                                   "sourcePath":  "artifacts/packaging/xiaobai-recorder-1.0.0/app-manifest.json",
+                                   "sha256":  "171067C3302DAFB59553F8AB70F8BF266F0F002E4636C2BE10D880E7C6E1BA78",
+                                   "sourceCommit":  "97c8e8c5698d654668f3aa29e07fc7f4f45b19b9",
+                                   "fileCount":  579,
+                                   "fullSha256Coverage":  true,
+                                   "pdbCount":  0
+                               },
+    "partition":  [
+                      {
+                          "component":  ".NET 8.0.29",
+                          "role":  "packaged-evidence",
+                          "origin":  "exact 8.0.29 runtime packages",
+                          "fileCount":  3,
+                          "paths":  [
+                                        "licenses/dotnet/Microsoft.NETCore.App.Runtime.win-x64/LICENSE.TXT",
+                                        "licenses/dotnet/Microsoft.NETCore.App.Runtime.win-x64/THIRD-PARTY-NOTICES.TXT",
+                                        "licenses/dotnet/Microsoft.WindowsDesktop.App.Runtime.win-x64/LICENSE"
+                                    ]
+                      },
+                      {
+                          "component":  ".NET 8.0.29",
+                          "role":  "runtime",
+                          "origin":  "Microsoft.NETCore.App.Runtime.win-x64 8.0.29",
+                          "fileCount":  179,
+                          "paths":  [
+                                        "clretwrc.dll",
+                                        "clrgc.dll",
+                                        "clrjit.dll",
+                                        "coreclr.dll",
+                                        "createdump.exe",
+                                        "hostfxr.dll",
+                                        "hostpolicy.dll",
+                                        "Microsoft.CSharp.dll",
+                                        "Microsoft.DiaSymReader.Native.amd64.dll",
+                                        "Microsoft.VisualBasic.Core.dll",
+                                        "Microsoft.Win32.Primitives.dll",
+                                        "Microsoft.Win32.Registry.dll",
+                                        "mscordaccore.dll",
+                                        "mscordaccore_amd64_amd64_8.0.2926.32403.dll",
+                                        "mscordbi.dll",
+                                        "mscorlib.dll",
+                                        "mscorrc.dll",
+                                        "msquic.dll",
+                                        "netstandard.dll",
+                                        "System.AppContext.dll",
+                                        "System.Buffers.dll",
+                                        "System.Collections.Concurrent.dll",
+                                        "System.Collections.dll",
+                                        "System.Collections.Immutable.dll",
+                                        "System.Collections.NonGeneric.dll",
+                                        "System.Collections.Specialized.dll",
+                                        "System.ComponentModel.Annotations.dll",
+                                        "System.ComponentModel.DataAnnotations.dll",
+                                        "System.ComponentModel.dll",
+                                        "System.ComponentModel.EventBasedAsync.dll",
+                                        "System.ComponentModel.Primitives.dll",
+                                        "System.ComponentModel.TypeConverter.dll",
+                                        "System.Configuration.dll",
+                                        "System.Console.dll",
+                                        "System.Core.dll",
+                                        "System.Data.Common.dll",
+                                        "System.Data.DataSetExtensions.dll",
+                                        "System.Data.dll",
+                                        "System.Diagnostics.Contracts.dll",
+                                        "System.Diagnostics.Debug.dll",
+                                        "System.Diagnostics.DiagnosticSource.dll",
+                                        "System.Diagnostics.FileVersionInfo.dll",
+                                        "System.Diagnostics.Process.dll",
+                                        "System.Diagnostics.StackTrace.dll",
+                                        "System.Diagnostics.TextWriterTraceListener.dll",
+                                        "System.Diagnostics.Tools.dll",
+                                        "System.Diagnostics.TraceSource.dll",
+                                        "System.Diagnostics.Tracing.dll",
+                                        "System.dll",
+                                        "System.Drawing.Primitives.dll",
+                                        "System.Dynamic.Runtime.dll",
+                                        "System.Formats.Asn1.dll",
+                                        "System.Formats.Tar.dll",
+                                        "System.Globalization.Calendars.dll",
+                                        "System.Globalization.dll",
+                                        "System.Globalization.Extensions.dll",
+                                        "System.IO.Compression.Brotli.dll",
+                                        "System.IO.Compression.dll",
+                                        "System.IO.Compression.FileSystem.dll",
+                                        "System.IO.Compression.Native.dll",
+                                        "System.IO.Compression.ZipFile.dll",
+                                        "System.IO.dll",
+                                        "System.IO.FileSystem.AccessControl.dll",
+                                        "System.IO.FileSystem.dll",
+                                        "System.IO.FileSystem.DriveInfo.dll",
+                                        "System.IO.FileSystem.Primitives.dll",
+                                        "System.IO.FileSystem.Watcher.dll",
+                                        "System.IO.IsolatedStorage.dll",
+                                        "System.IO.MemoryMappedFiles.dll",
+                                        "System.IO.Pipes.AccessControl.dll",
+                                        "System.IO.Pipes.dll",
+                                        "System.IO.UnmanagedMemoryStream.dll",
+                                        "System.Linq.dll",
+                                        "System.Linq.Expressions.dll",
+                                        "System.Linq.Parallel.dll",
+                                        "System.Linq.Queryable.dll",
+                                        "System.Memory.dll",
+                                        "System.Net.dll",
+                                        "System.Net.Http.dll",
+                                        "System.Net.Http.Json.dll",
+                                        "System.Net.HttpListener.dll",
+                                        "System.Net.Mail.dll",
+                                        "System.Net.NameResolution.dll",
+                                        "System.Net.NetworkInformation.dll",
+                                        "System.Net.Ping.dll",
+                                        "System.Net.Primitives.dll",
+                                        "System.Net.Quic.dll",
+                                        "System.Net.Requests.dll",
+                                        "System.Net.Security.dll",
+                                        "System.Net.ServicePoint.dll",
+                                        "System.Net.Sockets.dll",
+                                        "System.Net.WebClient.dll",
+                                        "System.Net.WebHeaderCollection.dll",
+                                        "System.Net.WebProxy.dll",
+                                        "System.Net.WebSockets.Client.dll",
+                                        "System.Net.WebSockets.dll",
+                                        "System.Numerics.dll",
+                                        "System.Numerics.Vectors.dll",
+                                        "System.ObjectModel.dll",
+                                        "System.Private.CoreLib.dll",
+                                        "System.Private.DataContractSerialization.dll",
+                                        "System.Private.Uri.dll",
+                                        "System.Private.Xml.dll",
+                                        "System.Private.Xml.Linq.dll",
+                                        "System.Reflection.DispatchProxy.dll",
+                                        "System.Reflection.dll",
+                                        "System.Reflection.Emit.dll",
+                                        "System.Reflection.Emit.ILGeneration.dll",
+                                        "System.Reflection.Emit.Lightweight.dll",
+                                        "System.Reflection.Extensions.dll",
+                                        "System.Reflection.Metadata.dll",
+                                        "System.Reflection.Primitives.dll",
+                                        "System.Reflection.TypeExtensions.dll",
+                                        "System.Resources.Reader.dll",
+                                        "System.Resources.ResourceManager.dll",
+                                        "System.Resources.Writer.dll",
+                                        "System.Runtime.CompilerServices.Unsafe.dll",
+                                        "System.Runtime.CompilerServices.VisualC.dll",
+                                        "System.Runtime.dll",
+                                        "System.Runtime.Extensions.dll",
+                                        "System.Runtime.Handles.dll",
+                                        "System.Runtime.InteropServices.dll",
+                                        "System.Runtime.InteropServices.JavaScript.dll",
+                                        "System.Runtime.InteropServices.RuntimeInformation.dll",
+                                        "System.Runtime.Intrinsics.dll",
+                                        "System.Runtime.Loader.dll",
+                                        "System.Runtime.Numerics.dll",
+                                        "System.Runtime.Serialization.dll",
+                                        "System.Runtime.Serialization.Formatters.dll",
+                                        "System.Runtime.Serialization.Json.dll",
+                                        "System.Runtime.Serialization.Primitives.dll",
+                                        "System.Runtime.Serialization.Xml.dll",
+                                        "System.Security.AccessControl.dll",
+                                        "System.Security.Claims.dll",
+                                        "System.Security.Cryptography.Algorithms.dll",
+                                        "System.Security.Cryptography.Cng.dll",
+                                        "System.Security.Cryptography.Csp.dll",
+                                        "System.Security.Cryptography.dll",
+                                        "System.Security.Cryptography.Encoding.dll",
+                                        "System.Security.Cryptography.OpenSsl.dll",
+                                        "System.Security.Cryptography.Primitives.dll",
+                                        "System.Security.Cryptography.X509Certificates.dll",
+                                        "System.Security.dll",
+                                        "System.Security.Principal.dll",
+                                        "System.Security.Principal.Windows.dll",
+                                        "System.Security.SecureString.dll",
+                                        "System.ServiceModel.Web.dll",
+                                        "System.ServiceProcess.dll",
+                                        "System.Text.Encoding.CodePages.dll",
+                                        "System.Text.Encoding.dll",
+                                        "System.Text.Encoding.Extensions.dll",
+                                        "System.Text.Encodings.Web.dll",
+                                        "System.Text.Json.dll",
+                                        "System.Text.RegularExpressions.dll",
+                                        "System.Threading.Channels.dll",
+                                        "System.Threading.dll",
+                                        "System.Threading.Overlapped.dll",
+                                        "System.Threading.Tasks.Dataflow.dll",
+                                        "System.Threading.Tasks.dll",
+                                        "System.Threading.Tasks.Extensions.dll",
+                                        "System.Threading.Tasks.Parallel.dll",
+                                        "System.Threading.Thread.dll",
+                                        "System.Threading.ThreadPool.dll",
+                                        "System.Threading.Timer.dll",
+                                        "System.Transactions.dll",
+                                        "System.Transactions.Local.dll",
+                                        "System.ValueTuple.dll",
+                                        "System.Web.dll",
+                                        "System.Web.HttpUtility.dll",
+                                        "System.Windows.dll",
+                                        "System.Xml.dll",
+                                        "System.Xml.Linq.dll",
+                                        "System.Xml.ReaderWriter.dll",
+                                        "System.Xml.Serialization.dll",
+                                        "System.Xml.XDocument.dll",
+                                        "System.Xml.XmlDocument.dll",
+                                        "System.Xml.XmlSerializer.dll",
+                                        "System.Xml.XPath.dll",
+                                        "System.Xml.XPath.XDocument.dll"
+                                    ]
+                      },
+                      {
+                          "component":  ".NET 8.0.29",
+                          "role":  "runtime",
+                          "origin":  "Microsoft.WindowsDesktop.App.Runtime.win-x64 8.0.29",
+                          "fileCount":  280,
+                          "paths":  [
+                                        "Accessibility.dll",
+                                        "cs/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "cs/PresentationCore.resources.dll",
+                                        "cs/PresentationFramework.resources.dll",
+                                        "cs/PresentationUI.resources.dll",
+                                        "cs/ReachFramework.resources.dll",
+                                        "cs/System.Windows.Controls.Ribbon.resources.dll",
+                                        "cs/System.Windows.Forms.Design.resources.dll",
+                                        "cs/System.Windows.Forms.Primitives.resources.dll",
+                                        "cs/System.Windows.Forms.resources.dll",
+                                        "cs/System.Windows.Input.Manipulations.resources.dll",
+                                        "cs/System.Xaml.resources.dll",
+                                        "cs/UIAutomationClient.resources.dll",
+                                        "cs/UIAutomationClientSideProviders.resources.dll",
+                                        "cs/UIAutomationProvider.resources.dll",
+                                        "cs/UIAutomationTypes.resources.dll",
+                                        "cs/WindowsBase.resources.dll",
+                                        "cs/WindowsFormsIntegration.resources.dll",
+                                        "D3DCompiler_47_cor3.dll",
+                                        "de/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "de/PresentationCore.resources.dll",
+                                        "de/PresentationFramework.resources.dll",
+                                        "de/PresentationUI.resources.dll",
+                                        "de/ReachFramework.resources.dll",
+                                        "de/System.Windows.Controls.Ribbon.resources.dll",
+                                        "de/System.Windows.Forms.Design.resources.dll",
+                                        "de/System.Windows.Forms.Primitives.resources.dll",
+                                        "de/System.Windows.Forms.resources.dll",
+                                        "de/System.Windows.Input.Manipulations.resources.dll",
+                                        "de/System.Xaml.resources.dll",
+                                        "de/UIAutomationClient.resources.dll",
+                                        "de/UIAutomationClientSideProviders.resources.dll",
+                                        "de/UIAutomationProvider.resources.dll",
+                                        "de/UIAutomationTypes.resources.dll",
+                                        "de/WindowsBase.resources.dll",
+                                        "de/WindowsFormsIntegration.resources.dll",
+                                        "DirectWriteForwarder.dll",
+                                        "es/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "es/PresentationCore.resources.dll",
+                                        "es/PresentationFramework.resources.dll",
+                                        "es/PresentationUI.resources.dll",
+                                        "es/ReachFramework.resources.dll",
+                                        "es/System.Windows.Controls.Ribbon.resources.dll",
+                                        "es/System.Windows.Forms.Design.resources.dll",
+                                        "es/System.Windows.Forms.Primitives.resources.dll",
+                                        "es/System.Windows.Forms.resources.dll",
+                                        "es/System.Windows.Input.Manipulations.resources.dll",
+                                        "es/System.Xaml.resources.dll",
+                                        "es/UIAutomationClient.resources.dll",
+                                        "es/UIAutomationClientSideProviders.resources.dll",
+                                        "es/UIAutomationProvider.resources.dll",
+                                        "es/UIAutomationTypes.resources.dll",
+                                        "es/WindowsBase.resources.dll",
+                                        "es/WindowsFormsIntegration.resources.dll",
+                                        "fr/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "fr/PresentationCore.resources.dll",
+                                        "fr/PresentationFramework.resources.dll",
+                                        "fr/PresentationUI.resources.dll",
+                                        "fr/ReachFramework.resources.dll",
+                                        "fr/System.Windows.Controls.Ribbon.resources.dll",
+                                        "fr/System.Windows.Forms.Design.resources.dll",
+                                        "fr/System.Windows.Forms.Primitives.resources.dll",
+                                        "fr/System.Windows.Forms.resources.dll",
+                                        "fr/System.Windows.Input.Manipulations.resources.dll",
+                                        "fr/System.Xaml.resources.dll",
+                                        "fr/UIAutomationClient.resources.dll",
+                                        "fr/UIAutomationClientSideProviders.resources.dll",
+                                        "fr/UIAutomationProvider.resources.dll",
+                                        "fr/UIAutomationTypes.resources.dll",
+                                        "fr/WindowsBase.resources.dll",
+                                        "fr/WindowsFormsIntegration.resources.dll",
+                                        "it/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "it/PresentationCore.resources.dll",
+                                        "it/PresentationFramework.resources.dll",
+                                        "it/PresentationUI.resources.dll",
+                                        "it/ReachFramework.resources.dll",
+                                        "it/System.Windows.Controls.Ribbon.resources.dll",
+                                        "it/System.Windows.Forms.Design.resources.dll",
+                                        "it/System.Windows.Forms.Primitives.resources.dll",
+                                        "it/System.Windows.Forms.resources.dll",
+                                        "it/System.Windows.Input.Manipulations.resources.dll",
+                                        "it/System.Xaml.resources.dll",
+                                        "it/UIAutomationClient.resources.dll",
+                                        "it/UIAutomationClientSideProviders.resources.dll",
+                                        "it/UIAutomationProvider.resources.dll",
+                                        "it/UIAutomationTypes.resources.dll",
+                                        "it/WindowsBase.resources.dll",
+                                        "it/WindowsFormsIntegration.resources.dll",
+                                        "ja/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "ja/PresentationCore.resources.dll",
+                                        "ja/PresentationFramework.resources.dll",
+                                        "ja/PresentationUI.resources.dll",
+                                        "ja/ReachFramework.resources.dll",
+                                        "ja/System.Windows.Controls.Ribbon.resources.dll",
+                                        "ja/System.Windows.Forms.Design.resources.dll",
+                                        "ja/System.Windows.Forms.Primitives.resources.dll",
+                                        "ja/System.Windows.Forms.resources.dll",
+                                        "ja/System.Windows.Input.Manipulations.resources.dll",
+                                        "ja/System.Xaml.resources.dll",
+                                        "ja/UIAutomationClient.resources.dll",
+                                        "ja/UIAutomationClientSideProviders.resources.dll",
+                                        "ja/UIAutomationProvider.resources.dll",
+                                        "ja/UIAutomationTypes.resources.dll",
+                                        "ja/WindowsBase.resources.dll",
+                                        "ja/WindowsFormsIntegration.resources.dll",
+                                        "ko/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "ko/PresentationCore.resources.dll",
+                                        "ko/PresentationFramework.resources.dll",
+                                        "ko/PresentationUI.resources.dll",
+                                        "ko/ReachFramework.resources.dll",
+                                        "ko/System.Windows.Controls.Ribbon.resources.dll",
+                                        "ko/System.Windows.Forms.Design.resources.dll",
+                                        "ko/System.Windows.Forms.Primitives.resources.dll",
+                                        "ko/System.Windows.Forms.resources.dll",
+                                        "ko/System.Windows.Input.Manipulations.resources.dll",
+                                        "ko/System.Xaml.resources.dll",
+                                        "ko/UIAutomationClient.resources.dll",
+                                        "ko/UIAutomationClientSideProviders.resources.dll",
+                                        "ko/UIAutomationProvider.resources.dll",
+                                        "ko/UIAutomationTypes.resources.dll",
+                                        "ko/WindowsBase.resources.dll",
+                                        "ko/WindowsFormsIntegration.resources.dll",
+                                        "Microsoft.VisualBasic.dll",
+                                        "Microsoft.VisualBasic.Forms.dll",
+                                        "Microsoft.Win32.Registry.AccessControl.dll",
+                                        "Microsoft.Win32.SystemEvents.dll",
+                                        "PenImc_cor3.dll",
+                                        "pl/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "pl/PresentationCore.resources.dll",
+                                        "pl/PresentationFramework.resources.dll",
+                                        "pl/PresentationUI.resources.dll",
+                                        "pl/ReachFramework.resources.dll",
+                                        "pl/System.Windows.Controls.Ribbon.resources.dll",
+                                        "pl/System.Windows.Forms.Design.resources.dll",
+                                        "pl/System.Windows.Forms.Primitives.resources.dll",
+                                        "pl/System.Windows.Forms.resources.dll",
+                                        "pl/System.Windows.Input.Manipulations.resources.dll",
+                                        "pl/System.Xaml.resources.dll",
+                                        "pl/UIAutomationClient.resources.dll",
+                                        "pl/UIAutomationClientSideProviders.resources.dll",
+                                        "pl/UIAutomationProvider.resources.dll",
+                                        "pl/UIAutomationTypes.resources.dll",
+                                        "pl/WindowsBase.resources.dll",
+                                        "pl/WindowsFormsIntegration.resources.dll",
+                                        "PresentationCore.dll",
+                                        "PresentationFramework.Aero.dll",
+                                        "PresentationFramework.Aero2.dll",
+                                        "PresentationFramework.AeroLite.dll",
+                                        "PresentationFramework.Classic.dll",
+                                        "PresentationFramework.dll",
+                                        "PresentationFramework.Luna.dll",
+                                        "PresentationFramework.Royale.dll",
+                                        "PresentationFramework-SystemCore.dll",
+                                        "PresentationFramework-SystemData.dll",
+                                        "PresentationFramework-SystemDrawing.dll",
+                                        "PresentationFramework-SystemXml.dll",
+                                        "PresentationFramework-SystemXmlLinq.dll",
+                                        "PresentationNative_cor3.dll",
+                                        "PresentationUI.dll",
+                                        "pt-BR/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "pt-BR/PresentationCore.resources.dll",
+                                        "pt-BR/PresentationFramework.resources.dll",
+                                        "pt-BR/PresentationUI.resources.dll",
+                                        "pt-BR/ReachFramework.resources.dll",
+                                        "pt-BR/System.Windows.Controls.Ribbon.resources.dll",
+                                        "pt-BR/System.Windows.Forms.Design.resources.dll",
+                                        "pt-BR/System.Windows.Forms.Primitives.resources.dll",
+                                        "pt-BR/System.Windows.Forms.resources.dll",
+                                        "pt-BR/System.Windows.Input.Manipulations.resources.dll",
+                                        "pt-BR/System.Xaml.resources.dll",
+                                        "pt-BR/UIAutomationClient.resources.dll",
+                                        "pt-BR/UIAutomationClientSideProviders.resources.dll",
+                                        "pt-BR/UIAutomationProvider.resources.dll",
+                                        "pt-BR/UIAutomationTypes.resources.dll",
+                                        "pt-BR/WindowsBase.resources.dll",
+                                        "pt-BR/WindowsFormsIntegration.resources.dll",
+                                        "ReachFramework.dll",
+                                        "ru/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "ru/PresentationCore.resources.dll",
+                                        "ru/PresentationFramework.resources.dll",
+                                        "ru/PresentationUI.resources.dll",
+                                        "ru/ReachFramework.resources.dll",
+                                        "ru/System.Windows.Controls.Ribbon.resources.dll",
+                                        "ru/System.Windows.Forms.Design.resources.dll",
+                                        "ru/System.Windows.Forms.Primitives.resources.dll",
+                                        "ru/System.Windows.Forms.resources.dll",
+                                        "ru/System.Windows.Input.Manipulations.resources.dll",
+                                        "ru/System.Xaml.resources.dll",
+                                        "ru/UIAutomationClient.resources.dll",
+                                        "ru/UIAutomationClientSideProviders.resources.dll",
+                                        "ru/UIAutomationProvider.resources.dll",
+                                        "ru/UIAutomationTypes.resources.dll",
+                                        "ru/WindowsBase.resources.dll",
+                                        "ru/WindowsFormsIntegration.resources.dll",
+                                        "System.CodeDom.dll",
+                                        "System.Configuration.ConfigurationManager.dll",
+                                        "System.Design.dll",
+                                        "System.Diagnostics.EventLog.dll",
+                                        "System.Diagnostics.EventLog.Messages.dll",
+                                        "System.Diagnostics.PerformanceCounter.dll",
+                                        "System.DirectoryServices.dll",
+                                        "System.Drawing.Common.dll",
+                                        "System.Drawing.Design.dll",
+                                        "System.Drawing.dll",
+                                        "System.IO.Packaging.dll",
+                                        "System.Printing.dll",
+                                        "System.Resources.Extensions.dll",
+                                        "System.Security.Cryptography.Pkcs.dll",
+                                        "System.Security.Cryptography.ProtectedData.dll",
+                                        "System.Security.Cryptography.Xml.dll",
+                                        "System.Security.Permissions.dll",
+                                        "System.Threading.AccessControl.dll",
+                                        "System.Windows.Controls.Ribbon.dll",
+                                        "System.Windows.Extensions.dll",
+                                        "System.Windows.Forms.Design.dll",
+                                        "System.Windows.Forms.Design.Editors.dll",
+                                        "System.Windows.Forms.dll",
+                                        "System.Windows.Forms.Primitives.dll",
+                                        "System.Windows.Input.Manipulations.dll",
+                                        "System.Windows.Presentation.dll",
+                                        "System.Xaml.dll",
+                                        "tr/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "tr/PresentationCore.resources.dll",
+                                        "tr/PresentationFramework.resources.dll",
+                                        "tr/PresentationUI.resources.dll",
+                                        "tr/ReachFramework.resources.dll",
+                                        "tr/System.Windows.Controls.Ribbon.resources.dll",
+                                        "tr/System.Windows.Forms.Design.resources.dll",
+                                        "tr/System.Windows.Forms.Primitives.resources.dll",
+                                        "tr/System.Windows.Forms.resources.dll",
+                                        "tr/System.Windows.Input.Manipulations.resources.dll",
+                                        "tr/System.Xaml.resources.dll",
+                                        "tr/UIAutomationClient.resources.dll",
+                                        "tr/UIAutomationClientSideProviders.resources.dll",
+                                        "tr/UIAutomationProvider.resources.dll",
+                                        "tr/UIAutomationTypes.resources.dll",
+                                        "tr/WindowsBase.resources.dll",
+                                        "tr/WindowsFormsIntegration.resources.dll",
+                                        "UIAutomationClient.dll",
+                                        "UIAutomationClientSideProviders.dll",
+                                        "UIAutomationProvider.dll",
+                                        "UIAutomationTypes.dll",
+                                        "vcruntime140_cor3.dll",
+                                        "WindowsBase.dll",
+                                        "WindowsFormsIntegration.dll",
+                                        "wpfgfx_cor3.dll",
+                                        "zh-Hans/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "zh-Hans/PresentationCore.resources.dll",
+                                        "zh-Hans/PresentationFramework.resources.dll",
+                                        "zh-Hans/PresentationUI.resources.dll",
+                                        "zh-Hans/ReachFramework.resources.dll",
+                                        "zh-Hans/System.Windows.Controls.Ribbon.resources.dll",
+                                        "zh-Hans/System.Windows.Forms.Design.resources.dll",
+                                        "zh-Hans/System.Windows.Forms.Primitives.resources.dll",
+                                        "zh-Hans/System.Windows.Forms.resources.dll",
+                                        "zh-Hans/System.Windows.Input.Manipulations.resources.dll",
+                                        "zh-Hans/System.Xaml.resources.dll",
+                                        "zh-Hans/UIAutomationClient.resources.dll",
+                                        "zh-Hans/UIAutomationClientSideProviders.resources.dll",
+                                        "zh-Hans/UIAutomationProvider.resources.dll",
+                                        "zh-Hans/UIAutomationTypes.resources.dll",
+                                        "zh-Hans/WindowsBase.resources.dll",
+                                        "zh-Hans/WindowsFormsIntegration.resources.dll",
+                                        "zh-Hant/Microsoft.VisualBasic.Forms.resources.dll",
+                                        "zh-Hant/PresentationCore.resources.dll",
+                                        "zh-Hant/PresentationFramework.resources.dll",
+                                        "zh-Hant/PresentationUI.resources.dll",
+                                        "zh-Hant/ReachFramework.resources.dll",
+                                        "zh-Hant/System.Windows.Controls.Ribbon.resources.dll",
+                                        "zh-Hant/System.Windows.Forms.Design.resources.dll",
+                                        "zh-Hant/System.Windows.Forms.Primitives.resources.dll",
+                                        "zh-Hant/System.Windows.Forms.resources.dll",
+                                        "zh-Hant/System.Windows.Input.Manipulations.resources.dll",
+                                        "zh-Hant/System.Xaml.resources.dll",
+                                        "zh-Hant/UIAutomationClient.resources.dll",
+                                        "zh-Hant/UIAutomationClientSideProviders.resources.dll",
+                                        "zh-Hant/UIAutomationProvider.resources.dll",
+                                        "zh-Hant/UIAutomationTypes.resources.dll",
+                                        "zh-Hant/WindowsBase.resources.dll",
+                                        "zh-Hant/WindowsFormsIntegration.resources.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "ANGLE",
+                          "role":  "packaged-evidence",
+                          "origin":  "Avalonia.Angle.Windows.Natives 2.1.27548.20260419",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "licenses/nuget/avalonia.angle.windows.natives/LICENSE"
+                                    ]
+                      },
+                      {
+                          "component":  "ANGLE",
+                          "role":  "runtime",
+                          "origin":  "Avalonia.Angle.Windows.Natives 2.1.27548.20260419",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "av_libglesv2.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Avalonia",
+                          "role":  "runtime",
+                          "origin":  "Avalonia 12.2.999-cibuild0067907-alpha",
+                          "fileCount":  11,
+                          "paths":  [
+                                        "Avalonia.Base.dll",
+                                        "Avalonia.Controls.dll",
+                                        "Avalonia.DesignerSupport.dll",
+                                        "Avalonia.Dialogs.dll",
+                                        "Avalonia.dll",
+                                        "Avalonia.Markup.dll",
+                                        "Avalonia.Markup.Xaml.dll",
+                                        "Avalonia.Metal.dll",
+                                        "Avalonia.MicroCom.dll",
+                                        "Avalonia.OpenGL.dll",
+                                        "Avalonia.Vulkan.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Avalonia",
+                          "role":  "runtime",
+                          "origin":  "Avalonia.Desktop 12.2.999-cibuild0067907-alpha",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "Avalonia.Desktop.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Avalonia",
+                          "role":  "runtime",
+                          "origin":  "Avalonia.FreeDesktop 12.2.999-cibuild0067907-alpha",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "Avalonia.FreeDesktop.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Avalonia",
+                          "role":  "runtime",
+                          "origin":  "Avalonia.FreeDesktop.AtSpi 12.2.999-cibuild0067907-alpha",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "Avalonia.FreeDesktop.AtSpi.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Avalonia",
+                          "role":  "runtime",
+                          "origin":  "Avalonia.HarfBuzz 12.2.999-cibuild0067907-alpha",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "Avalonia.HarfBuzz.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Avalonia",
+                          "role":  "runtime",
+                          "origin":  "Avalonia.Native 12.2.999-cibuild0067907-alpha",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "Avalonia.Native.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Avalonia",
+                          "role":  "runtime",
+                          "origin":  "Avalonia.Remote.Protocol 12.2.999-cibuild0067907-alpha",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "Avalonia.Remote.Protocol.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Avalonia",
+                          "role":  "runtime",
+                          "origin":  "Avalonia.Skia 12.2.999-cibuild0067907-alpha",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "Avalonia.Skia.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Avalonia",
+                          "role":  "runtime",
+                          "origin":  "Avalonia.Themes.Fluent 12.2.999-cibuild0067907-alpha",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "Avalonia.Themes.Fluent.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Avalonia",
+                          "role":  "runtime",
+                          "origin":  "Avalonia.Win32 12.2.999-cibuild0067907-alpha",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "Avalonia.Win32.Automation.dll",
+                                        "Avalonia.Win32.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Avalonia",
+                          "role":  "runtime",
+                          "origin":  "Avalonia.Win32.Interoperability 12.2.999-cibuild0067907-alpha",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "Avalonia.Win32.Interoperability.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Avalonia",
+                          "role":  "runtime",
+                          "origin":  "Avalonia.X11 12.2.999-cibuild0067907-alpha",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "Avalonia.X11.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "FFmpeg",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen BtbN archive n8.1.2-34-g9b6c8969e0-20260809",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "ffmpeg/LICENSE.txt",
+                                        "licenses/ffmpeg/SOURCE.md"
+                                    ]
+                      },
+                      {
+                          "component":  "FFmpeg",
+                          "role":  "runtime",
+                          "origin":  "frozen BtbN archive n8.1.2-34-g9b6c8969e0-20260809",
+                          "fileCount":  8,
+                          "paths":  [
+                                        "ffmpeg/avcodec-62.dll",
+                                        "ffmpeg/avdevice-62.dll",
+                                        "ffmpeg/avfilter-11.dll",
+                                        "ffmpeg/avformat-62.dll",
+                                        "ffmpeg/avutil-60.dll",
+                                        "ffmpeg/ffmpeg.exe",
+                                        "ffmpeg/swresample-6.dll",
+                                        "ffmpeg/swscale-9.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "FLAC",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/gstreamer/flac/COPYING.Xiph",
+                                        "licenses/gstreamer/flac/README-LICENSE-INFO.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "FLAC",
+                          "role":  "runtime",
+                          "origin":  "GStreamer 1.28.6 official MSVC x86_64 distribution",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "FLAC-8.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "GLib",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/gstreamer/glib/LGPL-2.0-or-later.txt",
+                                        "licenses/gstreamer/glib/README-LICENSE-INFO.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "GLib",
+                          "role":  "runtime",
+                          "origin":  "GStreamer 1.28.6 official MSVC x86_64 distribution",
+                          "fileCount":  3,
+                          "paths":  [
+                                        "glib-2.0-0.dll",
+                                        "gmodule-2.0-0.dll",
+                                        "gobject-2.0-0.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "gst-plugins-bad",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/gstreamer/gst-plugins-bad-1.0/LGPL-2.0-or-later.txt",
+                                        "licenses/gstreamer/gst-plugins-bad-1.0/README-LICENSE-INFO.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "gst-plugins-bad",
+                          "role":  "runtime",
+                          "origin":  "GStreamer 1.28.6 official MSVC x86_64 distribution",
+                          "fileCount":  3,
+                          "paths":  [
+                                        "gstbadaudio-1.0-0.dll",
+                                        "gstreamer/plugins/gstwasapi2.dll",
+                                        "gstreamer/plugins/gstwebrtcdsp.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "gst-plugins-base",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/gstreamer/gst-plugins-base-1.0/LGPL-2.0-or-later.txt",
+                                        "licenses/gstreamer/gst-plugins-base-1.0/README-LICENSE-INFO.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "gst-plugins-base",
+                          "role":  "runtime",
+                          "origin":  "GStreamer 1.28.6 official MSVC x86_64 distribution",
+                          "fileCount":  4,
+                          "paths":  [
+                                        "gstaudio-1.0-0.dll",
+                                        "gstreamer/plugins/gstaudioconvert.dll",
+                                        "gstreamer/plugins/gstaudioresample.dll",
+                                        "gsttag-1.0-0.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "gst-plugins-good",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "licenses/gstreamer/gst-plugins-good-1.0/LGPL-2.0-or-later.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "gst-plugins-good",
+                          "role":  "runtime",
+                          "origin":  "GStreamer 1.28.6 official MSVC x86_64 distribution",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "gstreamer/plugins/gstflac.dll",
+                                        "gstreamer/plugins/gstlevel.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "GStreamer aggregate",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen packaging evidence",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "licenses/GSTREAMER-AUDIO-THIRD-PARTY.md"
+                                    ]
+                      },
+                      {
+                          "component":  "GStreamer core",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/gstreamer/gstreamer-1.0/LGPL-2.0-or-later.txt",
+                                        "licenses/gstreamer/gstreamer-1.0/README-LICENSE-INFO.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "GStreamer core",
+                          "role":  "runtime",
+                          "origin":  "GStreamer 1.28.6 official MSVC x86_64 distribution",
+                          "fileCount":  3,
+                          "paths":  [
+                                        "gstbase-1.0-0.dll",
+                                        "gstreamer/plugins/gstcoreelements.dll",
+                                        "gstreamer-1.0-0.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "HarfBuzzSharp",
+                          "role":  "packaged-evidence",
+                          "origin":  "HarfBuzzSharp 8.3.1.3 packages",
+                          "fileCount":  3,
+                          "paths":  [
+                                        "licenses/nuget/harfbuzzsharp.nativeassets.win32/LICENSE.txt",
+                                        "licenses/nuget/harfbuzzsharp.nativeassets.win32/THIRD-PARTY-NOTICES.txt",
+                                        "licenses/nuget/harfbuzzsharp/LICENSE.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "HarfBuzzSharp",
+                          "role":  "runtime",
+                          "origin":  "HarfBuzzSharp 8.3.1.3",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "HarfBuzzSharp.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "HarfBuzzSharp",
+                          "role":  "runtime",
+                          "origin":  "HarfBuzzSharp.NativeAssets.Win32 8.3.1.3",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "libHarfBuzzSharp.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "libffi",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/gstreamer/libffi/LICENSE",
+                                        "licenses/gstreamer/libffi/README-LICENSE-INFO.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "libffi",
+                          "role":  "runtime",
+                          "origin":  "GStreamer 1.28.6 official MSVC x86_64 distribution",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "ffi-7.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "libogg",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/gstreamer/libogg/COPYING",
+                                        "licenses/gstreamer/libogg/README-LICENSE-INFO.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "libogg",
+                          "role":  "runtime",
+                          "origin":  "GStreamer 1.28.6 official MSVC x86_64 distribution",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "ogg-0.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "MicroCom.Runtime",
+                          "role":  "runtime",
+                          "origin":  "MicroCom.Runtime 0.11.6",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "MicroCom.Runtime.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Microsoft Visual C++ Runtime",
+                          "role":  "runtime",
+                          "origin":  "VC143 app-local redist, file version 14.44.35211.0",
+                          "fileCount":  3,
+                          "paths":  [
+                                        "msvcp140.dll",
+                                        "vcruntime140.dll",
+                                        "vcruntime140_1.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "ORC",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/gstreamer/orc/COPYING",
+                                        "licenses/gstreamer/orc/README-LICENSE-INFO.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "ORC",
+                          "role":  "runtime",
+                          "origin":  "GStreamer 1.28.6 official MSVC x86_64 distribution",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "orc-0.4-0.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "PCRE2",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/gstreamer/pcre2/LICENCE",
+                                        "licenses/gstreamer/pcre2/README-LICENSE-INFO.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "PCRE2",
+                          "role":  "runtime",
+                          "origin":  "GStreamer 1.28.6 official MSVC x86_64 distribution",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "pcre2-8-0.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "proxy-libintl",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/gstreamer/proxy-libintl/LGPL-2.0-or-later.txt",
+                                        "licenses/gstreamer/proxy-libintl/README-LICENSE-INFO.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "proxy-libintl",
+                          "role":  "runtime",
+                          "origin":  "GStreamer 1.28.6 official MSVC x86_64 distribution",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "intl-8.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "ScreenRecorderLib derivative",
+                          "role":  "packaged-evidence",
+                          "origin":  "vendored provenance record",
+                          "fileCount":  3,
+                          "paths":  [
+                                        "licenses/screenrecorderlib/LICENSE-MICROSOFT-WINDOWS-CLASSIC-SAMPLES.txt",
+                                        "licenses/screenrecorderlib/LICENSE-SCREENRECORDERLIB.txt",
+                                        "licenses/screenrecorderlib/SOURCE.md"
+                                    ]
+                      },
+                      {
+                          "component":  "ScreenRecorderLib derivative",
+                          "role":  "runtime",
+                          "origin":  "first-party native binary containing attributed MIT-derived code",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "XbPreview.Native.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "SkiaSharp",
+                          "role":  "packaged-evidence",
+                          "origin":  "SkiaSharp 3.119.4 packages",
+                          "fileCount":  3,
+                          "paths":  [
+                                        "licenses/nuget/skiasharp.nativeassets.win32/LICENSE.txt",
+                                        "licenses/nuget/skiasharp.nativeassets.win32/THIRD-PARTY-NOTICES.txt",
+                                        "licenses/nuget/skiasharp/LICENSE.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "SkiaSharp",
+                          "role":  "runtime",
+                          "origin":  "SkiaSharp 3.119.4",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "SkiaSharp.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "SkiaSharp",
+                          "role":  "runtime",
+                          "origin":  "SkiaSharp.NativeAssets.Win32 3.119.4",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "libSkiaSharp.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "System.IO.Pipelines",
+                          "role":  "packaged-evidence",
+                          "origin":  "System.IO.Pipelines 8.0.0 package",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/nuget/system.io.pipelines/LICENSE.TXT",
+                                        "licenses/nuget/system.io.pipelines/THIRD-PARTY-NOTICES.TXT"
+                                    ]
+                      },
+                      {
+                          "component":  "System.IO.Pipelines",
+                          "role":  "runtime",
+                          "origin":  "System.IO.Pipelines 8.0.0",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "System.IO.Pipelines.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Tmds.DBus.Protocol",
+                          "role":  "runtime",
+                          "origin":  "Tmds.DBus.Protocol 0.94.1",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "Tmds.DBus.Protocol.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "WebRTC audio processing",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/gstreamer/webrtc-audio-processing/COPYING",
+                                        "licenses/gstreamer/webrtc-audio-processing/README-LICENSE-INFO.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "Xiaobai Recorder",
+                          "role":  "first-party-asset",
+                          "origin":  "first-party frozen app-stage",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "assets/幻彩01.png",
+                                        "assets/幻彩02.png"
+                                    ]
+                      },
+                      {
+                          "component":  "Xiaobai Recorder",
+                          "role":  "first-party-or-metadata",
+                          "origin":  "first-party frozen app-stage",
+                          "fileCount":  9,
+                          "paths":  [
+                                        "en/XbPreview.Avalonia.resources.dll",
+                                        "LICENSE",
+                                        "package-manifest.json",
+                                        "XbPreview.Avalonia.dll",
+                                        "XiaobaiRecorder.deps.json",
+                                        "XiaobaiRecorder.dll",
+                                        "XiaobaiRecorder.exe",
+                                        "XiaobaiRecorder.runtimeconfig.json",
+                                        "zh-CN/XbPreview.Avalonia.resources.dll"
+                                    ]
+                      },
+                      {
+                          "component":  "Xiaobai Recorder",
+                          "role":  "packaged-evidence",
+                          "origin":  "first-party provenance",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "licenses/PRODUCT-ASSET-PROVENANCE.md"
+                                    ]
+                      },
+                      {
+                          "component":  "zlib",
+                          "role":  "packaged-evidence",
+                          "origin":  "frozen GStreamer packaging evidence",
+                          "fileCount":  2,
+                          "paths":  [
+                                        "licenses/gstreamer/zlib/README",
+                                        "licenses/gstreamer/zlib/README-LICENSE-INFO.txt"
+                                    ]
+                      },
+                      {
+                          "component":  "zlib",
+                          "role":  "runtime",
+                          "origin":  "GStreamer 1.28.6 official MSVC x86_64 distribution",
+                          "fileCount":  1,
+                          "paths":  [
+                                        "z-1.dll"
+                                    ]
+                      }
+                  ],
+    "partitionChecks":  {
+                            "recordCount":  579,
+                            "uniquePathCount":  579,
+                            "unmappedPaths":  [
+
+                                              ],
+                            "duplicatePaths":  [
+
+                                               ]
+                        }
+}

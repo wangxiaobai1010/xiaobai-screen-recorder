@@ -1,0 +1,144 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:l10n="using:XbPreview.Avalonia.Localization"
+             x:Class="XbPreview.Avalonia.Views.Panels.DirectorPanelView">
+  <UserControl.Styles>
+    <Style Selector="Button.director-zoom">
+      <Setter Property="HorizontalAlignment" Value="Stretch" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+    <Style Selector="ToggleButton.skill-toggle.director-toggle /template/ Border#PART_ToggleTrack">
+      <Setter Property="Background" Value="#D1D1D1" />
+      <Setter Property="BorderBrush" Value="#C5C5C5" />
+      <Setter Property="BorderThickness" Value="1" />
+    </Style>
+    <Style Selector="ToggleButton.skill-toggle.director-toggle /template/ Border#PART_ToggleKnob">
+      <Setter Property="Background"
+              Value="{DynamicResource SkillRecorder.Brush.Surface}" />
+      <Setter Property="BorderBrush" Value="#AAAAAA" />
+      <Setter Property="BorderThickness" Value="1.25" />
+    </Style>
+    <Style Selector="ToggleButton.skill-toggle.director-toggle:pointerover /template/ Border#PART_ToggleTrack">
+      <Setter Property="Background" Value="#C7C7C7" />
+      <Setter Property="BorderBrush" Value="#B8B8B8" />
+    </Style>
+    <Style Selector="ToggleButton.skill-toggle.director-toggle:pressed /template/ Border#PART_ToggleTrack">
+      <Setter Property="Background" Value="#BCBCBC" />
+      <Setter Property="BorderBrush" Value="#A9A9A9" />
+    </Style>
+    <Style Selector="ToggleButton.skill-toggle.director-toggle:checked /template/ Border#PART_ToggleTrack">
+      <Setter Property="Background"
+              Value="{DynamicResource SkillRecorder.Brush.Brand}" />
+      <Setter Property="BorderBrush"
+              Value="{DynamicResource SkillRecorder.Brush.BrandInk}" />
+    </Style>
+    <Style Selector="ToggleButton.skill-toggle.director-toggle:checked:pointerover /template/ Border#PART_ToggleTrack">
+      <Setter Property="Background"
+              Value="{DynamicResource SkillRecorder.Brush.BrandHover}" />
+    </Style>
+    <Style Selector="ToggleButton.skill-toggle.director-toggle:checked:pressed /template/ Border#PART_ToggleTrack">
+      <Setter Property="Background"
+              Value="{DynamicResource SkillRecorder.Brush.BrandInk}" />
+    </Style>
+    <Style Selector="ToggleButton.skill-toggle.director-toggle:disabled">
+      <Setter Property="Cursor" Value="Arrow" />
+      <Setter Property="Opacity" Value="0.55" />
+    </Style>
+    <Style Selector="ToggleButton.skill-toggle.director-toggle:disabled /template/ Border#PART_ToggleTrack">
+      <Setter Property="Background"
+              Value="{DynamicResource SkillRecorder.Brush.SurfaceSecondary}" />
+      <Setter Property="BorderBrush"
+              Value="{DynamicResource SkillRecorder.Brush.Line}" />
+    </Style>
+    <Style Selector="ToggleButton.skill-toggle.director-toggle:disabled /template/ Border#PART_ToggleKnob">
+      <Setter Property="Background" Value="#F7F7F7" />
+      <Setter Property="BorderBrush" Value="#D6D6D6" />
+    </Style>
+  </UserControl.Styles>
+
+  <Border Classes="skill-deck-region"
+          ClipToBounds="True">
+    <Grid>
+      <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,*"
+            RowSpacing="4">
+        <TextBlock Grid.Row="0"
+                   Classes="skill-section-title"
+                   Text="{x:Static l10n:Strings.DirectorTitle}" />
+        <TextBlock Grid.Row="1"
+                   Classes="skill-muted"
+                   Text="{x:Static l10n:Strings.ManualZoom}" />
+        <Grid Grid.Row="2"
+              ColumnDefinitions="*,*"
+              ColumnSpacing="8">
+          <Button x:Name="StandardZoomButton"
+                  Classes="director-small director-zoom"
+                  Content="1.6x" />
+          <Button x:Name="StrongZoomButton"
+                  Grid.Column="1"
+                  Classes="director-small director-zoom"
+                  Content="2.0x" />
+        </Grid>
+        <Grid Grid.Row="3"
+              ColumnDefinitions="*,Auto"
+              ColumnSpacing="6"
+              Margin="0,11,0,0">
+          <TextBlock Classes="skill-muted"
+                     VerticalAlignment="Center"
+                     Text="{x:Static l10n:Strings.ZoomShortcuts}" />
+          <ToggleButton x:Name="HotkeysToggle"
+                        Grid.Column="1"
+                        Classes="skill-toggle director-toggle" />
+        </Grid>
+        <TextBlock Grid.Row="4"
+                   Classes="skill-faint"
+                   Text="F9 = 1.6x   F10 = 2.0x" />
+        <Grid Grid.Row="5"
+              ColumnDefinitions="*,Auto"
+              ColumnSpacing="6"
+              Margin="0,6,0,0"
+              VerticalAlignment="Center">
+          <TextBlock Classes="skill-muted"
+                     VerticalAlignment="Center"
+                     Text="{x:Static l10n:Strings.AutoZoom}" />
+          <ToggleButton x:Name="AutoDirectorToggle"
+                        Grid.Column="1"
+                        Classes="skill-toggle director-toggle" />
+        </Grid>
+      </Grid>
+      <Viewbox Width="24"
+               Height="22"
+               Margin="60,-2,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               IsHitTestVisible="False">
+        <Canvas Width="22" Height="20">
+          <Path Data="M 2,8 L 20,6 L 20,2 L 2,4 Z"
+                Fill="#202124" />
+          <Path Data="M 2,9 L 20,7 L 20,18 L 2,18 Z"
+                Fill="#202124" />
+          <Path Data="M 6,3.55 L 9.35,7.18 M 12.25,2.85 L 15.6,6.48"
+                Stroke="{DynamicResource SkillRecorder.Brush.Surface}"
+                StrokeThickness="1.4"
+                StrokeLineCap="Square" />
+        </Canvas>
+      </Viewbox>
+      <Border x:Name="TitleDragHandle"
+              Height="20"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Top"
+              Background="Transparent"
+              Cursor="SizeAll" />
+      <Button x:Name="FloatingCloseButton"
+              Width="28"
+              Height="28"
+              MinHeight="28"
+              Padding="0"
+              HorizontalAlignment="Right"
+              VerticalAlignment="Top"
+              Classes="director-small director-return"
+              Content="↩"
+              IsVisible="False"
+              ToolTip.Tip="{x:Static l10n:Strings.ReturnHome}" />
+    </Grid>
+  </Border>
+</UserControl>

@@ -1,0 +1,120 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:l10n="using:XbPreview.Avalonia.Localization"
+             x:Class="XbPreview.Avalonia.Views.Panels.Stage3DPanelView">
+  <UserControl.Styles>
+    <Style Selector="Button.stage-pose">
+      <Setter Property="MinHeight" Value="26" />
+      <Setter Property="Padding" Value="7,3" />
+      <Setter Property="HorizontalAlignment" Value="Stretch" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+  </UserControl.Styles>
+  <Grid>
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+          RowSpacing="4">
+    <TextBlock Grid.Row="0"
+               Classes="skill-section-title"
+               Text="{x:Static l10n:Strings.StageTitle}" />
+    <TextBlock Grid.Row="1"
+               Classes="skill-muted"
+               Text="{x:Static l10n:Strings.ViewAngle}" />
+    <Grid Grid.Row="2"
+          ColumnDefinitions="*,*,*"
+          ColumnSpacing="5">
+      <Button x:Name="LeftOrientationButton"
+              Classes="director-small stage-pose"
+              Content="{x:Static l10n:Strings.Left}"
+              AutomationProperties.Name="{x:Static l10n:Strings.Left}" />
+      <Button x:Name="FrontOrientationButton"
+              Grid.Column="1"
+              Classes="director-small stage-pose"
+              Content="{x:Static l10n:Strings.Front}"
+              AutomationProperties.Name="{x:Static l10n:Strings.Front}" />
+      <Button x:Name="RightOrientationButton"
+              Grid.Column="2"
+              Classes="director-small stage-pose"
+              Content="{x:Static l10n:Strings.Right}"
+              AutomationProperties.Name="{x:Static l10n:Strings.Right}" />
+    </Grid>
+    <TextBlock Grid.Row="3"
+               Classes="skill-muted"
+               Text="{x:Static l10n:Strings.Tilt}" />
+    <Grid Grid.Row="4"
+          ColumnDefinitions="*,*,*"
+          ColumnSpacing="5">
+      <Button x:Name="Level1Button"
+              Classes="director-small stage-pose"
+              Content="{x:Static l10n:Strings.Light}"
+              AutomationProperties.Name="{x:Static l10n:Strings.Light}" />
+      <Button x:Name="Level2Button"
+              Grid.Column="1"
+              Classes="director-small stage-pose"
+              Content="{x:Static l10n:Strings.Medium}"
+              AutomationProperties.Name="{x:Static l10n:Strings.Medium}" />
+      <Button x:Name="Level3Button"
+              Grid.Column="2"
+              Classes="director-small stage-pose"
+              Content="{x:Static l10n:Strings.Strong}"
+              AutomationProperties.Name="{x:Static l10n:Strings.Strong}" />
+    </Grid>
+    <TextBlock Grid.Row="5"
+               Classes="skill-muted"
+               Text="{x:Static l10n:Strings.Background}" />
+    <ComboBox x:Name="BackgroundPresetSelector"
+              Grid.Row="6"
+              Classes="skill-select skill-window-select capture-target-choice"
+              MinWidth="0"
+              HorizontalAlignment="Stretch"
+              IsEnabled="False"
+              PlaceholderForeground="{DynamicResource SkillRecorder.Brush.TextPrimary}"
+              PlaceholderText="Warm"
+              AutomationProperties.Name="{x:Static l10n:Strings.Background}">
+      <ComboBox.ItemTemplate>
+        <DataTemplate x:CompileBindings="False">
+          <TextBlock Text="{Binding DisplayName}"
+                     TextWrapping="NoWrap"
+                     TextTrimming="CharacterEllipsis" />
+        </DataTemplate>
+      </ComboBox.ItemTemplate>
+    </ComboBox>
+    <TextBlock x:Name="BackgroundStatusText"
+               Grid.Row="7"
+               Classes="skill-faint"
+               IsVisible="False"
+               TextWrapping="NoWrap"
+               TextTrimming="CharacterEllipsis" />
+    </Grid>
+    <Viewbox x:Name="StageTitleIcon"
+             Width="24"
+             Height="22"
+             Margin="49.8167,-2,0,0"
+             HorizontalAlignment="Left"
+             VerticalAlignment="Top"
+             IsHitTestVisible="False">
+      <Canvas Width="22" Height="20">
+        <Path Data="M 11,1 L 19,5.5 L 19,14.5 L 11,19 L 3,14.5 L 3,5.5 Z M 3,5.5 L 11,10 L 19,5.5 M 11,10 V 19"
+              Fill="Transparent"
+              Stroke="#202124"
+              StrokeThickness="1.8" />
+      </Canvas>
+    </Viewbox>
+    <Border x:Name="TitleDragHandle"
+            Height="20"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            Cursor="SizeAll" />
+    <Button x:Name="FloatingCloseButton"
+            Width="28"
+            Height="28"
+            MinHeight="28"
+            Padding="0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Classes="director-small director-return"
+            Content="&#x21A9;"
+            IsVisible="False"
+            ToolTip.Tip="{x:Static l10n:Strings.ReturnHome}" />
+  </Grid>
+</UserControl>

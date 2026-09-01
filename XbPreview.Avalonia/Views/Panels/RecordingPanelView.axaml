@@ -1,0 +1,388 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:l10n="using:XbPreview.Avalonia.Localization"
+             x:Class="XbPreview.Avalonia.Views.Panels.RecordingPanelView">
+  <UserControl.Styles>
+    <Style Selector="Button.recording-back">
+      <Setter Property="Width" Value="18" />
+      <Setter Property="Height" Value="18" />
+      <Setter Property="MinWidth" Value="0" />
+      <Setter Property="MinHeight" Value="0" />
+      <Setter Property="Padding" Value="0" />
+      <Setter Property="HorizontalContentAlignment" Value="Center" />
+      <Setter Property="VerticalContentAlignment" Value="Center" />
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="Foreground"
+              Value="{DynamicResource SkillRecorder.Brush.TextSecondary}" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="CornerRadius" Value="5" />
+      <Setter Property="Cursor" Value="Hand" />
+    </Style>
+    <Style Selector="Button.recording-back:pointerover">
+      <Setter Property="Background"
+              Value="{DynamicResource SkillRecorder.Brush.SurfaceSecondary}" />
+      <Setter Property="Foreground"
+              Value="{DynamicResource SkillRecorder.Brush.TextPrimary}" />
+    </Style>
+    <Style Selector="Button.recording-back:focus-visible">
+      <Setter Property="BorderBrush"
+              Value="{DynamicResource SkillRecorder.Brush.FocusRing}" />
+      <Setter Property="BorderThickness" Value="1" />
+    </Style>
+    <Style Selector="TextBlock.recording-timer">
+      <Setter Property="Foreground"
+              Value="{DynamicResource SkillRecorder.Brush.Brand}" />
+    </Style>
+    <Style Selector="TextBlock.paused-timer">
+      <Setter Property="Foreground"
+              Value="{DynamicResource SkillRecorder.Brush.TextSecondary}" />
+    </Style>
+    <Style Selector="TextBlock.stopped-timer">
+      <Setter Property="Foreground"
+              Value="{DynamicResource SkillRecorder.Brush.TextPrimary}" />
+    </Style>
+    <Style Selector="ToggleButton#TrayInFrameToggle">
+      <Setter Property="HorizontalAlignment" Value="Right" />
+    </Style>
+    <Style Selector="ToggleButton#TrayInFrameToggle.floating">
+      <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+  </UserControl.Styles>
+  <Grid>
+    <Grid RowDefinitions="Auto,*,Auto"
+          RowSpacing="7">
+    <Grid Grid.Row="0"
+          ColumnDefinitions="*,Auto"
+          ColumnSpacing="6">
+      <TextBlock x:Name="RecordingSectionTitleText"
+                 Classes="skill-section-title"
+                 Text="{x:Static l10n:Strings.RecordingTitle}" />
+      <Border x:Name="TitleDragHandle"
+              Grid.ColumnSpan="2"
+              Height="20"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Top"
+              Background="Transparent"
+              Cursor="SizeAll" />
+    </Grid>
+    <Grid Grid.Row="1">
+      <Grid x:Name="TrayInFrameControl"
+            Height="22"
+            ColumnDefinitions="Auto,8,*"
+            VerticalAlignment="Top"
+            ZIndex="1">
+        <Grid Opacity="0"
+              IsHitTestVisible="False">
+          <TextBlock Classes="skill-muted"
+                     Text="{x:Static l10n:Strings.SaveLocation}" />
+          <TextBlock Classes="skill-muted"
+                     Text="{x:Static l10n:Strings.Resolution}" />
+          <TextBlock Classes="skill-muted"
+                     Text="{x:Static l10n:Strings.FrameRate}" />
+        </Grid>
+        <TextBlock Grid.ColumnSpan="3"
+                   Classes="skill-muted"
+                   VerticalAlignment="Center"
+                   Text="{x:Static l10n:Strings.IncludeFloatingPanels}" />
+        <ToggleButton x:Name="TrayInFrameToggle"
+                      Grid.Column="2"
+                      Classes="skill-toggle director-toggle"
+                      Classes.floating="{Binding IsVisible, ElementName=FloatingCloseButton}"
+                      AutomationProperties.Name="{x:Static l10n:Strings.IncludeFloatingPanels}"
+                      IsChecked="False" />
+      </Grid>
+      <Grid x:Name="RecordingIdlePresentation"
+            RowDefinitions="22,28,28,28,42"
+            ColumnDefinitions="Auto,*"
+            RowSpacing="2"
+            ColumnSpacing="8">
+        <Border Grid.Row="0"
+                Grid.ColumnSpan="2"
+                Height="22"
+                IsHitTestVisible="False" />
+        <TextBlock Grid.Row="1"
+                   Classes="skill-muted"
+                   VerticalAlignment="Center"
+                   Text="{x:Static l10n:Strings.SaveLocation}" />
+        <Button x:Name="ChooseRecordingFolderButton"
+                  Grid.Row="1"
+                  Grid.Column="1"
+                  Height="28"
+                  MinHeight="28"
+                  MinWidth="0"
+                  Padding="6,3"
+                  Classes="skill-secondary"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Stretch"
+                  AutomationProperties.Name="{x:Static l10n:Strings.SaveLocation}"
+                  IsEnabled="False">
+          <TextBlock x:Name="RecordingOutputPathText"
+                     Classes="skill-faint"
+                     VerticalAlignment="Center"
+                     Text="{x:Static l10n:Strings.SaveLocation}"
+                     TextTrimming="CharacterEllipsis" />
+        </Button>
+        <TextBlock Grid.Row="2"
+                   Classes="skill-muted"
+                   VerticalAlignment="Center"
+                   Text="{x:Static l10n:Strings.Resolution}" />
+        <ComboBox x:Name="ResolutionSelector"
+                  Grid.Row="2"
+                  Grid.Column="1"
+                  Height="28"
+                  MinHeight="28"
+                  Padding="7,2"
+                  HorizontalAlignment="Stretch"
+                  Classes="skill-select skill-window-select"
+                  AutomationProperties.Name="{x:Static l10n:Strings.Resolution}"
+                  SelectedIndex="0">
+          <ComboBoxItem Content="{x:Static l10n:Strings.ResolutionOriginal}" />
+          <ComboBoxItem Content="{x:Static l10n:Strings.Resolution1080}" />
+          <ComboBoxItem Content="{x:Static l10n:Strings.Resolution1440}" />
+          <ComboBoxItem Content="{x:Static l10n:Strings.Resolution4K}" />
+        </ComboBox>
+        <TextBlock Grid.Row="3"
+                   Classes="skill-muted"
+                   VerticalAlignment="Center"
+                   Text="{x:Static l10n:Strings.FrameRate}" />
+        <Grid x:Name="FrameRateControl"
+              Grid.Row="3"
+              Grid.Column="1"
+              Height="28"
+              ColumnDefinitions="*,6,*">
+          <Button x:Name="FrameRate30Button"
+                  Classes="director-small"
+                  Height="28"
+                  MinHeight="28"
+                  Padding="4,3"
+                  HorizontalAlignment="Stretch"
+                  AutomationProperties.Name="30 FPS"
+                  Content="30 FPS" />
+          <Button x:Name="FrameRate60Button"
+                  Grid.Column="2"
+                  Classes="director-small"
+                  Height="28"
+                  MinHeight="28"
+                  Padding="4,3"
+                  HorizontalAlignment="Stretch"
+                  AutomationProperties.Name="60 FPS"
+                  Content="60 FPS"
+                  ToolTip.Tip="{x:Static l10n:Strings.Frame60Help}" />
+        </Grid>
+        <Button x:Name="StartRecordingButton"
+                Grid.Row="4"
+                Grid.ColumnSpan="2"
+                Classes="skill-primary"
+                Width="140"
+                Height="42"
+                MinWidth="140"
+                MinHeight="42"
+                Margin="0,4,0,-4"
+                HorizontalAlignment="Center"
+                IsEnabled="False"
+                Content="{x:Static l10n:Strings.StartRecording}" />
+      </Grid>
+
+      <Grid x:Name="RecordingActivePresentation"
+            RowDefinitions="Auto,Auto,Auto,Auto,*"
+            RowSpacing="2"
+            IsVisible="False">
+        <Border Grid.Row="0"
+                Height="22"
+                IsHitTestVisible="False" />
+        <Grid Grid.Row="1"
+              MinHeight="18">
+          <StackPanel x:Name="RecordingLiveStatus"
+                      Orientation="Horizontal"
+                      VerticalAlignment="Center"
+                      Spacing="5"
+                      IsVisible="False">
+            <Ellipse Width="6"
+                     Height="6"
+                     Fill="{DynamicResource SkillRecorder.Brush.Record}" />
+            <TextBlock x:Name="RecordingLiveStateText"
+                       FontSize="12"
+                       FontWeight="SemiBold"
+                       Foreground="{DynamicResource SkillRecorder.Brush.Record}"
+                       Text="{x:Static l10n:Strings.Recording}" />
+          </StackPanel>
+          <StackPanel x:Name="RecordingTransitionStatus"
+                      Orientation="Horizontal"
+                      VerticalAlignment="Center"
+                      Spacing="4">
+            <TextBlock x:Name="RecordingPauseGlyph"
+                       Classes="skill-muted"
+                       FontFamily="Segoe Fluent Icons"
+                       FontSize="11"
+                       IsVisible="False"
+                       Text="&#xE769;" />
+            <TextBlock x:Name="RecordingStateText"
+                       Classes="skill-muted"
+                       FontWeight="SemiBold"
+                       Text="{x:Static l10n:Strings.Starting}" />
+          </StackPanel>
+        </Grid>
+        <TextBlock x:Name="RecordingElapsedLabel"
+                   Grid.Row="2"
+                   Margin="0,4,0,0"
+                   Classes="skill-muted"
+                   Text="{x:Static l10n:Strings.ElapsedTime}" />
+        <TextBlock x:Name="RecordingElapsedText"
+                   Grid.Row="3"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   Text="00:00:00" />
+        <Grid x:Name="RecordingActiveCommands"
+              Grid.Row="4"
+              ColumnDefinitions="*,4,*,4,*"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Bottom">
+          <Button x:Name="PauseResumeRecordingButton"
+                  Classes="skill-secondary"
+                  MinHeight="38"
+                  HorizontalAlignment="Stretch"
+                  IsEnabled="False"
+                  Content="{x:Static l10n:Strings.Pause}" />
+          <Button x:Name="RestartRecordingButton"
+                  Grid.Column="2"
+                  Classes="skill-secondary"
+                  MinHeight="38"
+                  HorizontalAlignment="Stretch"
+                  AutomationProperties.Name="{x:Static l10n:Strings.RestartRecording}"
+                  IsEnabled="False"
+                  Content="{x:Static l10n:Strings.RestartRecording}" />
+          <Button x:Name="StopRecordingButton"
+                  Grid.Column="4"
+                  Classes="skill-primary"
+                  MinHeight="38"
+                  Padding="13,8"
+                  HorizontalAlignment="Stretch"
+                  IsEnabled="False"
+                  Content="{x:Static l10n:Strings.Stop}" />
+        </Grid>
+      </Grid>
+
+      <Grid x:Name="RecordingCompletedPresentation"
+            RowDefinitions="Auto,Auto,Auto,Auto,*"
+            RowSpacing="1"
+            IsVisible="False">
+        <TextBlock Grid.Row="0"
+                   Classes="skill-muted"
+                   Text="{x:Static l10n:Strings.Status}" />
+        <Grid Grid.Row="1"
+              ColumnDefinitions="*,Auto"
+              ColumnSpacing="6">
+          <TextBlock Classes="skill-muted"
+                     VerticalAlignment="Center"
+                     FontWeight="SemiBold"
+                     Text="{x:Static l10n:Strings.Saved}" />
+          <Button x:Name="ReturnToRecordingReadyButton"
+                  Grid.Column="1"
+                  Padding="8,2"
+                  Classes="skill-secondary"
+                  HorizontalAlignment="Right"
+                  VerticalAlignment="Center"
+                  AutomationProperties.Name="{x:Static l10n:Strings.BackToReady}"
+                  Content="{x:Static l10n:Strings.BackToReady}" />
+        </Grid>
+        <TextBlock Grid.Row="2"
+                   Margin="0,3,0,0"
+                   Classes="skill-muted"
+                   Text="{x:Static l10n:Strings.RecordingDuration}" />
+        <TextBlock x:Name="CompletedRecordingElapsedText"
+                   Grid.Row="3"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   Foreground="{DynamicResource SkillRecorder.Brush.TextPrimary}"
+                   Text="00:00:00" />
+        <Grid Grid.Row="4"
+              Margin="0,8,0,8"
+              ColumnDefinitions="*,6,*"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Top">
+          <Button x:Name="OpenRecordingFolderButton"
+                  Classes="skill-secondary"
+                  MinHeight="38"
+                  Padding="6,6"
+                  HorizontalAlignment="Stretch"
+                  IsEnabled="False"
+                  Content="{x:Static l10n:Strings.OpenFolder}" />
+          <Button x:Name="OpenRecordingButton"
+                  Grid.Column="2"
+                  Classes="skill-secondary"
+                  MinHeight="38"
+                  Padding="6,6"
+                  HorizontalAlignment="Stretch"
+                  IsEnabled="False"
+                  Content="{x:Static l10n:Strings.OpenVideo}" />
+        </Grid>
+      </Grid>
+
+      <Border x:Name="RestartRecordingConfirmation"
+              Background="{DynamicResource SkillRecorder.Brush.PanelSurface}"
+              IsVisible="False"
+              ZIndex="10">
+        <Grid RowDefinitions="Auto,6,*,6,Auto,6,Auto">
+          <TextBlock Grid.Row="0"
+                     Classes="skill-section-title"
+                     Text="{x:Static l10n:Strings.RestartConfirmTitle}" />
+          <TextBlock Grid.Row="2"
+                     Classes="skill-muted"
+                     Text="{x:Static l10n:Strings.RestartConfirmBody}"
+                     TextWrapping="Wrap" />
+          <Button x:Name="ContinueCurrentRecordingButton"
+                  Grid.Row="4"
+                  Classes="skill-secondary"
+                  HorizontalAlignment="Stretch"
+                  AutomationProperties.Name="{x:Static l10n:Strings.ContinueRecording}"
+                  Content="{x:Static l10n:Strings.ContinueRecording}" />
+          <Button x:Name="DiscardCurrentRecordingButton"
+                  Grid.Row="6"
+                  Classes="skill-primary"
+                  HorizontalAlignment="Stretch"
+                  AutomationProperties.Name="{x:Static l10n:Strings.DiscardRecording}"
+                  Content="{x:Static l10n:Strings.DiscardRecording}" />
+        </Grid>
+      </Border>
+    </Grid>
+    <TextBlock x:Name="RecordingErrorText"
+               Grid.Row="2"
+               Classes="skill-faint"
+               Foreground="{DynamicResource SkillRecorder.Brush.TextSecondary}"
+               IsVisible="False"
+               MaxLines="2"
+               Text=""
+               TextTrimming="CharacterEllipsis"
+               TextWrapping="Wrap" />
+    </Grid>
+    <Viewbox x:Name="RecordingTitleIcon"
+             Width="24"
+             Height="22"
+             Margin="73.49,-2,0,0"
+             HorizontalAlignment="Left"
+             VerticalAlignment="Top"
+             IsHitTestVisible="False">
+      <Canvas Width="22" Height="20">
+        <Border Canvas.Left="2"
+                Canvas.Top="3"
+                Width="14"
+                Height="14"
+                Background="#202124"
+                CornerRadius="2" />
+        <Path Data="M 16,7 L 20,4.5 V 15.5 L 16,13 Z"
+              Fill="#202124" />
+      </Canvas>
+    </Viewbox>
+    <Button x:Name="FloatingCloseButton"
+            Width="28"
+            Height="28"
+            MinHeight="28"
+            Padding="0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Classes="director-small director-return"
+            Content="&#x21A9;"
+            IsVisible="False"
+            ToolTip.Tip="{x:Static l10n:Strings.ReturnHome}" />
+  </Grid>
+</UserControl>

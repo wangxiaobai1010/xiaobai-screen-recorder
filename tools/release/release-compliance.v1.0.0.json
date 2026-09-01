@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "thirdPartyNoticesPath": "THIRD-PARTY-NOTICES.md",
+  "components": [
+    {
+      "name": "FFmpeg",
+      "runtimeFiles": ["ffmpeg/ffmpeg.exe", "ffmpeg/avcodec-62.dll", "ffmpeg/avdevice-62.dll", "ffmpeg/avfilter-11.dll", "ffmpeg/avformat-62.dll", "ffmpeg/avutil-60.dll", "ffmpeg/swresample-6.dll", "ffmpeg/swscale-9.dll"],
+      "licenseNoticeFiles": ["ffmpeg/LICENSE.txt"],
+      "sourceBuildInfoFiles": ["licenses/ffmpeg/RELEASE-BUILD-INFO.md"],
+      "releaseCompanionSourceFiles": ["release-companion-source/ffmpeg/SOURCE-MANIFEST.json"],
+      "sourceBuildInfoRequired": true,
+      "releaseCompanionSourceRequired": true,
+      "nextMaterial": "Add a reviewed complete FFmpeg configure/dependency record, dependency notices, and the exact corresponding-source/build companion for the pinned archive."
+    },
+    {
+      "name": "GStreamer/GLib",
+      "runtimeFiles": ["gstreamer/plugins/gstcoreelements.dll", "gstreamer/plugins/gstwasapi2.dll", "gstreamer/plugins/gstaudioconvert.dll", "gstreamer/plugins/gstaudioresample.dll", "gstreamer/plugins/gstwebrtcdsp.dll", "gstreamer/plugins/gstflac.dll", "gstreamer/plugins/gstlevel.dll", "gstreamer-1.0-0.dll", "glib-2.0-0.dll"],
+      "licenseNoticeFiles": ["licenses/GSTREAMER-AUDIO-THIRD-PARTY.md", "licenses/gstreamer/gstreamer-1.0/LGPL-2.0-or-later.txt", "licenses/gstreamer/gst-plugins-good-1.0/README-LICENSE-INFO.txt"],
+      "sourceBuildInfoFiles": ["licenses/gstreamer/RELEASE-BUILD-INFO.md"],
+      "releaseCompanionSourceFiles": ["release-companion-source/gstreamer/SOURCE-MANIFEST.json"],
+      "sourceBuildInfoRequired": true,
+      "releaseCompanionSourceRequired": true,
+      "nextMaterial": "Add reviewed build/relink instructions and the exact corresponding-source companion for GStreamer, GLib, and the selected dependency closure."
+    },
+    {
+      "name": "Avalonia/ANGLE",
+      "runtimeFiles": ["Avalonia.Base.dll", "Avalonia.Win32.dll", "av_libglesv2.dll"],
+      "licenseNoticeFiles": ["licenses/nuget/avalonia/LICENSE", "licenses/nuget/avalonia.angle.windows.natives/LICENSE"],
+      "sourceBuildInfoFiles": [],
+      "releaseCompanionSourceFiles": [],
+      "sourceBuildInfoRequired": false,
+      "releaseCompanionSourceRequired": false,
+      "nextMaterial": "Add a reviewed Avalonia 12.2 prerelease license/attribution file; the ANGLE package license is already staged."
+    },
+    {
+      "name": "SkiaSharp/HarfBuzzSharp",
+      "runtimeFiles": ["SkiaSharp.dll", "libSkiaSharp.dll", "HarfBuzzSharp.dll", "libHarfBuzzSharp.dll"],
+      "licenseNoticeFiles": ["licenses/nuget/skiasharp/LICENSE.txt", "licenses/nuget/skiasharp.nativeassets.win32/THIRD-PARTY-NOTICES.txt", "licenses/nuget/harfbuzzsharp/LICENSE.txt", "licenses/nuget/harfbuzzsharp.nativeassets.win32/THIRD-PARTY-NOTICES.txt"],
+      "sourceBuildInfoFiles": [],
+      "releaseCompanionSourceFiles": [],
+      "sourceBuildInfoRequired": false,
+      "releaseCompanionSourceRequired": false,
+      "nextMaterial": "No additional material is currently required by this gate."
+    },
+    {
+      "name": "MicroCom.Runtime",
+      "runtimeFiles": ["MicroCom.Runtime.dll"],
+      "licenseNoticeFiles": ["licenses/nuget/microcom.runtime/LICENSE"],
+      "sourceBuildInfoFiles": [],
+      "releaseCompanionSourceFiles": [],
+      "sourceBuildInfoRequired": false,
+      "releaseCompanionSourceRequired": false,
+      "nextMaterial": "Add a reviewed MicroCom.Runtime 0.11.6 license/attribution file; the NuGet package contains no license text."
+    },
+    {
+      "name": "System.IO.Pipelines",
+      "runtimeFiles": ["System.IO.Pipelines.dll"],
+      "licenseNoticeFiles": ["licenses/nuget/system.io.pipelines/LICENSE.TXT", "licenses/nuget/system.io.pipelines/THIRD-PARTY-NOTICES.TXT"],
+      "sourceBuildInfoFiles": [],
+      "releaseCompanionSourceFiles": [],
+      "sourceBuildInfoRequired": false,
+      "releaseCompanionSourceRequired": false,
+      "nextMaterial": "No additional material is currently required by this gate."
+    },
+    {
+      "name": "Tmds.DBus.Protocol",
+      "runtimeFiles": ["Tmds.DBus.Protocol.dll"],
+      "licenseNoticeFiles": ["licenses/nuget/tmds.dbus.protocol/LICENSE"],
+      "sourceBuildInfoFiles": [],
+      "releaseCompanionSourceFiles": [],
+      "sourceBuildInfoRequired": false,
+      "releaseCompanionSourceRequired": false,
+      "nextMaterial": "Add a reviewed Tmds.DBus.Protocol 0.94.1 license/attribution file; the NuGet package contains no license text."
+    },
+    {
+      "name": ".NET 8.0.29",
+      "runtimeFiles": ["coreclr.dll", "System.Private.CoreLib.dll", "System.Windows.Forms.dll"],
+      "licenseNoticeFiles": ["licenses/dotnet/Microsoft.NETCore.App.Runtime.win-x64/LICENSE.TXT", "licenses/dotnet/Microsoft.NETCore.App.Runtime.win-x64/THIRD-PARTY-NOTICES.TXT", "licenses/dotnet/Microsoft.WindowsDesktop.App.Runtime.win-x64/LICENSE"],
+      "sourceBuildInfoFiles": ["licenses/dotnet/RELEASE-NOTICE-REVIEW.md"],
+      "releaseCompanionSourceFiles": [],
+      "sourceBuildInfoRequired": true,
+      "releaseCompanionSourceRequired": false,
+      "nextMaterial": "Add a reviewed .NET 8.0.29 release notice covering the self-contained NETCore and WindowsDesktop runtime file set."
+    },
+    {
+      "name": "ScreenRecorderLib",
+      "runtimeFiles": ["XbPreview.Native.dll"],
+      "licenseNoticeFiles": ["licenses/screenrecorderlib/LICENSE-SCREENRECORDERLIB.txt"],
+      "sourceBuildInfoFiles": ["licenses/screenrecorderlib/SOURCE.md"],
+      "releaseCompanionSourceFiles": [],
+      "sourceBuildInfoRequired": true,
+      "releaseCompanionSourceRequired": false,
+      "nextMaterial": "No additional material is currently required by this gate."
+    },
+    {
+      "name": "VC++",
+      "runtimeFiles": ["msvcp140.dll", "vcruntime140.dll", "vcruntime140_1.dll"],
+      "licenseNoticeFiles": ["licenses/vc-redist/REDISTRIBUTION.md"],
+      "sourceBuildInfoFiles": [],
+      "releaseCompanionSourceFiles": [],
+      "sourceBuildInfoRequired": false,
+      "releaseCompanionSourceRequired": false,
+      "nextMaterial": "Add reviewed Microsoft VC++ 14.44 redistribution-rights evidence for the three pinned app-local files."
+    }
+  ]
+}

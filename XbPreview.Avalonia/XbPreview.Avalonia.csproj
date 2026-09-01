@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>XbPreview.Avalonia</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="12.2.999-cibuild0067907-alpha" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="12.2.999-cibuild0067907-alpha" />
+  </ItemGroup>
+</Project>

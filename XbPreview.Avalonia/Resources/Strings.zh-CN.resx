@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="CaptureTitle" xml:space="preserve">
+    <value>录制准备</value>
+  </data>
+  <data name="CaptureTarget" xml:space="preserve">
+    <value>捕获目标</value>
+  </data>
+  <data name="FullScreen" xml:space="preserve">
+    <value>全屏</value>
+  </data>
+  <data name="Window" xml:space="preserve">
+    <value>窗口</value>
+  </data>
+  <data name="CaptureConnecting" xml:space="preserve">
+    <value>正在连接原捕获链…</value>
+  </data>
+  <data name="HideCursor" xml:space="preserve">
+    <value>鼠标隐藏</value>
+  </data>
+  <data name="SystemAudio" xml:space="preserve">
+    <value>系统声音</value>
+  </data>
+  <data name="Microphone" xml:space="preserve">
+    <value>麦克风</value>
+  </data>
+  <data name="RefreshSystemAudio" xml:space="preserve">
+    <value>刷新系统声音</value>
+  </data>
+  <data name="RefreshSystemAudioHelp" xml:space="preserve">
+    <value>重新读取 Windows 默认系统声音源</value>
+  </data>
+  <data name="RefreshMicrophone" xml:space="preserve">
+    <value>刷新麦克风</value>
+  </data>
+  <data name="RefreshMicrophoneHelp" xml:space="preserve">
+    <value>重新枚举当前可用麦克风设备</value>
+  </data>
+  <data name="DirectorTitle" xml:space="preserve">
+    <value>导演控制</value>
+  </data>
+  <data name="ManualZoom" xml:space="preserve">
+    <value>镜头 / 手动镜头</value>
+  </data>
+  <data name="ZoomShortcuts" xml:space="preserve">
+    <value>镜头快捷键</value>
+  </data>
+  <data name="AutoZoom" xml:space="preserve">
+    <value>自动镜头 / 跟随重点</value>
+  </data>
+  <data name="StageTitle" xml:space="preserve">
+    <value>3D运镜</value>
+  </data>
+  <data name="ViewAngle" xml:space="preserve">
+    <value>展示角度</value>
+  </data>
+  <data name="Left" xml:space="preserve">
+    <value>左倾</value>
+  </data>
+  <data name="Front" xml:space="preserve">
+    <value>正面</value>
+  </data>
+  <data name="Right" xml:space="preserve">
+    <value>右倾</value>
+  </data>
+  <data name="Tilt" xml:space="preserve">
+    <value>倾斜强度</value>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>轻</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>中</value>
+  </data>
+  <data name="Strong" xml:space="preserve">
+    <value>强</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>背景</value>
+  </data>
+  <data name="RecordingTitle" xml:space="preserve">
+    <value>保存 / 录制</value>
+  </data>
+  <data name="IncludeFloatingPanels" xml:space="preserve">
+    <value>托盘入镜</value>
+  </data>
+  <data name="SaveLocation" xml:space="preserve">
+    <value>保存位置</value>
+  </data>
+  <data name="Resolution" xml:space="preserve">
+    <value>分辨率</value>
+  </data>
+  <data name="ResolutionOriginal" xml:space="preserve">
+    <value>原始（推荐）</value>
+  </data>
+  <data name="Resolution1080" xml:space="preserve">
+    <value>1080p（更稳定）</value>
+  </data>
+  <data name="Resolution1440" xml:space="preserve">
+    <value>2K</value>
+  </data>
+  <data name="Resolution4K" xml:space="preserve">
+    <value>4K（性能要求高）</value>
+  </data>
+  <data name="FrameRate" xml:space="preserve">
+    <value>帧率</value>
+  </data>
+  <data name="StartRecording" xml:space="preserve">
+    <value>开始录制</value>
+  </data>
+  <data name="Recording" xml:space="preserve">
+    <value>正在录制</value>
+  </data>
+  <data name="Starting" xml:space="preserve">
+    <value>正在启动…</value>
+  </data>
+  <data name="ElapsedTime" xml:space="preserve">
+    <value>已录制时间</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>暂停</value>
+  </data>
+  <data name="RestartRecording" xml:space="preserve">
+    <value>重录</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>已保存</value>
+  </data>
+  <data name="BackToReady" xml:space="preserve">
+    <value>返回录制准备</value>
+  </data>
+  <data name="RecordingDuration" xml:space="preserve">
+    <value>录制时长</value>
+  </data>
+  <data name="OpenFolder" xml:space="preserve">
+    <value>打开文件夹</value>
+  </data>
+  <data name="OpenVideo" xml:space="preserve">
+    <value>打开视频</value>
+  </data>
+  <data name="RestartConfirmTitle" xml:space="preserve">
+    <value>重新录制？</value>
+  </data>
+  <data name="RestartConfirmBody" xml:space="preserve">
+    <value>当前这段录制将不会保存，并返回录制准备。</value>
+  </data>
+  <data name="ContinueRecording" xml:space="preserve">
+    <value>继续录制</value>
+  </data>
+  <data name="DiscardRecording" xml:space="preserve">
+    <value>放弃这段录制</value>
+  </data>
+  <data name="ReturnHome" xml:space="preserve">
+    <value>归位</value>
+  </data>
+  <data name="Later" xml:space="preserve">
+    <value>稍后处理</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="SettingsSubtitle" xml:space="preserve">
+    <value>应用偏好设置</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="SimplifiedChineseSelf" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="EnglishSelf" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="RestartToApply" xml:space="preserve">
+    <value>语言将在重启后生效</value>
+  </data>
+  <data name="RestartNow" xml:space="preserve">
+    <value>立即重启</value>
+  </data>
+  <data name="LanguageEntry" xml:space="preserve">
+    <value>中 / EN</value>
+  </data>
+  <data name="BrandName" xml:space="preserve">
+    <value>小白录</value>
+  </data>
+  <data name="RestartLater" xml:space="preserve">
+    <value>稍后</value>
+  </data>
+  <data name="RecoveryBodyPreserved" xml:space="preserve">
+    <value>原始录制文件已为你保留。</value>
+  </data>
+  <data name="RecoveryBodyCanTry" xml:space="preserve">
+    <value>原始录制文件已为你保留，可以尝试恢复。</value>
+  </data>
+  <data name="RecoveryChecking" xml:space="preserve">
+    <value>正在检查…</value>
+  </data>
+  <data name="RecoveryTry" xml:space="preserve">
+    <value>尝试恢复</value>
+  </data>
+  <data name="OpenContainingFolder" xml:space="preserve">
+    <value>打开所在文件夹</value>
+  </data>
+  <data name="DontRemindAgain" xml:space="preserve">
+    <value>不再提醒</value>
+  </data>
+  <data name="RecoveryFoundOne" xml:space="preserve">
+    <value>发现 1 段未正常结束的录制</value>
+  </data>
+  <data name="RecoveryFoundMany" xml:space="preserve">
+    <value>发现 {0} 段需要处理的历史录制</value>
+  </data>
+  <data name="RecoveryRecoveredNotice" xml:space="preserve">
+    <value>录像已找回并确认保存。</value>
+  </data>
+  <data name="RecoveryRecoveredTitle" xml:space="preserve">
+    <value>录像已找回</value>
+  </data>
+  <data name="RecoveryInterruptedTitle" xml:space="preserve">
+    <value>未正常结束的录制</value>
+  </data>
+  <data name="RecoveryAttentionTitle" xml:space="preserve">
+    <value>需要关注的历史录制</value>
+  </data>
+  <data name="RecoveryCanTryStatus" xml:space="preserve">
+    <value>发现一段未正常结束的录制，可以尝试找回。</value>
+  </data>
+  <data name="RecoveryPreservedStatus" xml:space="preserve">
+    <value>这段录制没有正常结束，原始录制文件已为你保留。</value>
+  </data>
+  <data name="RecoveryRetainedStatus" xml:space="preserve">
+    <value>暂时无法自动处理这段录制，但文件不会被删除。</value>
+  </data>
+  <data name="RecoveryCanceledStatus" xml:space="preserve">
+    <value>操作已停止，录制文件已保留。</value>
+  </data>
+  <data name="RecoveryReadFailureStatus" xml:space="preserve">
+    <value>暂时无法读取这段录制，请稍后再试。文件不会被删除。</value>
+  </data>
+  <data name="RecoveryChangedStatus" xml:space="preserve">
+    <value>当前情况发生了变化，暂时无法自动处理。录制文件已保留。</value>
+  </data>
+  <data name="RecoveryUnavailableStatus" xml:space="preserve">
+    <value>这段录制暂时无法自动恢复，文件已保留。</value>
+  </data>
+  <data name="DefaultSaveLocation" xml:space="preserve">
+    <value>默认保存位置</value>
+  </data>
+  <data name="NoFileYet" xml:space="preserve">
+    <value>尚未生成文件</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="RecordingComplete" xml:space="preserve">
+    <value>录制完成</value>
+  </data>
+  <data name="RecordingFailed" xml:space="preserve">
+    <value>录制失败</value>
+  </data>
+  <data name="Canceling" xml:space="preserve">
+    <value>正在取消…</value>
+  </data>
+  <data name="RecordingNow" xml:space="preserve">
+    <value>正在录制</value>
+  </data>
+  <data name="Paused" xml:space="preserve">
+    <value>Ⅱ 已暂停</value>
+  </data>
+  <data name="Saving" xml:space="preserve">
+    <value>正在保存…</value>
+  </data>
+  <data name="RecordingFailureDetail" xml:space="preserve">
+    <value>录制失败，请查看诊断日志。</value>
+  </data>
+  <data name="MicrophoneUnavailableAtStart" xml:space="preserve">
+    <value>未检测到麦克风，请连接后重试或关闭麦克风录制。</value>
+  </data>
+  <data name="UpscaleWarning" xml:space="preserve">
+    <value>将放大输出，不会增加原始画面的真实细节</value>
+  </data>
+  <data name="HighLoadWarning" xml:space="preserve">
+    <value>4K + 60 FPS 对电脑性能要求较高</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>自定义</value>
+  </data>
+  <data name="CustomEllipsis" xml:space="preserve">
+    <value>自定义…</value>
+  </data>
+  <data name="Fantasy01" xml:space="preserve">
+    <value>幻彩01</value>
+  </data>
+  <data name="Fantasy02" xml:space="preserve">
+    <value>幻彩02</value>
+  </data>
+  <data name="Frame60Help" xml:space="preserve">
+    <value>更流畅，对电脑性能要求较高</value>
+  </data>
+  <data name="CursorPreviewHidden" xml:space="preserve">
+    <value>预览隐藏鼠标并显示橙色辅助圈；桌面鼠标保持正常；成片不包含鼠标。</value>
+  </data>
+  <data name="CursorPreviewVisible" xml:space="preserve">
+    <value>预览显示鼠标；不显示辅助圈。</value>
+  </data>
+  <data name="TrayEnabled" xml:space="preserve">
+    <value>托盘入镜已开启</value>
+  </data>
+  <data name="TrayDisabled" xml:space="preserve">
+    <value>托盘入镜已关闭</value>
+  </data>
+  <data name="AudioInitFailed" xml:space="preserve">
+    <value>初始化录制音频模式失败：{0}</value>
+  </data>
+  <data name="AudioModeConfirmed" xml:space="preserve">
+    <value>音频模式：{0}（运行时已确认）</value>
+  </data>
+  <data name="RestoreMicrophoneFailed" xml:space="preserve">
+    <value>恢复麦克风选择失败：{0}；默认设备回退失败：{1}</value>
+  </data>
+  <data name="SavedMicrophoneFallback" xml:space="preserve">
+    <value>已保存的麦克风选择不可应用（{0}），已回到 Windows 默认。</value>
+  </data>
+  <data name="EnumeratingWindows" xml:space="preserve">
+    <value>正在枚举当前真实窗口…</value>
+  </data>
+  <data name="WindowCount" xml:space="preserve">
+    <value>真实窗口：{0} 个 · {1}</value>
+  </data>
+  <data name="WindowEnumerationFailed" xml:space="preserve">
+    <value>窗口枚举失败：{0}</value>
+  </data>
+  <data name="RecordingActiveCannotRefreshMicrophones" xml:space="preserve">
+    <value>录制会话活动时不能刷新麦克风设备。</value>
+  </data>
+  <data name="AnotherAudioCommand" xml:space="preserve">
+    <value>另一条音频命令正在处理。</value>
+  </data>
+  <data name="RefreshingMicrophones" xml:space="preserve">
+    <value>正在刷新麦克风设备…</value>
+  </data>
+  <data name="MicrophoneRefreshFailed" xml:space="preserve">
+    <value>麦克风设备刷新失败：{0}</value>
+  </data>
+  <data name="RecordingActiveCannotRefreshSystemAudio" xml:space="preserve">
+    <value>录制会话活动时不能刷新系统声音源。</value>
+  </data>
+  <data name="RefreshingSystemAudio" xml:space="preserve">
+    <value>正在刷新系统声音源…</value>
+  </data>
+  <data name="SystemAudioRefreshFailed" xml:space="preserve">
+    <value>系统声音源刷新失败：{0}</value>
+  </data>
+  <data name="SelectedMicrophoneUnavailable" xml:space="preserve">
+    <value>当前选择的麦克风不可用；请先选择可用设备。</value>
+  </data>
+  <data name="NoSystemAudio" xml:space="preserve">
+    <value>当前没有可用的 Windows 默认系统声音源。</value>
+  </data>
+  <data name="CursorCommandPending" xml:space="preserve">
+    <value>鼠标显示命令正在处理。</value>
+  </data>
+  <data name="ApplyingCursor" xml:space="preserve">
+    <value>正在应用鼠标显示命令…</value>
+  </data>
+  <data name="CursorHiddenOn" xml:space="preserve">
+    <value>鼠标隐藏：开</value>
+  </data>
+  <data name="CursorHiddenOff" xml:space="preserve">
+    <value>鼠标隐藏：关</value>
+  </data>
+  <data name="CursorCommandFailed" xml:space="preserve">
+    <value>鼠标显示命令异常：{0}</value>
+  </data>
+  <data name="ConfirmingAudioMode" xml:space="preserve">
+    <value>正在确认本次录制的音频模式…</value>
+  </data>
+  <data name="AudioConfirmationFailed" xml:space="preserve">
+    <value>录制启动前确认音频模式失败：{0}</value>
+  </data>
+  <data name="AudioConfirmationSucceeded" xml:space="preserve">
+    <value>录制启动已确认音频模式：{0}</value>
+  </data>
+  <data name="RecordingOrCapturePending" xml:space="preserve">
+    <value>录制会话活动或捕获命令正在处理。</value>
+  </data>
+  <data name="SwitchingCapture" xml:space="preserve">
+    <value>正在切换真实捕获目标…</value>
+  </data>
+  <data name="CaptureSwitchFailed" xml:space="preserve">
+    <value>捕获目标切换失败：{0}</value>
+  </data>
+  <data name="AudioLockedDuringRecording" xml:space="preserve">
+    <value>录制会话活动时音频选择已锁定。</value>
+  </data>
+  <data name="SubmittingAudio" xml:space="preserve">
+    <value>正在向录制运行时提交音频选择…</value>
+  </data>
+  <data name="AudioCommandFailed" xml:space="preserve">
+    <value>音频选择命令失败：{0}</value>
+  </data>
+  <data name="AudioSourceRejected" xml:space="preserve">
+    <value>{0}未被运行时接受：{1}；界面保留上次确认状态。</value>
+  </data>
+  <data name="CannotSelectUnavailableMicrophone" xml:space="preserve">
+    <value>不能选择当前不可用的麦克风设备。</value>
+  </data>
+  <data name="MicrophoneSelectionRejected" xml:space="preserve">
+    <value>麦克风选择未被运行时接受：{0}</value>
+  </data>
+  <data name="MicrophoneReadbackMismatch" xml:space="preserve">
+    <value>麦克风运行时回读与请求不一致；界面已显示运行时实际选择。</value>
+  </data>
+  <data name="RuntimeSelectedSaveFailed" xml:space="preserve">
+    <value>；运行时已选择，但保存失败：{0}</value>
+  </data>
+  <data name="MicrophoneSelected" xml:space="preserve">
+    <value>麦克风：{0}（运行时已回读）</value>
+  </data>
+  <data name="NoMicrophones" xml:space="preserve">
+    <value>未检测到可用麦克风；屏幕与系统声音录制仍可用。</value>
+  </data>
+  <data name="CurrentMicrophoneUnavailable" xml:space="preserve">
+    <value>当前麦克风不可用，请选择其他设备；麦克风保持关闭。</value>
+  </data>
+  <data name="MicrophoneCount" xml:space="preserve">
+    <value>真实麦克风设备：{0} 个</value>
+  </data>
+  <data name="NoDefaultSystemAudio" xml:space="preserve">
+    <value>未检测到 Windows 默认系统声音输出设备。</value>
+  </data>
+  <data name="DefaultSystemAudioUnavailable" xml:space="preserve">
+    <value>Windows 默认系统声音输出设备当前不可用。</value>
+  </data>
+  <data name="DefaultSystemAudioAvailable" xml:space="preserve">
+    <value>Windows 默认系统声音输出设备可用。</value>
+  </data>
+  <data name="WindowsDefault" xml:space="preserve">
+    <value>Windows 默认</value>
+  </data>
+  <data name="WindowsDefaultWithName" xml:space="preserve">
+    <value>Windows 默认 — {0}</value>
+  </data>
+  <data name="WindowsDefaultUnavailable" xml:space="preserve">
+    <value>Windows 默认（不可用）</value>
+  </data>
+  <data name="DeviceUnavailable" xml:space="preserve">
+    <value>{0}（不可用）</value>
+  </data>
+  <data name="CurrentWindow" xml:space="preserve">
+    <value>当前：窗口 · {0}</value>
+  </data>
+  <data name="CurrentFullScreen" xml:space="preserve">
+    <value>当前：全屏</value>
+  </data>
+  <data name="CannotStartRecording" xml:space="preserve">
+    <value>当前状态不能开始录制。</value>
+  </data>
+  <data name="CannotStopRecording" xml:space="preserve">
+    <value>当前状态不能停止录制。</value>
+  </data>
+  <data name="CannotDiscardRecording" xml:space="preserve">
+    <value>当前状态不能放弃这段录制。</value>
+  </data>
+  <data name="CannotResumeRecording" xml:space="preserve">
+    <value>当前状态不能继续录制。</value>
+  </data>
+  <data name="CannotPauseRecording" xml:space="preserve">
+    <value>当前状态不能暂停录制。</value>
+  </data>
+  <data name="CannotChangeTray" xml:space="preserve">
+    <value>当前录制状态不能更改“托盘入镜”。</value>
+  </data>
+  <data name="TrayChangeFailed" xml:space="preserve">
+    <value>托盘入镜设置失败：{0}</value>
+  </data>
+  <data name="CannotChangeFrameRate" xml:space="preserve">
+    <value>录制期间不能更改帧率。</value>
+  </data>
+  <data name="FrameRateChangeFailed" xml:space="preserve">
+    <value>帧率设置失败：{0}</value>
+  </data>
+  <data name="FrameRateSaveFailed" xml:space="preserve">
+    <value>帧率设置持久化失败：{0}{1}</value>
+  </data>
+  <data name="CannotChangeResolution" xml:space="preserve">
+    <value>录制期间不能更改分辨率。</value>
+  </data>
+  <data name="ResolutionChangeFailed" xml:space="preserve">
+    <value>分辨率切换异常：{0}</value>
+  </data>
+  <data name="CannotChangeSaveLocation" xml:space="preserve">
+    <value>录制期间不能更改保存位置。</value>
+  </data>
+  <data name="ChooseRecordingFolder" xml:space="preserve">
+    <value>选择本次录制的保存文件夹</value>
+  </data>
+  <data name="FinalVideoNotReady" xml:space="preserve">
+    <value>最终视频尚未完成发布，当前不能打开。</value>
+  </data>
+  <data name="OpenVideoFailed" xml:space="preserve">
+    <value>打开录制视频失败：{0}</value>
+  </data>
+  <data name="FinalFolderNotReady" xml:space="preserve">
+    <value>最终视频尚未完成发布，当前不能打开文件夹。</value>
+  </data>
+  <data name="OpenFolderFailed" xml:space="preserve">
+    <value>打开录制文件夹失败：{0}</value>
+  </data>
+  <data name="SaveLocationUnavailable" xml:space="preserve">
+    <value>保存位置不可用，请选择本机已存在的文件夹。</value>
+  </data>
+  <data name="SaveLocationRuntimeFailed" xml:space="preserve">
+    <value>保存位置不可用：{0}</value>
+  </data>
+  <data name="SaveLocationSaveFailed" xml:space="preserve">
+    <value>保存位置持久化失败：{0}{1}</value>
+  </data>
+  <data name="PickBackgroundTitle" xml:space="preserve">
+    <value>选择舞台背景图片</value>
+  </data>
+  <data name="ImageFiles" xml:space="preserve">
+    <value>图片文件 (*.png;*.jpg;*.jpeg;*.bmp)</value>
+  </data>
+  <data name="CursorRuntimeUnavailable" xml:space="preserve">
+    <value>鼠标显示运行时尚未就绪。</value>
+  </data>
+  <data name="CursorRuntimeFailed" xml:space="preserve">
+    <value>鼠标显示运行时命令失败：{0}；{1}</value>
+  </data>
+  <data name="ShellRecordingStateFailed" xml:space="preserve">
+    <value>读取正式录制状态失败：{0}</value>
+  </data>
+  <data name="ShellClosingCannotStart" xml:space="preserve">
+    <value>窗口正在关闭，无法开始录制。</value>
+  </data>
+  <data name="FrameRateRollbackFailed" xml:space="preserve">
+    <value>；恢复原帧率失败：{0}</value>
+  </data>
+  <data name="SaveLocationRollbackFailed" xml:space="preserve">
+    <value>；恢复原保存位置失败：{0}</value>
+  </data>
+  <data name="ApplySaveLocationFailed" xml:space="preserve">
+    <value>无法应用安全录制保存位置：{0}</value>
+  </data>
+  <data name="ApplyFrameRateFailed" xml:space="preserve">
+    <value>无法应用录制帧率：{0}</value>
+  </data>
+  <data name="TrayReadyAllIncluded" xml:space="preserve">
+    <value>托盘入镜已开启；准备态整个录屏器可截图</value>
+  </data>
+  <data name="TrayMainExcluded" xml:space="preserve">
+    <value>托盘入镜已开启；主窗口排除，浮动托盘入镜</value>
+  </data>
+  <data name="TrayAllExcluded" xml:space="preserve">
+    <value>托盘入镜已关闭；主窗口和浮动托盘均排除</value>
+  </data>
+  <data name="TrayPolicyFailed" xml:space="preserve">
+    <value>托盘入镜设置失败：{0}；{1}</value>
+  </data>
+  <data name="CursorInitializing" xml:space="preserve">
+    <value>正在连接冻结鼠标生命周期…</value>
+  </data>
+  <data name="RecorderExcludeFailed" xml:space="preserve">
+    <value>无法在录制前排除主录屏器：{0}；{1}</value>
+  </data>
+  <data name="TrayValidationFailed" xml:space="preserve">
+    <value>无法验证托盘入镜捕获策略：{0}；{1}</value>
+  </data>
+  <data name="CursorGuideExcludeFailed" xml:space="preserve">
+    <value>预览辅助圈捕获排除验证失败：{0}</value>
+  </data>
+  <data name="CaptureWindowClosing" xml:space="preserve">
+    <value>窗口正在关闭，不能切换捕获目标。</value>
+  </data>
+  <data name="StopPreviewFailed" xml:space="preserve">
+    <value>切换捕获目标前停止 Preview 失败：{0}</value>
+  </data>
+  <data name="WindowTargetRejected" xml:space="preserve">
+    <value>窗口捕获目标未接受：{0}</value>
+  </data>
+  <data name="CaptureCanvasRejected" xml:space="preserve">
+    <value>捕获画布未接受：{0}</value>
+  </data>
+  <data name="StartPreviewFailed" xml:space="preserve">
+    <value>切换捕获目标后启动 Preview 失败：{0}</value>
+  </data>
+  <data name="CurrentCaptureWindow" xml:space="preserve">
+    <value>当前捕获：窗口 · {0}</value>
+  </data>
+  <data name="CurrentCaptureFullScreen" xml:space="preserve">
+    <value>当前捕获：全屏</value>
+  </data>
+  <data name="BackgroundRuntimeNotReady" xml:space="preserve">
+    <value>背景运行时尚未就绪</value>
+  </data>
+  <data name="BackgroundFileFallback" xml:space="preserve">
+    <value>背景文件不可用，已回退 Warm</value>
+  </data>
+  <data name="BackgroundRuntimeUnavailable" xml:space="preserve">
+    <value>背景运行时不可用，已保留当前背景</value>
+  </data>
+  <data name="BackgroundLoadFailed" xml:space="preserve">
+    <value>背景加载失败，已保留当前背景</value>
+  </data>
+  <data name="BackgroundReadFailed" xml:space="preserve">
+    <value>无法读取所选图片，已保留当前背景</value>
+  </data>
+  <data name="BackgroundDecodeFailed" xml:space="preserve">
+    <value>图片解码失败，已保留当前背景</value>
+  </data>
+  <data name="BackgroundPickerFailed" xml:space="preserve">
+    <value>无法打开图片选择器，已保留当前背景</value>
+  </data>
+  <data name="BackgroundWarmFailed" xml:space="preserve">
+    <value>Warm 背景初始化失败</value>
+  </data>
+  <data name="BackgroundSaveFailed" xml:space="preserve">
+    <value>背景已应用，但设置未保存</value>
+  </data>
+  <data name="RecordingMicDisconnected" xml:space="preserve">
+    <value>当前选择的麦克风不可用，请重新连接或选择其他麦克风。</value>
+  </data>
+  <data name="RecordingDiskFull" xml:space="preserve">
+    <value>磁盘空间不足，录制已安全停止；已有素材会保留。</value>
+  </data>
+  <data name="RecordingFolderReadOnly" xml:space="preserve">
+    <value>录制目录不可写，请检查目录权限或磁盘写保护。</value>
+  </data>
+  <data name="RecordingDriveUnavailable" xml:space="preserve">
+    <value>录制目录或磁盘当前不可用；已有素材会保留。</value>
+  </data>
+  <data name="RecordingDiskWriteFailed" xml:space="preserve">
+    <value>写入录制磁盘时发生错误；已有素材会保留。</value>
+  </data>
+  <data name="RecordingStorageFailure" xml:space="preserve">
+    <value>录制未能完成，请检查录制目录和可用磁盘空间。</value>
+  </data>
+</root>

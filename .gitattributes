@@ -1,0 +1,34 @@
+* text=auto
+
+*.sln text eol=crlf
+*.csproj text eol=crlf
+*.vcxproj text eol=crlf
+*.props text eol=crlf
+*.targets text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.cs text eol=crlf
+*.cpp text eol=crlf
+*.c text eol=crlf
+*.h text eol=crlf
+*.hpp text eol=crlf
+*.hlsl text eol=crlf
+*.manifest text eol=crlf
+
+*.md text eol=lf
+docs/stages/abandoned/*.patch text eol=lf -whitespace
+*.json text eol=lf
+*.csv text eol=lf
+
+*.ico binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.mp4 binary
+*.dll binary
+*.exe binary
+
+# Preserve the upstream miniaudio distribution byte-for-byte, including its
+# intentional trailing whitespace in generated/documentation sections.
+third_party/miniaudio/miniaudio.h -whitespace

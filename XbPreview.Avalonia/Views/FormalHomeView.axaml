@@ -1,0 +1,121 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="using:XbPreview.Avalonia.Controls"
+             x:Class="XbPreview.Avalonia.Views.FormalHomeView"
+             Background="#FFF9F0">
+  <Grid Margin="18,14" RowDefinitions="Auto,10,*,10,Auto">
+    <Grid ColumnDefinitions="*,Auto">
+      <StackPanel Spacing="2">
+        <TextBlock Text="TECHNICAL PRODUCTION REVIEW"
+                   FontSize="11"
+                   FontWeight="SemiBold"
+                   Foreground="#B64A2B" />
+        <TextBlock Text="Avalonia Home · Production adapters"
+                   FontSize="19"
+                   FontWeight="SemiBold"
+                   Foreground="#292521" />
+      </StackPanel>
+      <Button x:Name="SettingsButton"
+              Grid.Column="1"
+              Content="SETTINGS" />
+    </Grid>
+
+    <Grid Grid.Row="2" ColumnDefinitions="*,12,320">
+      <Border Background="#2D2A27"
+              BorderBrush="#403B36"
+              BorderThickness="1"
+              CornerRadius="12"
+              Padding="12">
+        <Grid>
+          <controls:GpuPreviewControl x:Name="GpuPreview" />
+          <Border HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Background="#99393530"
+                  BorderBrush="#665E55"
+                  BorderThickness="1"
+                  CornerRadius="6"
+                  Padding="8,4">
+            <TextBlock Text="GPU PREVIEW"
+                       FontSize="11"
+                       FontWeight="SemiBold"
+                       Foreground="#F4EDE2" />
+          </Border>
+        </Grid>
+      </Border>
+
+      <Border Grid.Column="2"
+              Background="#FFFDF8"
+              BorderBrush="#DDD3C6"
+              BorderThickness="1"
+              CornerRadius="10"
+              Padding="10">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+          <StackPanel Spacing="7">
+            <TextBlock Text="CAPTURE" FontWeight="SemiBold" />
+            <ComboBox x:Name="CaptureModeSelector">
+              <ComboBoxItem Content="全屏" />
+              <ComboBoxItem Content="指定窗口" />
+            </ComboBox>
+            <Grid ColumnDefinitions="*,Auto">
+              <ComboBox x:Name="WindowSelector" />
+              <Button x:Name="RefreshWindowsButton"
+                      Grid.Column="1"
+                      Content="REFRESH" />
+            </Grid>
+
+            <TextBlock Text="AUDIO / CURSOR" FontWeight="SemiBold" />
+            <CheckBox x:Name="MicrophoneEnabledCheckBox" Content="麦克风" />
+            <ComboBox x:Name="MicrophoneSelector" />
+            <TextBlock x:Name="MicrophoneAvailabilityText"
+                       FontSize="11"
+                       TextWrapping="Wrap" />
+            <CheckBox x:Name="SystemAudioCheckBox" Content="电脑声音" />
+            <CheckBox x:Name="CursorVisibleCheckBox" Content="录制鼠标" />
+
+            <TextBlock Text="CAMERA" FontWeight="SemiBold" />
+            <CheckBox x:Name="HotkeysEnabledCheckBox" Content="F9 / F10 快捷键" />
+            <CheckBox x:Name="AutoDirectorCheckBox" Content="自动跟随重点" />
+            <StackPanel Orientation="Horizontal" Spacing="6">
+              <Button x:Name="StandardZoomButton" Content="1.6x" />
+              <Button x:Name="StrongZoomButton" Content="2.0x" />
+              <TextBlock x:Name="ManualZoomText" VerticalAlignment="Center" />
+            </StackPanel>
+
+            <TextBlock Text="3D / BACKGROUND" FontWeight="SemiBold" />
+            <Grid ColumnDefinitions="*,6,*">
+              <ComboBox x:Name="StageOrientationSelector" />
+              <ComboBox x:Name="StageLevelSelector" Grid.Column="2" />
+            </Grid>
+            <ComboBox x:Name="BackgroundPresetSelector" />
+            <TextBox x:Name="CustomBackgroundPathTextBox"
+                     PlaceholderText="Custom image absolute path" />
+            <Button x:Name="ApplyCustomBackgroundButton"
+                    Content="APPLY CUSTOM IMAGE" />
+
+            <TextBlock Text="OUTPUT" FontWeight="SemiBold" />
+            <TextBox x:Name="OutputRootTextBox"
+                     PlaceholderText="Output root; blank = default" />
+            <Button x:Name="ApplyOutputRootButton" Content="APPLY OUTPUT ROOT" />
+            <TextBlock x:Name="ProductStatusText"
+                       FontSize="11"
+                       TextWrapping="Wrap" />
+          </StackPanel>
+        </ScrollViewer>
+      </Border>
+    </Grid>
+
+    <StackPanel Grid.Row="4" Spacing="5">
+      <StackPanel Orientation="Horizontal" Spacing="8">
+        <Button x:Name="StartRecordingButton" Content="START" />
+        <Button x:Name="PauseRecordingButton" Content="PAUSE" IsEnabled="False" />
+        <Button x:Name="ResumeRecordingButton" Content="RESUME" IsEnabled="False" />
+        <Button x:Name="StopRecordingButton" Content="STOP" IsEnabled="False" />
+        <TextBlock x:Name="RecordingStateText"
+                   Text="STATE: IDLE"
+                   VerticalAlignment="Center" />
+      </StackPanel>
+      <TextBlock x:Name="RecordingOutputText" Text="OUTPUT: -" TextWrapping="Wrap" />
+      <TextBlock x:Name="RecordingErrorText" TextWrapping="Wrap" />
+    </StackPanel>
+  </Grid>
+</UserControl>
