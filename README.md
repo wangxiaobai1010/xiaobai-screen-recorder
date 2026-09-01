@@ -2,6 +2,18 @@
 
 [中文](#中文) | [English](#english)
 
+![小白录 / Xiaobai Recorder](docs/media/xiaobai-recorder-hero.png)
+
+## 功能展示 / Highlights
+
+### 可拖拽控制面板 / Draggable Control Panels
+
+![Draggable Control Panels](docs/media/xiaobai-recorder-floating-control-panels.png)
+
+### 3D 运镜 / 3D Camera Movement
+
+![3D Camera Movement](docs/media/xiaobai-recorder-3d-camera-movement.png)
+
 ## 中文
 
 小白录是一款开源 Windows 录屏工具，专注于让录制内容无需复杂的编辑流程也能获得整洁、适合展示的成片效果。
